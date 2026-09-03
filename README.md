@@ -1,5 +1,5 @@
 <!-- course-title:start -->
-# Course Wiki Template
+# Ingeniería del Software 2
 <!-- course-title:end -->
 
 [English](README.en.md)
