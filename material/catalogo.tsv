@@ -1,1 +1,12 @@
 id	tipo	titulo	ruta	paginas	ciclo	estado	archivo_original
+CL01-P	presentacion	Clase 1: conceptos generales de Ingeniería de Software	material/catedra/teoria/clase-01-presentacion-introduccion.pdf	27	2026	vigente	Clase 1 - intro IS.pdf
+CL01-A	apuntes	Clase 1: Ingeniería de Software, procesos y ciclos de vida	material/catedra/teoria/clase-01-apuntes.pdf	10	2026	vigente	Apuntes clase 1.pdf
+CL02-P	presentacion	Clase 2: metodologías clásicas (predictivas) y ágiles	material/catedra/teoria/clase-02-presentacion-metodologias.pdf	47	2026	vigente	clase 2 - metodologias.pptx.pdf
+CL02-A	apuntes	Clase 2: metodologías de desarrollo de software	material/catedra/teoria/clase-02-apuntes.pdf	44	2026	vigente	Apuntes clase 2.pdf
+CL04-P	presentacion	Clase 4: productos digitales con Lean Startup, Design Thinking y Canvas	material/catedra/teoria/clase-04-presentacion-productos-digitales.pdf	41	2026	vigente	clase 3 - productos digitales.pptx.pdf
+CL04-A	apuntes	Clase 4: desarrollo de productos digitales	material/catedra/teoria/clase-04-apuntes-productos-digitales.pdf	5	2026	vigente	Apuntes clases 3.pdf
+CL05-P	presentacion	Clase 5: estimación de proyectos de software	material/catedra/teoria/clase-05-presentacion-estimacion.pdf	22	2026	vigente	clase 4 estimadores v2.pdf
+CL05-A	apuntes	Clase 5: estimación de proyectos de software	material/catedra/teoria/clase-05-apuntes-estimacion.pdf	7	2026	vigente	Apuntes clase 4 (2).pdf
+CL06-P	presentacion	Clase 6: calidad de software	material/catedra/teoria/clase-06-presentacion-calidad.pdf	39	2026	vigente	clase 6 - calidad.pptx (1).pdf
+CL06-A	apuntes	Clase 6: conceptos de calidad de software	material/catedra/teoria/clase-06-apuntes-calidad.pdf	5	2026	vigente	Apuntes clase 4.pdf
+PARCIAL1	parcial	Parcial 1 — primer cuatrimestre 2026	material/catedra/practica/parcial-01-2026.pdf	1	2026	vigente	Parcial 1 con formato.pdf

@@ -1,0 +1,501 @@
+FUENTE: CL01-A
+TITULO: Clase 1: Ingeniería de Software, procesos y ciclos de vida
+ORIGINAL: material/catedra/teoria/clase-01-apuntes.pdf
+PAGINAS: 10
+
+===== PAGINA 1 =====
+
+1. Ingeniería de Software
+
+La Ingeniería de Software, como disciplina, ha evolucionado de manera constante desde
+mediados del siglo XX. Surge ante la necesidad de abordar la complejidad creciente de los
+proyectos informáticos y la demanda de software confiable, sostenible y fácil de mantener.
+Lo que en un principio se concebía como un acto casi artesanal de programación, pasó a
+requerir un enfoque sistemático, con procesos, métodos, herramientas y buenas prácticas.
+Así se fue forjando la idea de la “Ingeniería de Software”, un término que no solo abarca la
+escritura de código, sino todo el ciclo de vida del desarrollo, desde la concepción de la idea
+o necesidad de negocio hasta la puesta en producción y el mantenimiento de la solución
+final.
+
+Al día de hoy, la Ingeniería de Software comprende múltiples áreas, entre ellas la gestión de
+proyectos, la garantía de calidad, la medición y estimación de esfuerzos, la arquitectura de
+sistemas, la usabilidad, la seguridad informática, la evaluación de costos y riesgos, las
+metodologías ágiles y muchas más. En este primer apartado, se revisarán definiciones
+célebres propuestas por autores de renombre en el campo, así como la relevancia de un
+cuerpo de conocimiento estándar como el SWEBOK, avalado por el IEEE.
+
+1.1 Definición de Sommerville
+
+Ian Sommerville, uno de los autores más influyentes y prolíficos en Ingeniería de Software,
+define la disciplina como:
+
+   Una disciplina de la ingeniería que se ocupa de todos los aspectos de la producción de
+software, desde las primeras etapas de la especificación del sistema hasta el mantenimiento
+                       del sistema después de que ha entrado en uso.
+
+En su definición, Sommerville destaca la importancia de la confiabilidad y la calidad como
+pilares fundamentales. No basta con producir software que “funcione”, sino que también
+debe ser robusto, mantenerse correctamente y soportar cambios a lo largo del tiempo. La
+confiabilidad implica que el software cumpla consistentemente con los requisitos y
+expectativas de los usuarios, mientras que la calidad engloba características como la
+corrección, la eficiencia, la facilidad de uso, la portabilidad, la mantenibilidad, entre otras.
+
+La mención de un límite de tiempo y presupuesto advierte que, si bien el software ideal
+podría ser perfecto en el sentido abstracto, en la práctica hay restricciones reales que
+influyen en la toma de decisiones de diseño, implementación y pruebas. Precisamente, una
+de las competencias clave en Ingeniería de Software es conciliar calidad con el
+cumplimiento de plazos de entrega y costos, sin perder de vista la sostenibilidad y evolución
+futura del producto.
+
+1.2 Definición de Pressman
+
+Roger Pressman, otro autor de referencia y autor del libro “Ingeniería de Software: Un
+Enfoque Práctico”, define la Ingeniería de Software como:
+
+===== PAGINA 2 =====
+
+Una tecnología en capas compuesta de un proceso, métodos y herramientas, cuyo objetivo
+   es la producción de software de alta calidad que sea entregado a tiempo, dentro del
+                presupuesto y que cumpla con los requisitos establecidos
+
+En esta visión, Pressman subraya la idea de la “construcción” de software, comparándola
+en cierta medida con otras ingenierías (civil, mecánica, etc.), donde se emplea un conjunto
+integrado de herramientas y métodos sistemáticos para asegurar resultados predecibles. El
+autor enfatiza, además, la importancia del factor humano: aunque existan muchos procesos
+y herramientas, es fundamental el rol de las personas que participan en el proyecto, su
+capacitación, experiencia y comunicación fluida.
+
+Otra parte relevante en la definición de Pressman es la mención de “productos de software
+de alta calidad, libres de defectos”. Si bien en la práctica es virtualmente imposible erradicar
+todos los defectos, el objetivo es reducirlos mediante actividades como la revisión del
+código, las pruebas automáticas y manuales, y una cultura de mejora continua.
+
+1.3 Definición de Ivar Jacobson
+
+Ivar Jacobson es reconocido por sus aportaciones en el ámbito de la orientación a objetos y
+por ser uno de los creadores de UML (Lenguaje Unificado de Modelado) junto con Grady
+Booch y James Rumbaugh. Según Jacobson, la Ingeniería de Software es:
+
+      “Un proceso de trabajo colaborativo que se centra en la modularidad y la
+      orientación a objetos, con el fin de construir aplicaciones sólidas y adaptables a
+      los cambios del entorno de negocio”.
+
+La definición de Jacobson está más orientada a la programación orientada a objetos (POO)
+y a la arquitectura de software. Alude a dos elementos clave:
+
+   1.​ Colaboración: El software es producto del trabajo en equipo, lo que exige
+       coordinación, comunicación efectiva y roles bien definidos.
+   2.​ Modularidad y Orientación a Objetos: Estos conceptos ayudan a construir
+       soluciones escalables, fáciles de entender y de mantener. La modularidad permite
+       dividir un sistema en subsistemas o módulos, cada uno con responsabilidades bien
+       delimitadas. La orientación a objetos, por su parte, propone la creación de objetos
+       que encapsulan datos y comportamientos relacionados, facilitando la modelación de
+       soluciones más cercanas a la realidad.
+
+Jacobson también enfatiza la adaptabilidad del software a los cambios de negocio. En un
+mundo donde la tecnología y las prioridades competitivas de las organizaciones cambian
+con rapidez, la capacidad de modificar y extender un sistema sin costos desorbitados es
+esencial para la supervivencia de la empresa y la satisfacción del cliente.
+
+1.4 SWEBOK (Software Engineering Body of Knowledge - IEEE)
+
+El SWEBOK, publicado por el IEEE (Institute of Electrical and Electronics Engineers),
+constituye un cuerpo de conocimiento que organiza y describe las áreas y prácticas
+fundamentales de la Ingeniería de Software. No es un manual de recetas definitivas, sino
+
+===== PAGINA 3 =====
+
+una guía que establece un conjunto de temas esenciales, clasificándolos en áreas de
+conocimiento (“knowledge areas”) tales como:
+
+   ●​ Requisitos: Técnicas de elicitación, análisis y gestión de requerimientos.
+   ●​ Diseño: Principios de diseño a nivel de arquitectura y de detalle.
+   ●​ Construcción: Lenguajes de programación, estándares de codificación,
+      herramientas de desarrollo.
+   ●​ Pruebas (Testing): Estrategias de prueba, tipos de pruebas, cobertura,
+      automatización.
+   ●​ Mantenimiento: Evolución del software, corrección de errores, adaptación a nuevos
+      requerimientos.
+   ●​ Gestión de Configuración: Control de versiones, gestión de cambios, integridad del
+      sistema.
+   ●​ Gestión de Proyectos de Software: Planificación, estimación, gestión de riesgos,
+      liderazgo.
+   ●​ Ingeniería de Procesos: Definición, medición y mejora de procesos de desarrollo.
+   ●​ Herramientas y Métodos: Entornos de desarrollo integrados, metodologías
+      formales, metodologías ágiles, etc.
+   ●​ Calidad: Aseguramiento, control y medición de la calidad.
+
+El objetivo de SWEBOK es estandarizar el conocimiento necesario para la práctica
+profesional de la Ingeniería de Software, sirviendo como referencia para planes de estudio,
+certificaciones y desarrollo profesional. Además, promueve la investigación y la difusión de
+buenas prácticas, impulsando el avance de la disciplina a nivel global.
+
+Conocer y entender los lineamientos del SWEBOK brinda al ingeniero de software una
+visión holística del campo, ayudándole a identificar cuáles son las áreas de conocimiento
+más pertinentes a cada etapa de un proyecto y a mantener una visión clara de la
+complejidad inherente al desarrollo de software.
+
+
+
+
+2. Proceso de Software
+
+El proceso de software se refiere al conjunto de actividades y tareas que guían la creación
+y evolución de un producto de software. Puede verse como una hoja de ruta que establece
+el orden en el que se llevan a cabo actividades como la obtención de requerimientos, el
+diseño, la codificación y las pruebas, así como la gestión general del proyecto.
+
+La definición de un buen proceso de software es crucial para asegurar la calidad, la
+fiabilidad y el cumplimiento de los plazos y el presupuesto. A grandes rasgos, se buscan
+objetivos como:
+
+   ●​ Estandarizar los pasos y asegurar que nada importante sea pasado por alto.
+   ●​ Proporcionar una estructura que facilite la comunicación entre los distintos roles y
+      partes interesadas (stakeholders).
+   ●​ Crear puntos de control (milestones) que permitan medir el avance y realizar
+      ajustes en caso de desviaciones.
+
+===== PAGINA 4 =====
+
+   ●​ Garantizar la calidad del producto a través de prácticas de verificación, validación y
+      control de cambios.
+
+No existe un único proceso de software universalmente mejor. Dependiendo del tipo de
+proyecto, los requerimientos, el riesgo, la cultura de la organización y otros factores, se
+puede optar por distintos enfoques: procesos predictivos (más tradicionales), procesos
+iterativos e incrementales (más flexibles), o incluso procesos ágiles (como Scrum o Extreme
+Programming).
+
+Un proceso de software abarca, por lo general, las siguientes fases de alto nivel:
+
+   1.​ Planificación y gestión del proyecto: Incluye la estimación de recursos (tiempo,
+       presupuesto, personal), el establecimiento de objetivos medibles y la definición de
+       hitos.
+   2.​ Análisis de requisitos: Se recogen, analizan, validan y documentan los
+       requerimientos y necesidades del cliente o del mercado.
+   3.​ Diseño: Se elabora la arquitectura del software y se definen detalles sobre la
+       estructura interna y las interacciones entre los módulos.
+   4.​ Implementación o construcción: Se escribe el código fuente, se integran las
+       librerías y se configuran las bases de datos y componentes necesarios.
+   5.​ Pruebas (Testing): Se ejecutan diversos niveles de prueba (unitarias, de
+       integración, de sistema, de aceptación) para encontrar y corregir defectos.
+   6.​ Despliegue: Se entrega el producto para su uso en producción, asegurando que se
+       cumplan los requerimientos de infraestructura y seguridad.
+   7.​ Mantenimiento: Se corrigen errores, se añaden nuevas características y se ajusta el
+       software a cambios en el entorno o en los requerimientos.
+
+La forma de iterar o encadenar estas fases puede variar según el modelo de ciclo de vida
+adoptado, como se discutirá en la siguiente sección.
+
+
+
+
+3. Introducción a los Ciclos de Vida
+
+Los ciclos de vida del desarrollo de software ofrecen esquemas o marcos de trabajo que
+describen cómo se avanza a través de las fases (desde la concepción hasta la entrega y
+mantenimiento). Cada modelo de ciclo de vida define de manera particular el orden, la
+intensidad y la iteración (o no) entre las fases.
+
+Como se mencionará a continuación, existen varios modelos clásicos que han servido de
+base histórica y conceptual para la evolución de los proyectos de software. Aunque en la
+práctica moderna coexisten metodologías ágiles y marcos híbridos, los modelos
+tradicionales son importantes para entender las raíces y la lógica detrás de cada
+aproximación.
+
+3.1 Modelo en Cascada
+
+===== PAGINA 5 =====
+
+El Modelo en Cascada (o Waterfall) es uno de los primeros modelos formales de ciclo de
+vida propuestos. Surgió en un contexto industrial en el que se buscaba un enfoque
+sistemático y lineal, similar al empleado en la ingeniería civil. Sus fases típicas incluyen:
+
+   1.​ Requerimientos
+   2.​ Diseño
+   3.​ Implementación
+   4.​ Verificación (Testing)
+   5.​ Mantenimiento
+
+La principal característica del Modelo en Cascada es la secuencia rígida de las fases. Se
+supone que cada fase debe estar completamente terminada antes de pasar a la siguiente,
+de modo que, idealmente, no se regresa a fases anteriores. El nombre “cascada” proviene
+de la representación gráfica de estas fases que fluyen hacia abajo.
+
+Ventajas del Modelo en Cascada:
+
+   ●​ Es relativamente sencillo de entender y gestionar.
+   ●​ Facilita la planeación y el control de las fases.
+   ●​ Define hitos claros para aprobar o rechazar el paso a la siguiente fase.
+
+Desventajas del Modelo en Cascada:
+
+   ●​ Resulta poco flexible si los requerimientos cambian de forma significativa durante el
+      proyecto.
+   ●​ Se concentra la fase de pruebas al final, lo que puede generar un incremento en los
+      costes de corrección si se hallan errores tardíos.
+   ●​ Asume que los requerimientos están bien definidos desde el inicio, lo cual no
+      siempre es realista.
+
+A pesar de las críticas, el Modelo en Cascada mantiene su relevancia histórica y su uso en
+proyectos donde los requerimientos son estables y se prioriza un alto grado de
+documentación y control formal, como en ciertos desarrollos críticos para la industria militar
+o aeroespacial.
+
+3.2 Modelo de Prototipo
+
+El Modelo de Prototipo surge como una respuesta a la necesidad de aclarar y validar
+requerimientos de forma temprana, especialmente en contextos donde el cliente o el usuario
+final no tiene muy claro qué es lo que realmente necesita.
+
+La idea central es construir rápidamente un prototipo (una versión simplificada o limitada
+del sistema) para que el cliente pueda “ver y tocar” un primer acercamiento a la
+funcionalidad. Con base en su retroalimentación, se realizan ajustes y refinamientos
+sucesivos hasta acordar los requerimientos finales. Posteriormente, se procede al desarrollo
+completo con base en la experiencia y el conocimiento adquiridos durante la fase de
+prototipado.
+
+Ventajas del Modelo de Prototipo:
+
+===== PAGINA 6 =====
+
+   ●​ Reduce la incertidumbre y el riesgo de construir un producto que no cumpla con las
+      expectativas del usuario.
+   ●​ Permite la experimentación y la detección de requerimientos no explícitos o
+      malinterpretados.
+   ●​ Fomenta una mayor colaboración y comunicación con el cliente.
+
+Desventajas del Modelo de Prototipo:
+
+   ●​ Puede generar la impresión de que el desarrollo final será tan rápido como el
+      prototipo, llevando a expectativas poco realistas de tiempo y costos.
+   ●​ Existe el riesgo de que el prototipo sea implementado de manera improvisada y
+      termine siendo la base del producto final, generando problemas de calidad y
+      mantenibilidad si no se refactoriza adecuadamente.
+
+Este modelo es especialmente útil cuando se desarrollan aplicaciones con alta interacción
+con el usuario (por ejemplo, interfaces gráficas complejas o sistemas web) donde la
+usabilidad y la experiencia de usuario son cruciales.
+
+3.3 Modelos Incrementales
+
+Los Modelos Incrementales parten de la idea de dividir el desarrollo en varias entregas
+parciales (o incrementos), cada una con una porción funcional del sistema. En la primera
+iteración se entrega un núcleo básico de la aplicación; en la segunda, se añaden más
+funcionalidades, y así sucesivamente, hasta completar los requerimientos.
+
+Este enfoque permite:
+
+   ●​ Asegurar retroalimentación temprana: Los usuarios pueden evaluar los
+      incrementos iniciales y proponer cambios o mejoras.
+   ●​ Mitigar riesgos: Se identifica y corrige problemas técnicos o de usabilidad de forma
+      progresiva.
+   ●​ Entregar valor: Se obtiene una versión funcional del software en etapas más
+      tempranas del proyecto, lo que puede traducirse en beneficios de negocio (por
+      ejemplo, lanzar primero un “mínimo producto viable”).
+
+Los Modelos Incrementales se alinean con la filosofía de mejora continua y de priorización
+de requerimientos. En la práctica, muchas organizaciones combinan este enfoque con
+metodologías ágiles, como Scrum, donde cada “sprint” es un pequeño incremento de dos a
+cuatro semanas de duración.
+
+3.4 Modelo en Espiral
+
+El Modelo en Espiral, propuesto por Barry Boehm, combina elementos del desarrollo
+iterativo con el énfasis en la gestión de riesgos. Visualmente, se representa como una
+espiral que avanza en sucesivas vueltas o ciclos, cada uno de los cuales implica las
+siguientes actividades genéricas:
+
+   1.​ Planificación: Se determinan los objetivos y las restricciones, así como las
+       alternativas viables de solución.
+
+===== PAGINA 7 =====
+
+   2.​ Análisis de Riesgos: Se identifican y evalúan los riesgos que puedan afectar al
+       proyecto (técnicos, de costo, de plazos, de cambio de requerimientos, etc.).
+   3.​ Desarrollo e Ingeniería: Se lleva a cabo la construcción de una parte o versión del
+       producto, siguiendo la estrategia elegida.
+   4.​ Evaluación y Planificación de la Siguiente Iteración: Se revisan los resultados, se
+       negocian con el cliente los cambios y se planifica la siguiente “vuelta” de la espiral.
+
+Este modelo es especialmente valioso en proyectos grandes y complejos, pues permite
+realizar pruebas de concepto y prototipos para reducir riesgos técnicos y de negocio antes
+de comprometer grandes sumas de recursos. Cada ciclo de la espiral termina con la
+revisión del producto parcial y los planes de trabajo para la siguiente etapa.
+
+Ventajas:
+
+   ●​ Enfoque sistemático para la gestión de riesgos.
+   ●​ Gran flexibilidad para incorporar cambios en cualquier momento, basados en el
+      aprendizaje adquirido.
+   ●​ Asegura una comunicación constante con el cliente.
+
+Desventajas:
+
+   ●​ Puede ser complejo de planificar y gestionar, pues requiere de un equipo con
+      madurez en gestión de proyectos y experiencia técnica.
+   ●​ La estimación de costos y plazos puede ser más complicada, dado el carácter
+      iterativo y adaptativo.
+
+El Modelo en Espiral sentó las bases para las metodologías ágiles y otras técnicas
+modernas de desarrollo orientadas a la gestión de la incertidumbre y el cambio continuo.
+
+
+
+
+4. Ingeniería de Software: Ética Profesional e Impacto Social
+
+La Ingeniería de Software no se limita a las cuestiones técnicas de diseño y programación.
+Forma parte esencial de la vida de las personas en la sociedad contemporánea, dado que el
+software está presente en sectores críticos (medicina, finanzas, transporte, gobierno) y es
+una herramienta indispensable para la comunicación y la productividad. Por ello, es
+imprescindible abordar la ética profesional y el impacto social inherentes a la práctica de
+la Ingeniería de Software.
+
+4.1 Ética Profesional
+
+La ética profesional en Ingeniería de Software se rige, en gran medida, por códigos
+establecidos por organizaciones como la ACM (Association for Computing Machinery) y
+la IEEE Computer Society. Estos códigos establecen principios y normas de conducta que
+los ingenieros de software deben observar en su ejercicio profesional. Algunos de los
+principios clave incluyen:
+
+===== PAGINA 8 =====
+
+   1.​ Responsabilidad: El ingeniero de software debe asumir la responsabilidad de sus
+       acciones y decisiones, anticipando las consecuencias de sus diseños y asegurando
+       la integridad de los resultados.
+   2.​ Confidencialidad: Se exige el resguardo de la información sensible del cliente y de
+       la organización. La violación de la confidencialidad puede tener consecuencias
+       legales y éticas graves.
+   3.​ Honestidad y Transparencia: El ingeniero de software debe ser veraz en las
+       estimaciones de tiempo y coste, así como en la presentación de los riesgos y
+       limitaciones técnicas del proyecto.
+   4.​ Competencia y Aprendizaje Continuo: El profesional debe mantenerse actualizado
+       en cuanto a las tecnologías, métodos y buenas prácticas. El software evoluciona con
+       rapidez, y la formación constante es esencial para garantizar la calidad y seguridad
+       de los sistemas.
+   5.​ Respeto a la Propiedad Intelectual: Es necesario cumplir con las licencias y
+       derechos de autor de software, librerías y demás activos digitales.
+   6.​ Protección al Usuario y al Público: Las decisiones de un ingeniero de software
+       pueden tener implicaciones importantes en la seguridad de las personas (por
+       ejemplo, sistemas de transporte o de salud). Se debe priorizar la protección de la
+       vida humana y el bienestar social sobre los intereses económicos o políticos.
+
+La ética profesional también implica luchar contra prácticas fraudulentas o irresponsables,
+como la manipulación de datos, la inserción de puertas traseras (“backdoors”) o la creación
+de malware. En muchos países, los ingenieros de software comienzan a estar regulados de
+manera similar a otras disciplinas, exigiendo no solo cualificaciones técnicas sino también
+compromisos éticos y legales.
+
+4.2 Impacto Social
+
+El software no es neutral; posee un impacto amplio y profundo en la manera en que las
+personas interactúan, trabajan, se educan y viven su día a día. Por ello, el ingeniero de
+software debe asumir la responsabilidad del efecto que sus creaciones pueden tener en la
+sociedad.
+
+Algunos factores de impacto social incluyen:
+
+   ●​ Accesibilidad: Garantizar que el software sea usable por personas con distintas
+      capacidades (visuales, auditivas, motrices, cognitivas). Diseñar con la inclusión en
+      mente promueve la igualdad de oportunidades.
+   ●​ Privacidad y Seguridad: La recolección y manejo de datos personales exige un
+      cuidado extremo y el cumplimiento de normativas (p. ej., GDPR en la Unión
+      Europea). La filtración de datos puede comprometer la vida de los usuarios de
+      manera irremediable.
+   ●​ Automatización y Empleo: Muchas aplicaciones de software automatizan tareas
+      que antes realizaban personas. Si bien esto puede mejorar la productividad y reducir
+      costos, también puede tener un impacto en el mercado laboral, obligando a los
+      trabajadores a reconvertirse o enfrentar el desempleo en determinados sectores.
+   ●​ Desigualdades Digitales: El avance tecnológico puede profundizar brechas
+      sociales si no se contemplan planes de formación y acceso equitativo. Los
+
+===== PAGINA 9 =====
+
+      ingenieros de software pueden desarrollar soluciones escalables y de bajo coste
+      para poblaciones vulnerables, contribuyendo a disminuir la brecha digital.
+   ●​ Influencia en la Opinión Pública y Democracia: Plataformas sociales y motores de
+      recomendación pueden manipular la información que llega a los usuarios,
+      moldeando sus perspectivas. El ingeniero de software, como responsable del diseño
+      y mantenimiento de estos sistemas, debe considerar los posibles sesgos
+      algorítmicos y la transparencia en la gestión de la información.
+
+En última instancia, el objetivo es producir software que mejore la calidad de vida de la
+sociedad, promueva la justicia y facilite la sostenibilidad. Los ingenieros deben medir el
+impacto de sus decisiones y adoptar posturas éticas ante los dilemas que puedan surgir.
+
+
+
+
+5. Ciclo de Deming - Plan/Do/Check/Act
+
+El Ciclo de Deming, también conocido como Ciclo PDCA (por las siglas en inglés de Plan,
+Do, Check, Act), es un modelo de mejora continua que puede aplicarse a procesos,
+productos y servicios en cualquier ámbito industrial y organizacional, incluida la Ingeniería
+de Software. Fue popularizado por W. Edwards Deming y se ha convertido en un referente
+para la gestión de la calidad.
+
+La esencia de este ciclo es iterar en cuatro fases:
+
+   1.​ Plan (Planificar)
+          ○​ Se identifican los objetivos de mejora y se define un plan de acción para
+              lograrlos.
+          ○​ Se recogen los datos necesarios y se establecen indicadores (métricas) que
+              permitirán evaluar el progreso.
+          ○​ En el contexto de la Ingeniería de Software, “Plan” podría referirse a la
+              definición de requisitos y el establecimiento de criterios de calidad, así como
+              la elaboración de la planificación para una iteración o sprint.
+   2.​ Do (Hacer o Ejecutar)
+          ○​ Se implementa el plan, poniendo en práctica las actividades y tareas
+              definidas.
+          ○​ En ingeniería de software, esto puede abarcar la codificación, la
+              configuración de entornos de prueba o la ejecución de pruebas piloto.
+          ○​ Durante la ejecución, se recolectan datos para el posterior análisis.
+   3.​ Check (Verificar o Revisar)
+          ○​ Se miden los resultados de la implementación y se comparan con los
+              objetivos establecidos en la fase “Plan”.
+          ○​ Se analizan las desviaciones y se identifican las causas de los problemas o
+              éxitos.
+          ○​ En proyectos de software, esto implica, por ejemplo, evaluar la calidad del
+              producto mediante métricas de defectos, rendimiento, usabilidad y otros
+              indicadores de satisfacción del cliente.
+   4.​ Act (Actuar o Ajustar)
+
+===== PAGINA 10 =====
+
+           ○​ Con base en los hallazgos de la fase anterior, se emprenden acciones
+              correctivas o de mejora.
+           ○​ Si el experimento o la estrategia funcionó, se estandarizan las prácticas
+              óptimas; si no, se modifica el plan y se inicia una nueva iteración del ciclo.
+           ○​ En Ingeniería de Software, esto puede traducirse en cambios en la
+              arquitectura, en la forma de organizar los equipos, en la adopción de nuevas
+              herramientas o en la refactorización de partes del código.
+
+El Ciclo de Deming se repite indefinidamente, cimentando una cultura de mejora continua.
+En la práctica, se puede aplicar a todos los niveles: al desarrollo de un nuevo módulo, a la
+implementación de un proceso de control de calidad, a la metodología de gestión de
+proyectos, e incluso a la cultura organizacional.
+
+Relación del Ciclo de Deming con Metodologías Ágiles​
+Las metodologías ágiles, como Scrum, incorporan el concepto de iteraciones y
+retrospectivas continuas, lo cual está muy alineado con los principios del PDCA. Por
+ejemplo, en Scrum cada sprint (2-4 semanas) es una unidad de planificación (Plan), se
+ejecutan tareas y se desarrolla software (Do), se revisan los resultados en la reunión de
+revisión y retrospectiva (Check), y se ajustan procesos y backlog para la siguiente iteración
+(Act).
+
+Importancia de las Métricas​
+Para que el Ciclo de Deming sea efectivo, es indispensable contar con métricas pertinentes.
+Estas métricas pueden incluir tiempos de respuesta del sistema, cobertura de pruebas,
+número de defectos, velocidad de entrega (cantidad de funcionalidades por sprint),
+satisfacción del cliente, etc. Sin mediciones, la fase “Check” pierde valor, pues no hay forma
+de evaluar objetivamente el éxito de las acciones.
+
+Conclusión sobre PDCA​
+El Ciclo de Deming aporta un método sencillo pero poderoso para promover la calidad y la
+eficiencia en la Ingeniería de Software. A través de ciclos iterativos y la retroalimentación
+continua, las organizaciones pueden adaptarse a entornos cambiantes, corregir errores de
+manera temprana y construir una base de conocimiento que incremente el éxito de futuros
+proyectos.
+

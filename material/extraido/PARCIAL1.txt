@@ -1,0 +1,53 @@
+FUENTE: PARCIAL1
+TITULO: Parcial 1 — primer cuatrimestre 2026
+ORIGINAL: material/catedra/practica/parcial-01-2026.pdf
+PAGINAS: 1
+
+===== PAGINA 1 =====
+
+       Parcial #1                   Fecha:
+Ingeniería de Software II
+ Ingeniería Informática
+          ITBA                      Nombre y Apellido:
+
+ 1er Cuatrimestre 2026
+                                    Email:
+
+
+
+
+   1)​ ¿Cómo las técnicas de estimación utilizadas en metodologías ágiles abordan de manera
+       más efectiva (o no) el impacto de la "Ley de Parkinson" en los plazos y el esfuerzo de los
+       proyectos, en comparación con los enfoques de estimación tradicionales o más
+       predictivos, especialmente en contextos de requerimientos cambiantes?
+
+
+   2)​ ¿Qué relación hay entre los modelos de ciclo de vida del software y la deuda técnica?
+
+
+
+   3)​ ¿Cómo se relacionan las prácticas de Extreme Programming con la planificación,
+       aseguramiento y control de la calidad?
+
+
+
+   4)​ ¿Cómo se conectan las técnicas de estimación informales con el Business Model
+       Canvas en etapas iniciales de un proyecto?
+
+
+
+   5)​ ¿Cómo las prácticas y artefactos específicos de las metodologías ágiles como Scrum y
+       XP, complementadas por TDD y Kanban, contribuyen a la calidad del software a lo largo
+       del proceso de desarrollo, cómo abordan el "costo de la no calidad" y contribuyen o no a
+       mitigar la deuda técnica?
+
+
+
+
+Consideraciones:
+   -​ Respuesta correcta, 2 puntos. Respuesta incompleta, 1 punto. Respuesta incorrecta, 0
+       puntos.
+   -​ Pueden usar ejemplos, casos, justificaciones como complemento para reforzar las ideas.
+   -​ Se espera el uso de letra clara y prolija. Pueden tachar, siempre y cuando esto no afecte
+       la compresión de las ideas.
+

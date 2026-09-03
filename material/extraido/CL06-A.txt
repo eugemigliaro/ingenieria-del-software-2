@@ -1,0 +1,231 @@
+FUENTE: CL06-A
+TITULO: Clase 6: conceptos de calidad de software
+ORIGINAL: material/catedra/teoria/clase-06-apuntes-calidad.pdf
+PAGINAS: 5
+
+===== PAGINA 1 =====
+
+                     Conceptos de Calidad de software
+
+
+
+La importancia de la calidad del software trasciende la mera verificación técnica del
+producto para abordar aspectos organizacionales, metodológicos y culturales. Asegurar la
+calidad no solo significa entregar un software libre de errores, sino también garantizar que el
+mismo cumpla con los objetivos funcionales y no funcionales que se esperan de él, en
+tiempo y forma, con costos controlados y en condiciones sostenibles de mantenimiento y
+evolución.
+
+
+
+
+El concepto de calidad en el software
+
+A diferencia de productos físicos, en los cuales la calidad puede medirse por su durabilidad
+o precisión en la manufactura, el software presenta una naturaleza abstracta y evolutiva.
+Por ello, existen múltiples perspectivas desde las cuales puede analizarse su calidad.
+Garvin (1984) describió cinco enfoques que son ampliamente aceptados en la literatura: el
+trascendental, el basado en el usuario, el basado en el producto, el basado en la
+manufactura (o proveedor) y el basado en el valor. El enfoque trascendental asume que la
+calidad es una propiedad casi mística que se reconoce pero no se define fácilmente. El
+enfoque del usuario pone el foco en la satisfacción de necesidades. El del producto
+considera atributos internos como eficiencia o fiabilidad. El enfoque del proceso mide la
+conformidad con los estándares de producción. Por último, el valor relaciona calidad con el
+precio que los clientes están dispuestos a pagar.
+
+Estas perspectivas deben coexistir. En efecto, la norma ISO/IEC 25010 propone un modelo
+de calidad que incluye características tales como funcionalidad, fiabilidad, usabilidad,
+eficiencia, mantenibilidad, portabilidad, seguridad y compatibilidad. Estas dimensiones
+permiten descomponer la calidad en atributos observables y medibles. La calidad, por tanto,
+deja de ser una noción difusa y se convierte en un objetivo alcanzable mediante
+planificación, seguimiento y mejora continua.
+
+
+
+
+La gestión de la calidad en el ciclo de vida del software
+
+El ciclo de vida del software abarca desde la concepción de un sistema hasta su retiro. En
+todas sus fases deben integrarse prácticas orientadas a asegurar la calidad. La gestión de
+calidad comprende tres componentes esenciales: la planificación de la calidad, el
+aseguramiento de calidad (QA, por sus siglas en inglés) y el control de calidad (QC).
+
+La planificación consiste en definir objetivos, estándares, métricas y actividades necesarias
+para alcanzar la calidad esperada. Incluye, por ejemplo, la redacción de un plan de gestión
+de calidad según la norma IEEE 730, el cual especifica cómo se verificará que los productos
+
+===== PAGINA 2 =====
+
+y procesos cumplan con los requisitos definidos. También contempla la política de calidad,
+las responsabilidades del equipo y el uso de herramientas.
+
+El aseguramiento de calidad, por su parte, tiene un enfoque preventivo: busca garantizar
+que los procesos involucrados en el desarrollo estén bien definidos y se sigan
+correctamente. El control de calidad, en cambio, tiene un enfoque correctivo: se concentra
+en revisar los productos generados para detectar defectos y corregirlos antes de que
+lleguen al cliente.
+
+Tanto QA como QC deben aplicarse de forma coherente y coordinada. Mientras que QA es
+responsabilidad de toda la organización, QC suele estar centralizado en un equipo
+especializado o compartido entre desarrolladores y testers. Ambos se benefician del uso de
+métricas que permiten evaluar la evolución de la calidad, como la densidad de defectos, el
+tiempo medio de resolución de fallos, la cobertura de pruebas, la satisfacción del usuario,
+entre otras.
+
+
+
+
+Costo de calidad y costo de no calidad
+
+Incorporar prácticas de calidad implica invertir tiempo, recursos y esfuerzo. Sin embargo,
+omitirlas puede resultar mucho más costoso. El análisis del costo de calidad permite
+visualizar esta relación. Se distinguen cuatro componentes:
+
+   ●​ Costos de prevención: relacionados con la formación, la planificación, la adquisición
+      de herramientas y la definición de procesos.​
+
+   ●​ Costos de evaluación: incluyen actividades de revisión, auditoría y pruebas.​
+
+   ●​ Costos de fallos internos: asociados a defectos detectados antes de la entrega
+      (retrabajos, retrasos).​
+
+   ●​ Costos de fallos externos: los más onerosos, incluyen corrección de errores en
+      producción, soporte, indemnizaciones y pérdida de reputación.​
+
+
+Las empresas líderes entienden que aumentar los costos de prevención y evaluación
+reduce de manera significativa los de fallos. Este principio se resume en la máxima “la
+calidad no cuesta, se paga sola”.
+
+
+
+
+La deuda técnica como forma de no calidad
+
+Ward Cunningham introdujo el concepto de deuda técnica en 1992, comparando decisiones
+de desarrollo apresuradas con un préstamo financiero: permiten avanzar más rápido a corto
+plazo, pero generan intereses que deberán ser pagados más adelante. La deuda técnica
+puede clasificarse como intencionada o no, prudente o imprudente (Fowler). Steve
+
+===== PAGINA 3 =====
+
+McConnell añade que puede originarse tanto en decisiones estratégicas (por ejemplo, no
+documentar funciones secundarias) como en errores o negligencias (mal diseño,
+duplicación de código, falta de pruebas).
+
+Controlar la deuda técnica requiere visibilidad y gestión activa. Debe registrarse en sistemas
+de seguimiento (como JIRA o GitHub Issues), estimarse su impacto y establecer
+prioridades. Si una deuda supera los 90 días sin ser abordada, debe marcarse como crítica.
+También se recomienda incorporarla como parte del backlog, revisarla en las retrospectivas
+y considerarla dentro del "Definition of Done" de las tareas.
+
+
+
+
+Pruebas de software: eje del control de calidad
+
+Las pruebas de software son fundamentales para detectar y prevenir defectos. Se clasifican
+según diferentes criterios. Por nivel de integración, encontramos pruebas unitarias, de
+integración, de sistema y de aceptación. Por tipo, distinguimos entre pruebas funcionales y
+no funcionales. Por su forma, pueden ser manuales o automatizadas. Por su técnica,
+pueden ser de caja blanca, caja negra o híbridas.
+
+Las pruebas funcionales validan que el sistema cumpla con lo que debe hacer. Las no
+funcionales evalúan aspectos como rendimiento, seguridad, compatibilidad, escalabilidad o
+usabilidad. Herramientas como Selenium (automatización de UI), JMeter (performance),
+OWASP ZAP (seguridad), Postman (API testing), y herramientas de gestión como TestLink
+o Zephyr, permiten profesionalizar el proceso de testing y reducir errores humanos.
+
+El enfoque TDD (Test Driven Development) y su derivado BDD (Behavior Driven
+Development) enfatizan el rol de las pruebas desde las etapas tempranas. En TDD, se
+escribe primero el test y luego el código que lo satisface. En BDD, se redactan escenarios
+en lenguaje natural (Given-When-Then) que permiten validar funcionalidades junto a los
+usuarios.
+
+
+
+
+Integración de calidad en metodologías ágiles y DevOps
+
+Las metodologías ágiles como Scrum y XP asumen la calidad como una responsabilidad
+compartida. En lugar de tener una etapa de pruebas al final del ciclo, las actividades de
+calidad están distribuidas en cada iteración. Se revisan las historias de usuario, se definen
+criterios de aceptación, se realizan revisiones de código y se automatizan las pruebas.
+
+En DevOps, este enfoque se profundiza mediante la automatización del ciclo completo. La
+integración continua (CI) y el despliegue continuo (CD) permiten validar cada cambio de
+forma inmediata, generando feedback rápido. Herramientas como Jenkins, GitHub Actions,
+GitLab CI, CircleCI, permiten orquestar pipelines que ejecutan tests, análisis de calidad
+estática (SonarQube), despliegues en entornos de prueba y notificaciones al equipo.
+
+===== PAGINA 4 =====
+
+Documentos de calidad: plan, pruebas, casos y métricas
+
+El plan de calidad es un documento estratégico que articula la visión, los estándares y las
+prácticas que se adoptarán para asegurar la calidad en un proyecto. Según IEEE 730, debe
+incluir: objetivos, políticas, estándares, responsabilidades, procesos, revisiones, auditorías,
+herramientas, métricas, procedimientos de aprobación y planes de contingencia.
+
+El plan de pruebas complementa al anterior y define: el alcance de las pruebas, los tipos a
+aplicar, el entorno, los recursos, los criterios de entrada/salida, la planificación temporal, la
+gestión de defectos y los informes.
+
+Los casos de prueba documentan los pasos específicos para validar una funcionalidad o
+requisito. Deben ser atómicos, claros, trazables, medibles, reproducibles y mantenibles. Se
+recomienda utilizar datos realistas, definir precondiciones y postcondiciones, y mantenerlos
+versionados junto al código.
+
+Las métricas, por su parte, permiten evaluar objetivamente la calidad. Algunas de las más
+comunes son:
+
+   ●​ Densidad de defectos​
+
+   ●​ Tasa de errores por usuario​
+
+   ●​ Tiempo medio de corrección​
+
+   ●​ Porcentaje de cobertura de código​
+
+   ●​ Tiempo de respuesta bajo carga​
+
+   ●​ Tasa de éxito en pruebas automatizadas​
+
+   ●​ Número de incidentes en producción​
+
+
+
+Casos reales que ilustran la importancia de la calidad
+
+La historia del desarrollo de software incluye ejemplos emblemáticos de fallos por falta de
+calidad. El caso Ariane 5 (1996) muestra cómo una conversión incorrecta de un número en
+coma flotante a entero causó el colapso del cohete 37 segundos después del despegue. El
+fallo, que costó 370 millones de dólares, fue producto de la reutilización de software sin
+pruebas suficientes.
+
+En 2012, Knight Capital perdió 440 millones de dólares en 45 minutos debido a una
+implementación errónea en el sistema de trading. Un script de despliegue no actualizó todos
+los servidores, provocando órdenes erráticas. Ninguna validación automática alertó el
+problema.
+
+Estos casos refuerzan la idea de que la calidad no es negociable. Debe planificarse,
+incorporarse desde el inicio y evaluarse continuamente.
+
+===== PAGINA 5 =====
+
+Cultura organizacional y formación en calidad
+
+La calidad no depende únicamente de procesos o herramientas, sino de la cultura
+organizacional. Es necesario promover valores como la responsabilidad compartida, la
+mejora continua, la revisión entre pares, la transparencia, la documentación y la apertura a
+la retroalimentación. Modelos como el ciclo PDCA (Plan-Do-Check-Act), las retrospectivas
+ágiles, el uso de indicadores visibles y la gestión visual del trabajo (Kanban) refuerzan esta
+cultura.
+
+A nivel formativo, es esencial que las carreras universitarias incorporen contenidos
+específicos sobre calidad de software. No solo desde una perspectiva técnica, sino también
+estratégica y organizacional. Actividades como el análisis de casos reales, el diseño de
+planes de pruebas, la redacción de historias de usuario con criterios de aceptación claros, y
+la simulación de auditorías internas, permiten desarrollar competencias clave en los futuros
+profesionales.
+

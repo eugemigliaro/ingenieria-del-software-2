@@ -1,0 +1,387 @@
+FUENTE: CL05-P
+TITULO: Clase 5: estimación de proyectos de software
+ORIGINAL: material/catedra/teoria/clase-05-presentacion-estimacion.pdf
+PAGINAS: 22
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+       Estimación de proyectos de software
+
+===== PAGINA 2 =====
+
+Actividad - Estimación
+
+Estimar sin utilizar ningún tipo de información externa, ni googleo ni nada más que la intuición
+
+
+
+
+                                                                                                   2
+
+===== PAGINA 3 =====
+
+Actividad - Estimación
+
+
+
+
+                         719.000.000.000
+                         1.836.000.000
+
+
+
+
+                                           3
+
+===== PAGINA 4 =====
+
+Actividad - Estimación
+
+▶ ¿Harían un proyecto estimado por ustedes?
+
+▶ ¿Eligieron valores absolutos o rangos? → Ojo con la presión por acotar los rangos de
+estimación.
+
+▶ Tener seguridad también es poder asumir cuando “no se tiene idea” (¿y los supuestos?)
+
+
+
+
+                                                                                          4
+
+===== PAGINA 5 =====
+
+Ley de Parkinson
+
+●   Estimamos porque necesitamos tener una noción del
+    tamaño de la solución del requerimiento.
+●   Ley de Parkinson:
+      ○ Cyril Parkinson (1957): "el trabajo se expande hasta
+         llenar el tiempo disponible para su realización".
+      ○ Servicio Civil Británico: a pesar de la decadencia del
+         Imperio Británico, la cantidad de empleados
+         aumentaba continuamente.
+      ○ Burocracia: Los funcionarios multiplican
+         subordinados. Los funcionarios se crean trabajo
+         entre sí.
+      ○ Crecimiento Administrativo: El número de empleados
+         en una burocracia aumenta alrededor de un 5-7 %
+         por año, independientemente de la carga de trabajo
+         real.
+                                                                 5
+
+===== PAGINA 6 =====
+
+Ley de Parkinson
+
+●   Ejemplos:
+      ○ "Los datos se expanden hasta llenar el
+         espacio disponible para su almacenamiento"
+
+●   Tres Leyes Fundamentales de Parkinson:
+      ○ El trabajo se expande hasta llenar el tiempo
+          disponible.
+      ○ Los gastos aumentan hasta cubrir todos los
+          ingresos.
+      ○ “El tiempo dedicado a un tema es
+          inversamente proporcional a su importancia”
+          (Ley de la trivialidad, también de C.
+          Parkinson).
+
+
+
+
+                                                        6
+
+===== PAGINA 7 =====
+
+Puntos de Caso de Uso
+
+●   Deﬁnición: Método de estimación basado en la
+    complejidad y número de casos de uso en un
+    proyecto. Ayuda a evaluar el tamaño del
+    software y el esfuerzo necesario.
+
+●   Proceso: Se asigna una ponderación a cada
+    caso de uso según su complejidad, sumando
+    estos valores para obtener la estimación total
+    del proyecto.
+
+●   Ventajas: Proporciona una visión clara del
+    alcance del proyecto y facilita la comunicación
+    entre desarrolladores y stakeholders.
+
+
+
+
+                                                      7
+
+===== PAGINA 8 =====
+
+Puntos de Caso de Uso
+
+Antes de seguir: busquen en su LLM amigo qué es y porqué es importante el “factor de productividad” para una
+estimación por Puntos de Caso de Uso y otros métodos de estimación.
+
+
+
+
+                                                                                                               8
+
+===== PAGINA 9 =====
+
+Puntos de Caso de Uso
+Ponderación de Factores Ambientales y Técnicos:
+
+
+
+
+                                                  9
+
+===== PAGINA 10 =====
+
+Puntos de Caso de Uso
+Ponderación de Casos de Uso y Actores
+
+
+
+
+                                        10
+
+===== PAGINA 11 =====
+
+Puntos de Caso de Uso
+Cálculo ﬁnal:
+
+
+
+
+                        11
+
+===== PAGINA 12 =====
+
+Puntos de Función
+
+●   Deﬁnición: Método de estimación que mide la
+    funcionalidad entregada al usuario ﬁnal. Se basa
+    en el conteo de entradas, salidas, consultas,
+    archivos y interfaces externas.
+
+●   Proceso: Se asignan valores a cada tipo de
+    función basado en su complejidad, y se suman
+    para obtener una medida del tamaño del
+    software.
+
+●   Ventajas: Proporciona una métrica objetiva y
+    consistente para comparar proyectos y medir la
+    productividad del desarrollo de software.
+
+
+
+
+                                                       12
+
+===== PAGINA 13 =====
+
+Poker Planning
+
+●   Deﬁnición: Método de estimación colaborativa en el
+    que los miembros del equipo usan cartas para votar
+    sobre el tamaño relativo de las tareas del proyecto.
+
+●   Proceso: Cada miembro del equipo selecciona una
+    carta en secreto y todas las cartas se revelan al
+    mismo tiempo. Las discusiones se centran en las
+    diferencias de estimaciones hasta alcanzar un
+    consenso.
+
+●   Ventajas: Fomenta la participación de todo el
+    equipo, mejora la precisión de las estimaciones y
+    ayuda a identiﬁcar riesgos y dependencias
+    tempranas.
+
+
+
+                                                           13
+
+===== PAGINA 14 =====
+
+Poker Planning
+
+
+
+
+                 14
+
+===== PAGINA 15 =====
+
+Story Points
+
+●   Deﬁnición: Unidad de medida utilizada en
+    metodologías ágiles para estimar el esfuerzo
+    relativo necesario para implementar una historia
+    de usuario.
+
+●   Proceso: Los equipos asignan puntos a cada
+    historia basándose en su complejidad, cantidad
+    de trabajo y riesgos involucrados, usando
+    técnicas como Planning Poker.
+
+●   Ventajas: Facilita la planiﬁcación y priorización
+    del trabajo, promueve la colaboración del
+    equipo y permite un seguimiento más preciso
+    del progreso del proyecto.
+
+
+
+                                                        15
+
+===== PAGINA 16 =====
+
+Estimación de 3 Puntos / PERT
+
+●   Deﬁnición: Método que utiliza tres estimaciones
+    (optimista, pesimista y más probable) para
+    calcular una estimación ponderada y reducir la
+    incertidumbre.
+●   PERT: Program Evaluation and Review
+    Technique
+●   Proceso: Se calcula la estimación ﬁnal utilizando
+    la fórmula:
+
+     (Optimista + (4 * Más Probable) + Pesimista) / 6
+
+●   Ventajas: Proporciona una visión más completa
+    de los posibles resultados y ayuda a gestionar el
+    riesgo asociado con las estimaciones.
+
+
+                                                        16
+
+===== PAGINA 17 =====
+
+COCOMO
+
+●   Deﬁnición: Constructive Cost Model (COCOMO) es un
+    modelo de estimación de costos de software que utiliza
+    una fórmula basada en el tamaño del software para
+    calcular el esfuerzo y el tiempo necesarios.
+
+●   Variables:
+     ○ Tipo de proyecto (Orgánicos: pequeños, equipos
+          reducidos, requisitos claros; Semi-Detached:
+          tamaño medio, equipos con experiencia variable;
+          Embedded: complejos, restricciones exigentes,
+          alto nivel de innovación
+     ○ Fórmula: a x (KLOC)b x F
+            ■ a - b dependen del tipo de proyecto
+            ■ KLOC: cantidad de líneas (histórico)
+            ■ F: factor de ajuste
+     ○ Factores de Ajuste (Producto, Hardware, Personal,
+          Proyecto)                                          17
+
+===== PAGINA 18 =====
+
+COCOMO
+
+●   Proceso:
+     ○ Clasiﬁcar el proyecto según categoría
+         (orgánico, Semi-Detached o Embedded)
+     ○ Contar o estimar KLOC (líneas de código)
+     ○ Aplicar la fórmula COCOMO usando
+         valores de a y b apropiados
+     ○ Identiﬁcar factores de ajuste para reﬁnar la
+         estimación
+     ○ Calcular esfuerzo total, tiempo de
+         desarrollo y personal requerido
+
+
+
+
+                                                      18
+
+===== PAGINA 19 =====
+
+Estimadores no formales
+
+●   Juicio experto
+      ○ Un experto revisa la información disponible y emite una estimación basada en su conocimiento y
+           experiencia.
+      ○ Ventaja: Rápido y fácil de aplicar cuando no se tiene datos formales o históricos.
+      ○ Desventaja: subjetivo y susceptible a sesgos personales o de grupo.
+●   Método Delphi / Wideband Delphi
+      ○ Se consulta a varios expertos de manera iterativa y anónima. Cada ronda resume las estimaciones,
+           de forma que los expertos pueden ajustar sus respuestas en función de la información recibida.
+      ○ Ventaja: Reduce la inﬂuencia de jerarquías o liderazgos fuertes (al ser anónimo) y fomenta la
+           convergencia de opiniones.
+      ○ Desventaja: Puede ser costoso en tiempo si se requieren varias rondas y depende de la selección de
+           expertos.
+●   Analogía con proyectos similares
+      ○ Comparar el proyecto que se quiere estimar con otros proyectos o tareas similares previamente
+           realizados, aprovechando la experiencia previa.
+      ○ Ventaja: Fácil de comprender; se basa en ejemplos reales y no en suposiciones puramente teóricas.
+      ○ Desventaja: Requiere disponer de proyectos de referencia realmente similares en cuanto a alcance,    19
+           complejidad y contexto.
+
+===== PAGINA 20 =====
+
+Estimadores no formales
+
+●   Técnica “Talla de Camiseta” (T-Shirt Sizing)
+      ○ Se asigna a cada elemento a estimar una “talla” (XS, S, M, L, XL) basada en criterios subjetivos de
+          complejidad, alcance, riesgo, etc.
+      ○ Ventaja: Es muy simple e intuitivo; bueno para estimaciones rápidas al inicio de un proyecto.
+      ○ Desventaja: Discrepancias grandes si no se deﬁnen adecuadamente los criterios para cada “talla”.
+●   Estimaciones “a ojo” (estimaciones rápidas o guesstimate
+      ○ Se obtiene un valor aproximado rápidamente basándose en la experiencia, la lógica elemental o la
+          información disponible en el momento, sin un método estructurado.
+      ○ Ventaja: Muy veloz cuando se necesita un número aproximado de forma urgente.
+      ○ Desventaja: La precisión puede ser muy baja y depender en exceso de la experiencia de quien hace
+          la estimación.
+
+
+
+
+                                                                                                              20
+
+===== PAGINA 21 =====
+
+Estimadores personalizados
+
+●   Adaptados a diferentes proyectos
+●   Útiles cuando no se trata de un típico desarrollo de software
+●   Caso: migración de core de seguros
+
+
+
+
+                                                                    21
+
+===== PAGINA 22 =====
+
+Conceptos clave
+
+●   Tamaño: Se reﬁere a la cantidad de trabajo
+    requerido para completar el proyecto de software,
+    usualmente medido en líneas de código o puntos de
+    función.
+●   Esfuerzo: Cantidad de recursos (horas de trabajo,
+    personas, etc.) necesarios para completar el
+    proyecto. Depende del tamaño y complejidad del
+    proyecto.
+●   Complejidad: Grado de diﬁcultad técnica y
+    organizativa del proyecto. Afecta directamente al
+    esfuerzo y tiempo necesarios para completar el
+    proyecto.
+●   Duración: Tiempo “calendarizado” que lleva resolver
+    un requerimiento o serie de requerimientos.
+
+
+
+                                                          22
+

@@ -1,0 +1,298 @@
+FUENTE: CL01-P
+TITULO: Clase 1: conceptos generales de Ingeniería de Software
+ORIGINAL: material/catedra/teoria/clase-01-presentacion-introduccion.pdf
+PAGINAS: 27
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Clase 1: Conceptos generales de ingeniería de software
+
+===== PAGINA 2 =====
+
+Introducción a la Ingeniería de Software
+
+
+
+• Sommerville: La ingeniería de software es una
+disciplina de la ingeniería que se ocupa de todos los
+aspectos de la producción de software, desde las
+primeras etapas de la especificación del sistema hasta el
+mantenimiento del sistema después de que ha entrado
+en uso.
+
+===== PAGINA 3 =====
+
+Introducción a la Ingeniería de Software
+
+
+
+• Pressman: La ingeniería de software es una
+tecnología en capas compuesta de un proceso, métodos
+y herramientas, cuyo objetivo es la producción de
+software de alta calidad que sea entregado a tiempo,
+dentro del presupuesto y que cumpla con los requisitos
+establecidos.
+
+===== PAGINA 4 =====
+
+Introducción a la Ingeniería de Software
+
+
+
+• Ivar Jacobson: La ingeniería de software es un
+conjunto de métodos y técnicas que se utilizan
+para construir software complejo. Jacobson
+destaca la importancia de la orientación a objetos
+y el uso de casos de uso como parte fundamental
+del desarrollo de software.
+
+===== PAGINA 5 =====
+
+Introducción a la Ingeniería de Software
+
+                                 SWEBOK (Software Engineering
+                                 Body of Knowledge) - IEEE:
+                                 - Visión consistente de IS.
+
+                                 - Papel y fronteras con respecto a
+                                 otras disciplinas asociadas: cs. de la
+                                 computación, gestión de proyectos,
+                                 ingeniería de computadores, y
+                                 matemática.
+                                 - Contenidos de la disciplina.
+
+                                 - Acceso a cuerpo de conocimientos
+
+                                 - Bases para planes de estudios o
+                                 materiales.
+
+===== PAGINA 6 =====
+
+Introducción a la Ingeniería de Software
+
+===== PAGINA 7 =====
+
+Introducción a la Ingeniería de Software
+
+===== PAGINA 8 =====
+
+ Introducción a la Ingeniería de Software
+- PROCESO: Fases sucesivas. “Qué”
+
+- PROCEDIMIENTO: Acciones u operaciones. “Cómo”
+
+- TAREA: Trabajo que debe hacerse en tiempo limitado.
+
+- PROYECTO: conjunto de actividades a realizar las cuales están relacionadas, con el fin de producir determinados
+bienes o servicios capaces de satisfacer necesidades o resolver problemas, dentro de los límites de un presupuesto
+y en tiempo dados.
+
+- METODOLOGIA: marco de trabajo usado para estructurar, planificar y controlar el proceso.
+
+            - 60’: desarrollos "deliberada, estructurada y metódica"
+
+            - 70’/80’: Estructurado
+
+            - 90’: objetos
+
+            - 00’: ágiles (tecnología vs proceso)
+
+===== PAGINA 9 =====
+
+ Introducción a la Ingeniería de Software
+Proceso de Software:
+
+1) Conjunto de tareas para producir software de alta calidad
+
+2) Proceso para construir software desde la idea hasta entrega y retiro
+
+3) Actividades y resultados asociados para crear software
+
+===== PAGINA 10 =====
+
+ Introducción a la Ingeniería de Software
+Actividad: Saquen su LLM amigo y busquen “Crisis del software”
+
+- ¿Qué fue?
+
+- ¿Cómo y por qué surgió?
+
+- ¿Cuáles fueron las consecuencias?
+
+- ¿Qué relación tiene con el surgimiento de la Ingeniería de Software?
+
+===== PAGINA 11 =====
+
+Procesos de Desarrollo de Software
+
+
+
+• Introducción a los Ciclos de Vida: Los ciclos de vida
+del software son modelos que describen las fases y
+actividades desde la concepción hasta el retiro del
+software. Estos modelos ayudan a organizar y
+estructurar el desarrollo del software.
+
+===== PAGINA 12 =====
+
+Procesos de Desarrollo de Software
+
+           Ciclo de vida: indica el QUÉ vamos a obtener. Es el PROCESO
+
+       Metodología: indica el CÓMO vamos a obtener. Es el PROCEDIMIENTO
+
+===== PAGINA 13 =====
+
+Procesos de Desarrollo de Software
+
+William Edwards Deming
+- 1900/1993. Físico/Estadístico/Consultor
+- 1950/Japón
+Frases:
+«Si mejoran algo acerca de ustedes mismos y hacen de la calidad un
+logro y un modo de vida, revertirán la economía de Japón en diez
+años. Luego, si continúan mejorando cada día, aunque sea algo
+minúsculo, en tres décadas se convertirán en un poder económico
+mundial».
+«Mejora un 1% cada día, busca la calidad en todo lo que hagas y
+sentirás la satisfacción del objetivo alcanzado, que te seguirá
+impulsando hacia adelante».
+
+===== PAGINA 14 =====
+
+Procesos de Desarrollo de Software
+
+Ciclo de Deming - Plan/Do/Check/Act
+
+===== PAGINA 15 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción del Modelo en Cascada: El modelo en
+cascada es un enfoque secuencial para el desarrollo de
+software, donde cada fase debe completarse antes de
+que la siguiente comience. Las fases típicas incluyen:
+requisitos, diseño, implementación, pruebas, despliegue
+y mantenimiento.
+
+===== PAGINA 16 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 17 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción del Modelo de Prototipo: El modelo de
+prototipo se centra en la creación rápida de un prototipo
+funcional que pueda ser evaluado por los usuarios. Este
+enfoque permite identificar y solucionar problemas
+desde etapas tempranas en el desarrollo del software.
+
+===== PAGINA 18 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 19 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción de los Modelos Incrementales: Los
+modelos incrementales implican desarrollar el software
+en    pequeños   incrementos    funcionales.     Cada
+incremento es una versión completa del producto,
+permitiendo la entrega rápida de funcionalidades
+esenciales.
+
+===== PAGINA 20 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 21 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción del Modelo en Espiral: El modelo en
+espiral combina elementos de diseño y prototipado en
+un esfuerzo iterativo para construir un sistema. Este
+modelo se centra en la identificación y reducción de
+riesgos a través de iteraciones sucesivas.
+
+===== PAGINA 22 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 23 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 24 =====
+
+  Modelos de Ciclo de Vida
+
+
+Pensemos…
+- ¿Qué relación encuentran entre el Ciclo de Deming con el desarrollo y contenidos de los
+CVS?
+
+- ¿Qué factores influyen a la hora de elegir un ciclo de vida para resolver un problema
+dado?
+
+- ¿Qué ciclo de vida elegirían para resolver un problema que se comprende bien desde el
+principio y está muy estructurado? Una vez elegido el ciclo de vida, ¿qué procesos
+(pasos) escogerían para dicho ciclo de vida, teniendo en cuenta que el desarrollo
+informático para resolver el problema anterior lo realiza una única persona?
+
+===== PAGINA 25 =====
+
+Aspectos Éticos y Sociales
+
+
+
+• Ética Profesional: Los ingenieros de software
+deben adherirse a un código de conducta ética que
+incluye responsabilidades hacia el público, el cliente,
+el empleador y la profesión.
+
+• Impacto Social: El software tiene un impacto
+significativo en la sociedad. Es crucial considerar
+aspectos como la privacidad, la seguridad y el
+bienestar de los usuarios.
+
+===== PAGINA 26 =====
+
+No Silver Bullet
+
+
+
+• 'No Silver Bullet' es un ensayo de Fred Brooks
+que argumenta que no existen soluciones
+milagrosas para los desafíos inherentes al
+desarrollo de software. Brooks sostiene que la
+complejidad esencial del software no puede ser
+eliminada por ningún avance tecnológico único.
+
+===== PAGINA 27 =====
+
+No Silver Bullet
+
+
+• Temas de Discusión:
+
+- ¿Cuáles son los principales desafíos en el
+desarrollo de software según Brooks?
+- ¿Están de acuerdo con la afirmación de que no
+existe una 'bala de plata'?
+
+- ¿Qué avances recientes podrían desafiar las
+ideas presentadas en el ensayo?
+

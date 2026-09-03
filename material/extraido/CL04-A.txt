@@ -1,0 +1,255 @@
+FUENTE: CL04-A
+TITULO: Clase 4: desarrollo de productos digitales
+ORIGINAL: material/catedra/teoria/clase-04-apuntes-productos-digitales.pdf
+PAGINAS: 5
+
+===== PAGINA 1 =====
+
+                                Desarrollo de Productos
+
+Introducción
+
+A lo largo de las dos primeras décadas del siglo XXI la creación de productos y servicios
+digitales se convirtió en una actividad estratégica para organizaciones de todos los
+tamaños. El mercado global de software como servicio, por ejemplo, pasó de 13.000
+millones de dólares en 2010 a más de 150.000 millones en 2023, según estimaciones de
+Gartner, reflejando la aceleración de la demanda de soluciones innovadoras, personalizadas
+y escalables. Sin embargo, la misma fuente advierte que siete de cada diez lanzamientos
+fracasan antes de cumplir treinta y seis meses, en buena parte porque las empresas siguen
+priorizando la ejecución técnica por encima de la comprensión profunda de las necesidades
+humanas y la lógica económica que sostiene el negocio. Frente a ese escenario, tres
+enfoques metodológicos —Design Thinking, Business Model Canvas y Lean Startup—
+adquirieron relevancia como pilares de un nuevo paradigma de innovación que combina
+empatía, análisis sistémico y experimentación rápida.
+
+
+
+   1.​ El concepto de producto en la era digital
+
+Cuando Peter Drucker definió el propósito de toda empresa como la creación de un cliente
+(The Practice of Management, 1954), dejó implícita la necesidad de un artefacto —tangible
+o intangible— que satisfaga un deseo o resuelva un problema mejor que las alternativas
+existentes. En marketing el producto se describe como una combinación de atributos
+funcionales, simbólicos y experienciales que entrega valor al consumidor. Philip Kotler, en
+su célebre clasificación de los cinco niveles de producto (1997), aclara que más allá de lo
+físico, los clientes compran beneficios: seguridad, estatus, eficiencia, placer, entre otros. El
+Project Management Institute, por su parte, subraya que un producto es el resultado
+principal de un proyecto y que su alcance se define a partir de requisitos verificables
+acordados con el patrocinador. La ingeniería de software agrega la perspectiva de la calidad
+técnica: un producto digital debe ser mantenible, seguro, performante y usable a lo largo de
+su ciclo de vida. La economía clásica enfatiza la dimensión de intercambio; un producto es,
+en última instancia, un bien o servicio que circula en el mercado generando riqueza.
+Finalmente, el diseño industrial se detiene en la forma, la ergonomía y la interacción
+sensorial.
+
+Esta multiplicidad de miradas invita a concebir el producto digital contemporáneo como un
+sistema sociotécnico: código, bases de datos y algoritmos interactúan con expectativas
+culturales, regulaciones, infraestructuras y narrativas de marca. Por ello, el proceso de
+concepción no puede limitarse al desarrollo tecnológico. Requiere metodologías que
+conecten la voz del usuario, la viabilidad económica y la factibilidad técnica en un diálogo
+continuo. Ahí radica la relevancia de Design Thinking, Canvas y Lean Startup.
+
+
+
+   2.​ Design Thinking​
+
+===== PAGINA 2 =====
+
+2.1 Orígenes y evolución histórica
+
+El término “design thinking” apareció impreso por primera vez en 1969 en el libro The
+Sciences of the Artificial del nobel Herbert Simon, quien propuso estudiar el diseño como
+una ciencia centrada en la resolución de problemas. En paralelo, la escuela de Ulm y la
+Bauhaus habían puesto en circulación la idea de que diseñar implicaba investigar los
+hábitos de la gente antes que imponerles formas estéticas. En los años ochenta, la
+consultora IDEO —fundada por David Kelley en Palo Alto— adoptó esos principios para
+proyectos como el primer mouse de Apple (1983) y consolidó una práctica basada en
+equipos multidisciplinarios, espacios de trabajo flexibles y prototipado rápido. Tim Brown,
+CEO de IDEO, popularizó el término al publicar en 2008 su artículo “Design Thinking” en
+Harvard Business Review, donde describió un proceso iterativo de tres espacios
+superpuestos: inspiración, ideación e implementación.
+
+
+
+2.2 Fundamentos y fases
+
+Aunque existen variantes, la mayoría de los manuales contemporáneos (Kelley & Kelley,
+2013; Liedtka & Ogilvie, 2011) describen cinco etapas secuenciales pero no lineales:
+empatizar, definir, idear, prototipar y testear. Empatizar se apoya en la investigación
+cualitativa —entrevistas en profundidad, shadowing, diarios de experiencia— para captar
+motivaciones explícitas y latentes. Definir implica sintetizar hallazgos en un insight y
+enunciar un enunciado How Might We que abra el terreno de la solución. Idear convoca
+técnicas de pensamiento lateral —brainstorming, crazy 8s— con la premisa de suspender el
+juicio para favorecer la cantidad sobre la calidad inicial. Prototipar busca transformar ideas
+en objetos tangibles o simulaciones digitales de baja fidelidad que faciliten la crítica
+temprana. Testear involucra a los usuarios en la evaluación, generando aprendizaje que
+alimenta iteraciones.
+
+
+
+2.3 Herramientas avanzadas
+
+En la última década surgieron adaptaciones específicas: Service Design aplica Design
+Thinking a servicios complejos e introduce el blueprint de servicio; Design Sprint,
+desarrollado por Google Ventures en 2014, condensa el ciclo en cinco días; Speculative
+Design explora futuros posibles para anticipar consecuencias éticas y sociales. Además, la
+incorporación de inteligencia artificial generativa (ChatGPT, Midjourney) habilitó sesiones de
+co‑ideación humano‑máquina que aceleran la exploración de conceptos visuales.
+
+
+
+2.4 Casos de uso representativos
+
+El sistema de salud Kaiser Permanente aplicó Design Thinking para rediseñar el momento
+del pase de guardia de enfermería, reduciendo errores médicos un 30 % (Berry et al., 2016).
+IBM creó su IBM Garage en 2016, combinando Design Thinking con metodologías ágiles y
+DevOps para desarrollar soluciones cloud híbridas; reportó hasta 40 % menos tiempo de
+
+===== PAGINA 3 =====
+
+ciclo. En América Latina destaca el programa de innovación abierta de Banco de Chile, que
+utilizó Design Thinking para lanzar Cuenta FAN en 2021, captando un millón de usuarios
+nativos digitales en dieciocho meses.
+
+
+
+    3.​ Business Model Canvas​
+
+
+3.1 Génesis y propósito
+
+Alexander Osterwalder desarrolló el Business Model Canvas durante su tesis doctoral en la
+Universidad de Lausana y lo difundió en 2008 a través de un wiki colaborativo que reunió a
+470 coautores de cincuenta países. Publicado formalmente en 2010 como Business Model
+Generation, el lienzo se transformó en una herramienta global gracias a su simpleza visual y
+a su capacidad de reemplazar planes de negocio extensos.
+
+
+
+3.2 Análisis profundo de los nueve bloques
+
+Segmentos de clientes obliga a describir arquetipos basados en demografía,
+comportamiento y jobs‑to‑be‑done. La propuesta de valor articula bundle de beneficios
+funcionales y emocionales. Canales distingue entre comunicación, venta y entrega física o
+digital. Relaciones con clientes especifica el tipo de interacción: autoservicio, asistencia
+humana, comunidad. Fuentes de ingreso detalla mecanismos de monetización: venta única,
+suscripción, freemium, licensing, usage‑based. Recursos clave abarca físicos, intelectuales,
+humanos y financieros. Actividades clave recoge procesos esenciales: manufactura,
+plataforma, consultoría. Socios clave incluye alianzas estratégicas, joint ventures,
+proveedores críticos. Finalmente, la estructura de costos identifica gastos fijos, variables y
+economías de escala.
+
+
+
+3.3 Estudios de caso
+
+Netflix pasó del alquiler de DVD por correo (1997) a streaming (2007) tras mapear
+escenarios de costos y asociarse con proveedores de CDN1. Spotify utilizó el Canvas para
+
+1
+  Proveedor de CDN (Content Delivery Network): Es una empresa que ofrece una red mundial de servidores
+distribuidos (caches) diseñada para acercar los contenidos estáticos y dinámicos de un sitio web—páginas
+HTML, archivos JavaScript y CSS, imágenes, video, streaming, APIs—al usuario final.
+
+Beneficios principales
+
+    ●​   Menor latencia: páginas y streams cargan más rápido, mejora la UX y el SEO.
+    ●​   Ahorro de ancho de banda del servidor origen: la mayor parte del tráfico se sirve desde los PoPs.
+    ●​   Escalabilidad y resiliencia: absorben picos masivos de tráfico y mitigan ataques.
+    ●​   Cumplimiento local: algunos proveedores permiten mantener datos en regiones específicas (GDPR,
+         LGPD, etc.).
+
+===== PAGINA 4 =====
+
+justificar su modelo freemium, combinando ingresos de suscripción con publicidad y
+negociaciones de regalías. En Argentina, Mercado Libre reformuló su Canvas en 2014 para
+separar Mercado Pago como unidad de negocio independiente, estrategia que incrementó
+su capitalización bursátil siete veces en seis años.
+
+
+
+    4.​ Lean Startup​
+
+
+4.1 Raíces teóricas y evolución
+
+Eric Ries, influenciado por Steve Blank y la filosofía Customer Development, acuñó Lean
+Startup en 2008, fusionando principios de lean manufacturing de Toyota2 con desarrollo ágil
+de software. Su libro (2011) vendió más de un millón de copias y originó conferencias,
+aceleradoras y políticas públicas: la SBA estadounidense adoptó programas Lean para
+pymes; el Banco Interamericano de Desarrollo financió en 2018 la aplicación del método en
+emprendimientos sociales latinoamericanos.
+
+
+
+4.2 Estructura del ciclo Build‑Measure‑Learn
+
+Construir comienza con la formulación de hipótesis de valor y de crecimiento. El MVP
+—producto mínimo viable— no es una versión recortada, sino el experimento más pequeño
+que permite aprender. Medir implica seleccionar métricas accionables, diseñar experimentos
+controlados y utilizar analítica de producto, logging estructurado y seguimientos de funnel.
+Aprender exige análisis estadístico para decidir pivotar o perseverar.
+
+
+
+4.3 Tipos de pivote
+
+Ries identifica diez pivotes: de zoom‑in, de zoom‑out, de arquitectura, de segmento de
+cliente, de captura de valor, de motor de crecimiento, de canal, de tecnología, de motor de
+plataforma y de problema. Un ejemplo famoso es Twitter, que nació como Odeo, plataforma
+de podcasts, y pivoteó en 2006 hacia microblogging tras el lanzamiento de iTunes.
+
+
+
+4.4 Herramientas complementarias
+
+
+
+2
+ Lean Manufacturing es una filosofía de gestión de la producción, originada en el Sistema de Producción de
+Toyota, que busca maximizar el valor para el cliente eliminando todo desperdicio a lo largo del flujo de trabajo.
+Se apoya en principios como flujo continuo, producción “just-in-time”, mejora continua (kaizen) y
+empoderamiento del equipo para detectar y resolver problemas en tiempo real. El resultado es un proceso más
+rápido, flexible y con menos costos, sin sacrificar calidad.
+
+Como referencia Kanban nació dentro de Lean como una herramienta de control de flujo: tarjetas que “jalan”
+materiales del proceso anterior sólo cuando el paso siguiente los necesita. Hoy, el término se popularizó también
+como tablero visual en software y servicios para limitar trabajo en curso y balancear capacidad.
+
+===== PAGINA 5 =====
+
+Feature flags posibilitan lanzamientos graduales. CI/CD reduce lead time de despliegue.
+Infraestructura as‑code y contenedores facilitan entornos reproducibles. Data warehouses
+en la nube y paneles de BI democratizan la lectura de métricas.
+
+4.5 Casos emblemáticos
+
+Dropbox validó su propuesta con un video en 2007; la lista de espera creció de 5.000 a
+75.000 usuarios en una noche. Zappos, antes de invertir en inventario, probó comprando
+zapatos en tiendas y enviándolos, confirmando demanda. En el sector público, el Servicio
+Digital del Reino Unido lanzó Gov.UK aplicando MVPs para trámites; ahorró 1 800 millones
+de libras entre 2012 y 2020.
+
+
+
+   5.​ Sinergias y adopción integrada​
+
+
+La praxis contemporánea combina los tres enfoques en un ciclo continuo: Design Thinking
+descubre necesidades humanas, el Canvas evalúa la lógica de negocio y Lean Startup itera
+para reducir la incertidumbre técnica y de mercado. Empresas como Airbnb documentan
+hasta seis bucles de retroalimentación al año donde entrevistan usuarios, actualizan su
+Canvas y despliegan experimentos A/B.
+
+
+
+   6.​ Desafíos y críticas​
+
+
+No obstante su popularidad, las metodologías enfrentan desafíos: Design Thinking es
+acusado de superficial cuando se reduce a talleres de postits; el Canvas puede ignorar
+componentes culturales y regulatorios; Lean Startup tiende a descuidar la ética en la
+experimentación con usuarios. Investigaciones de la Universidad de Stanford (2021)
+sugieren complementar con marcos de responsabilidad como Ethical AI Canvas y análisis
+de sustentabilidad.
+
