@@ -1,0 +1,396 @@
+FUENTE: P1-CL06
+TITULO: Primer parcial: selección oficial de Calidad de Software
+ORIGINAL: material/catedra/teoria/parcial-1-seleccion-calidad.pdf
+PAGINAS: 18
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+       Calidad
+
+===== PAGINA 2 =====
+
+Gestión de Calidad
+
+●   Conceptos clave:
+     ○ La gestión de calidad en software busca asegurar que los procesos de desarrollo cumplan
+         con estándares definidos para garantizar la calidad del producto ﬁnal.
+     ○ Concepto complejo y de aristas múltiples (puntos de vista).
+
+●   Importancia:
+     ○ Reduce errores en etapas tempranas del desarrollo.
+     ○ Mejora la satisfacción del cliente.
+     ○ Incrementa la eficiencia y la sostenibilidad del software.
+
+●   Métricas de calidad:
+     ○ Densidad de defectos.
+     ○ Tasa de errores por usuario.
+     ○ Tiempo medio para la resolución de problemas.
+
+
+                                 LA CALIDAD NO SUCEDE, SE GESTIONA                               2
+
+===== PAGINA 3 =====
+
+Calidad - Costo de Calidad y "No Calidad"
+
+●   Costo de calidad (CoQ): Se reﬁere a los gastos necesarios para prevenir defectos y garantizar un producto
+    de alta calidad.
+     ○ Ejemplo: Entrenamiento, revisiones, auditorías.
+
+●   Costo de "no calidad": Gastos derivados de errores o fallos en el producto.
+     ○ Fallos internos: Reparaciones previas al lanzamiento.
+     ○ Fallos externos: Reclamos de clientes, pérdidas de reputación.
+
+●   Conclusión: Invertir en calidad reduce signiﬁcativamente los costos de "no calidad".
+
+
+
+
+                                                                                                                3
+
+===== PAGINA 4 =====
+
+                     DIAPOSITIVA MUY IMPORTANTE!!
+
+Caso especial de "No Calidad": Deuda técnica
+
+Definición: la deuda técnica es el costo de retrabajo que
+aparece cuando se prioriza una solución rápida por sobre
+la más efectiva.
+
+Origen y analogía: el término lo acuñó Cunningham* (1992)
+y se compara con la deuda ﬁnanciera: puede ser “buena” si
+se gestiona, o “mala” si se ignora.
+
+Cuadrantes de Fowler*: prudente + deliberada, imprudente
++ deliberada, prudente + inadvertida, imprudente +
+inadvertida; sirven para calibrar intención y nivel de riesgo.
+
+Origen: puede ser funcional o tecnológica
+
+
+* Howard Cunningham: XP, Maniﬁesto Ágil, Wiki
+* Martin Fowler: “Refactoring: Improving the Design of Existing Code”   4
+
+===== PAGINA 5 =====
+
+                       DIAPOSITIVA MUY IMPORTANTE!!
+
+   Deuda técnica
+      Cuadrante                ¿Qué lo caracteriza?                    Ejemplo típico en un proyecto real
+
+Prudente + Deliberada      El equipo sabe que genera      Sprint de lanzamiento: para llegar a la demo con el cliente, se
+(“decisión estratégica”)   deuda y planea cómo y          omite la capa de validaciones complejas y se documenta una
+                           cuándo pagarla.                “tarjeta” de backlog con el refactor previsto para el próximo ciclo.
+
+Imprudente +               Se conoce el riesgo pero se    Parche de producción a las 3 a. m.: se mete código
+Deliberada (“lo            acepta sin plan de pago;       hardcodeado con credenciales para reactivar un servicio crítico;
+hacemos rápido y           prima la presión de negocio.   “mañana lo limpiamos”… y pasa un año.
+después vemos”)
+Prudente + Inadvertida     Se trabajó con buenas          Cambio de normativa: se construye un módulo ﬁscal según la ley
+(“nadie podía preverlo”)   prácticas, pero                vigente; tres meses después sale una nueva resolución
+                           apareció información           impositiva que obliga a reescribir gran parte de la lógica.
+                           nueva.
+Imprudente +               Falta de conocimiento o        On-boarding apurado: desarrolladores juniors copian-pegan
+Inadvertida (“no           control; la deuda surge sin    código de internet sin tests ni revisión; meses más tarde
+sabíamos que era tan       que el equipo se dé cuenta.    aparecen bugs y duplicación masiva de lógica en toda la base
+grave”)                                                   de código.                                                   5
+
+===== PAGINA 6 =====
+
+Caso especial de "No Calidad": Deuda técnica
+
+Tipos según Steve McConnell (autor de “Code complete”):
+ ● Intencionada: decisión consciente de optimizar el presente (puede ser a corto o largo plazo).
+       ○ Ejemplo: elegir un framework rápido pero de bajo rendimiento para llegar a un deadline;
+           requerirá reescritura posterior.
+ ● No intencionada: errores, falta de conocimiento o diseño defectuoso.
+       ○ Ejemplo: liberar código escrito por desarrolladores junior sin revisión suficiente, generando errores
+           que aparecen tras el lanzamiento.
+
+Buenas prácticas de control:
+ ● Registrar cada deuda en un sistema de seguimiento/backlog con esfuerzo y fecha estimada.
+ ● Tratarla como historias de usuario (en enfoques ágiles); si supera 90 días, marcarla como crítica.
+ ● Fomentar transparencia y comunicación: pagar la deuda en incrementos pequeños y visibles para
+     todo el equipo.
+
+
+
+
+                                                                                                             6
+
+===== PAGINA 7 =====
+
+Calidad - Proceso de Gestión de Calidad
+
+●   Fases principales:
+     ○ Planiﬁcación de calidad: incluir en el
+          plan
+     ○ Control de calidad (QC)
+     ○ Aseguramiento de calidad (QA)
+
+●   Herramientas utilizadas:
+     ○ Diagramas de causa-efecto (Diagrama
+         de Ishikawa o “ﬁshbone”)
+     ○ Auditorías internas.
+     ○ Indicadores clave de rendimiento (KPIs).
+
+●   Ciclo de mejora continua: Planiﬁcar,
+    Hacer, Veriﬁcar, Actuar (PDCA).
+
+
+                                                  7
+
+===== PAGINA 8 =====
+
+                 DIAPOSITIVA MUY IMPORTANTE!!
+
+Calidad - Control de Calidad (QC)
+
+Enfoque
+ ● Producto y entregables concretos
+ ● Detección de defectos existentes
+
+Actividades
+ ● Revisiones de código
+ ● Pruebas (unitarias, integración,
+      sistema)
+ ● Verificación de requisitos
+
+Resultado
+ ● Lista de defectos e incidencias
+ ● Métricas (defect density, severidad)
+
+
+
+
+                                                8
+
+===== PAGINA 9 =====
+
+                DIAPOSITIVA MUY IMPORTANTE!!
+
+Calidad - Aseguramiento de Calidad (QA)
+
+Enfoque
+ ● Procesos y metodologías de desarrollo
+ ● Prevención de defectos
+
+Actividades
+ ● Deﬁnición de políticas y estándares (ISO/IEC 25010,
+      CMMI)
+ ● Auditorías de proceso
+ ● Capacitación y mejora continua
+
+Resultado
+ ● Procesos documentados y validados
+ ● Conﬁanza en la calidad durante todo el ciclo de vida
+
+
+
+
+                                                          9
+
+===== PAGINA 10 =====
+
+Calidad - Control vs. Aseguramiento
+
+Perspectiva
+ ● QC: Orientado al producto
+ ● QA: Orientado al proceso
+
+Objetivo
+ ● QC: Detectar defectos
+ ● QA: Prevenir defectos
+
+Momento
+ ● QC: Durante y después del desarrollo
+ ● QA: Desde el inicio y durante todo el ciclo
+
+Responsabilidad
+ ● QC: Equipo de testing/inspección
+ ● QA: Toda la organización (equipo SQA -software quality assurance-
+     facilita)
+                                                                       10
+
+===== PAGINA 11 =====
+
+Calidad - Verificación y Validación
+
+●   Verificación: Asegura que el producto se esté construyendo correctamente según los
+    requisitos especiﬁcados.
+      ○ Ejemplo: Revisiones de código, inspecciones.
+
+●   Validación: Comprueba que el producto ﬁnal cumple con las necesidades del cliente.
+     ○ Ejemplo: Pruebas funcionales, pruebas de usuario.
+
+●   Técnicas comunes:
+     ○ Revisiones técnicas.
+     ○ Pruebas de integración.
+     ○ Simulaciones.
+
+
+
+
+                                                                                         11
+
+===== PAGINA 12 =====
+
+Pruebas de software - Clasificación de las Pruebas 1/2
+
+Según el nivel:
+ ● Pruebas unitarias: Validan componentes individuales.
+ ● Pruebas de integración: Aseguran que los módulos funcionan juntos.
+ ● Pruebas del sistema: Veriﬁcan el software completo.
+ ● “Smoke test” (*): Conjunto reducido de pruebas de sistema
+ ● Pruebas de aceptación: Realizadas por el cliente para validar requisitos.
+
+(*) Se la llama así porque es “ver si sale humo” apenas se enciende el sistema: si falla, no vale la pena
+seguir probando.
+
+Según la técnica:
+ ● Pruebas estáticas: Evaluación sin ejecutar el código (revisiones, inspecciones).
+ ● Pruebas dinámicas: Ejecución activa para detectar defectos.
+
+
+
+
+                                                                                                            12
+
+===== PAGINA 13 =====
+
+Pruebas de software - Clasificación de las Pruebas 2/2
+
+Según el alcance:
+ ● Funcionales: Validan funcionalidades especíﬁcas.
+ ● No funcionales: Evalúan aspectos como rendimiento, seguridad, usabilidad,
+     etc.
+
+Según la automatización:
+ ● Manuales: Realizadas por testers.
+ ● Automatizadas: Usan scripts y herramientas.
+Pruebas de sistema / No funcionales:
+ ● Pruebas de recuperación: recuperarse de fallas y reanudar el procesamiento
+ ● Pruebas de seguridad: intenta veriﬁcar que los mecanismos de protección (pentest)
+ ● Pruebas de compatibilidad/despliegue: varias plataformas y bajo más de un entorno de sistema
+     operativo.
+ ● Pruebas de esfuerzo/rendimiento: demanda recursos en cantidad, frecuencia o volumen anormales
+ ● Pruebas de usabilidad: analizan la experiencia del usuario.
+ ● Pruebas de escalabilidad: comprueban cómo el sistema responde al crecimiento.
+       ○ Escalabilidad vertical: aumentar los recursos de un solo servidor (ej: más CPU, memoria)   22
+       ○ Escalabilidad horizontal: agregar más servidores para compartir la carga
+
+===== PAGINA 14 =====
+
+Pruebas de software - Técnicas y Estrategias de Pruebas
+
+ ●   Caja negra: Basada en especiﬁcaciones sin conocer el código.
+
+ ●   Caja blanca: Basada en la estructura del código.
+
+ ●   Técnicas híbridas: Combinan caja negra y caja blanca.
+
+ ●   Generación de casos de prueba efectivos:
+      ○ Identiﬁcar escenarios clave.
+      ○ Usar técnicas como partición de equivalencia y análisis de valores
+          límite.
+
+ ●   Gestión de riesgos:
+      ○ Priorización según impacto y probabilidad de fallos.
+
+
+
+                                                                             14
+
+===== PAGINA 15 =====
+
+Documentos “““importantes””” (1/3)
+
+Plan de Gestión de Calidad de Software: cómo se asegura y controla la calidad durante todo el ciclo de vida del
+software. Incluye estrategias, métricas, responsabilidades, y actividades para garantizar que el producto cumpla
+con los estándares establecidos.
+
+Contenidos:
+ ● 1. Introducción: Objetivo, Alcance
+ ● 2. Política de Calidad: Declaración de los principios y objetivos de calidad.
+ ● 3. Roles y responsabilidades relacionados con la calidad: Gerente de Calidad, Equipo de Desarrollo,
+     Equipo de Pruebas
+ ●    4. Estrategia de Calidad: Requisitos de Calidad, Métricas de Calidad, Revisiones y Auditorías
+ ●    5. Actividades de Control de Calidad: Revisiones de Código, Pruebas Automatizadas y Manuales,
+      Validación y Veriﬁcación
+ ●    6. Cronograma y Presupuesto: Desglose de tiempo y costos asignados a la calidad.
+ ●    7. Procedimientos de Aprobación: Criterios y procesos para la aprobación de entregables de calidad.
+
+                                                                                                                   15
+
+===== PAGINA 16 =====
+
+Documentos “““importantes””” (2/3)
+
+Plan de Pruebas de Software: enfoque, alcance, recursos y cronograma para realizar las pruebas. Describe los
+tipos de pruebas, los criterios de aceptación y ﬁnalización, el ambiente de pruebas y las herramientas a utilizar.
+
+Contenidos:
+ ● 1. Introducción: Objetivo, Alcance.
+ ● 2. Estrategia de Pruebas: Tipos de Pruebas y Ambiente de Pruebas.
+ ● 3. Gestión de Riesgos de Calidad: Identiﬁcación y mitigación de riesgos relacionados con la calidad.
+ ● 4. Herramientas: Descripción de las herramientas utilizadas (Postman, Selenium, JIRA, Selenium,
+     SonarQube, etc.).
+ ● 5. Planificación de Actividades: Tiempos estimados para cada tipo de prueba.
+ ● 6. Gestión de Incidentes: Procedimientos para registrar, rastrear y resolver defectos.
+ ● 7. Informe de Resultados: Formato y frecuencia de los informes.
+
+
+
+
+                                                                                                                     16
+
+===== PAGINA 17 =====
+
+Documentos “““importantes””” (3/3)
+
+Casos de Prueba de Software: pasos especíﬁcos para probar una funcionalidad o característica del software.
+Incluye precondiciones, datos de entrada, resultados esperados y obtenidos, para garantizar que cada
+componente funcione como se espera. Incluye el registro y trazabilidad de las pruebas.
+
+Objetivo:
+ ● Veriﬁcar que cada requisito de negocio se cumpla sin errores.
+ ● Detectar defectos antes de la puesta en producción, reduciendo costo de corrección.
+ ● Servir como documentación viva que facilita mantenimiento y regresión.
+
+Buenas prácticas de redacción:
+ ● Claridad: una sola veriﬁcación por caso; evita ambigüedad.
+ ● Trazabilidad: referencia al ID del requisito o user story.
+ ● Atomicidad: los casos no deben depender unos de otros.
+ ● Datos realistas: usa entradas representativas (y evita información sensible).
+ ● Resultados observables: deﬁne salidas medibles (UI, API response, BD, logs).
+ ● Mantenibilidad: usa nombres descriptivos y versiona los casos junto al código.
+                                                                                                             17
+
+===== PAGINA 18 =====
+
+Casos de Prueba - Formato Given-When-Then
+
+¿Qué es?
+ ● Plantilla de Behavior-Driven Development que conecta requisitos de negocio con pruebas
+     ejecutables.
+ ● Favorece lenguaje comprensible para negocio, QA y desarrollo.
+
+Estructura
+      Given (contexto): estado previo del sistema y datos
+      iniciales. When (acción): evento/disparo que el usuario o
+      sistema realiza. Then (resultado): salida observable o
+      cambio esperado.
+
+Buenas prácticas
+ ● Una sola acción principal por escenario.
+ ● Evitar condicionales: usar escenarios separados para ramas positivas y negativas.
+ ● Mantener las frases en tiempo presente y voz activa (el sujeto realiza la acción).
+
+                                                                                            18
+

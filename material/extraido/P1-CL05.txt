@@ -1,0 +1,190 @@
+FUENTE: P1-CL05
+TITULO: Primer parcial: selección oficial de Estimación de Proyectos de Software
+ORIGINAL: material/catedra/teoria/parcial-1-seleccion-estimacion.pdf
+PAGINAS: 10
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+       Estimación de proyectos de software
+
+===== PAGINA 2 =====
+
+Puntos de Caso de Uso
+
+●   Definición: Método de estimación basado en
+    la complejidad y número de casos de uso en
+    un proyecto. Ayuda a evaluar el tamaño del
+    software y el esfuerzo necesario.
+
+●   Proceso: Se asigna una ponderación a cada
+    caso de uso según su complejidad,
+    sumando estos valores para obtener la
+    estimación total del proyecto.
+
+●   Ventajas: Proporciona una visión clara del
+    alcance del proyecto y facilita la
+    comunicación entre desarrolladores y
+    stakeholders.
+
+
+                                                 2
+
+===== PAGINA 3 =====
+
+Puntos de Caso de Uso
+Ponderación de Factores Ambientales y
+Técnicos:
+
+
+
+
+                                        3
+
+===== PAGINA 4 =====
+
+Puntos de Caso de Uso
+Ponderación de Casos de Uso y
+Actores
+
+
+
+
+                                4
+
+===== PAGINA 5 =====
+
+Poker Planning
+
+●   Definición: Método de estimación colaborativa en
+    el que los miembros del equipo usan cartas para
+    votar sobre el tamaño relativo de las tareas del
+    proyecto.
+
+●   Proceso: Cada miembro del equipo selecciona
+    una carta en secreto y todas las cartas se revelan
+    al mismo tiempo. Las discusiones se centran en
+    las diferencias de estimaciones hasta alcanzar un
+    consenso.
+
+●   Ventajas: Fomenta la participación de todo el
+    equipo, mejora la precisión de las estimaciones
+    y ayuda a identiﬁcar riesgos y dependencias
+    tempranas.
+
+                                                         5
+
+===== PAGINA 6 =====
+
+Story Points
+
+●   Definición: Unidad de medida utilizada en
+    metodologías ágiles para estimar el esfuerzo
+    relativo necesario para implementar una
+    historia de usuario.
+
+●   Proceso: Los equipos asignan puntos a cada
+    historia basándose en su complejidad,
+    cantidad de trabajo y riesgos involucrados,
+    usando técnicas como Planning Poker.
+
+●   Ventajas: Facilita la planiﬁcación y
+    priorización del trabajo, promueve la
+    colaboración del equipo y permite un
+    seguimiento más preciso del progreso del
+    proyecto.
+
+                                                   6
+
+===== PAGINA 7 =====
+
+Estimación de 3 Puntos / PERT
+
+●   Definición: Método que utiliza tres
+    estimaciones (optimista, pesimista y más
+    probable) para calcular una estimación
+    ponderada y reducir la incertidumbre.
+●   PERT: Program Evaluation and Review
+    Technique
+●   Proceso: Se calcula la estimación ﬁnal
+    utilizando la fórmula:
+
+     (Optimista + (4 * Más Probable) + Pesimista) /
+     6
+
+●   Ventajas: Proporciona una visión más
+    completa de los posibles resultados y ayuda a
+    gestionar el riesgo asociado con las
+    estimaciones.
+                                                      7
+
+===== PAGINA 8 =====
+
+Estimadores no formales
+
+●   Juicio experto
+     ○ Un experto revisa la información disponible y emite una estimación basada en su
+           conocimiento y experiencia.
+     ○ Ventaja: Rápido y fácil de aplicar cuando no se tiene datos formales o históricos.
+     ○ Desventaja: subjetivo y susceptible a sesgos personales o de grupo.
+●   Método Delphi / Wideband Delphi
+     ○ Se consulta a varios expertos de manera iterativa y anónima. Cada ronda resume las
+           estimaciones, de forma que los expertos pueden ajustar sus respuestas en función de la
+           información recibida.
+     ○ Ventaja: Reduce la inﬂuencia de jerarquías o liderazgos fuertes (al ser anónimo) y fomenta
+           la convergencia de opiniones.
+     ○ Desventaja: Puede ser costoso en tiempo si se requieren varias rondas y depende de la selección
+           de expertos.
+●   Analogía con proyectos similares
+     ○ Comparar el proyecto que se quiere estimar con otros proyectos o tareas similares
+           previamente realizados, aprovechando la experiencia previa.
+     ○ Ventaja: Fácil de comprender; se basa en ejemplos reales y no en suposiciones puramente           19
+           teóricas.
+
+===== PAGINA 9 =====
+
+Estimadores no formales
+
+●   Técnica “Talla de Camiseta” (T-Shirt Sizing)
+     ○ Se asigna a cada elemento a estimar una “talla” (XS, S, M, L, XL) basada en criterios subjetivos
+          de complejidad, alcance, riesgo, etc.
+     ○ Ventaja: Es muy simple e intuitivo; bueno para estimaciones rápidas al inicio de un proyecto.
+     ○ Desventaja: Discrepancias grandes si no se deﬁnen adecuadamente los criterios para cada “talla”.
+●   Estimaciones “a ojo” (estimaciones rápidas o guesstimate
+     ○ Se obtiene un valor aproximado rápidamente basándose en la experiencia, la lógica elemental o
+          la información disponible en el momento, sin un método estructurado.
+     ○ Ventaja: Muy veloz cuando se necesita un número aproximado de forma urgente.
+     ○ Desventaja: La precisión puede ser muy baja y depender en exceso de la experiencia de quien
+          hace la estimación.
+
+
+
+
+                                                                                                          9
+
+===== PAGINA 10 =====
+
+Conceptos clave
+
+●   Tamaño: Se reﬁere a la cantidad de trabajo
+    requerido para completar el proyecto de software,
+    usualmente medido en líneas de código o puntos
+    de función.
+●   Esfuerzo: Cantidad de recursos (horas de
+    trabajo, personas, etc.) necesarios para
+    completar el proyecto. Depende del tamaño y
+    complejidad del proyecto.
+●   Complejidad: Grado de diﬁcultad técnica y
+    organizativa del proyecto. Afecta directamente
+    al esfuerzo y tiempo necesarios para completar
+    el proyecto.
+●   Duración: Tiempo “calendarizado” que lleva
+    resolver un requerimiento o serie de
+    requerimientos.
+
+                                                        10
+

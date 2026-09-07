@@ -1,0 +1,632 @@
+FUENTE: P1-CL02
+TITULO: Primer parcial: selección oficial de Metodologías de Desarrollo
+ORIGINAL: material/catedra/teoria/parcial-1-seleccion-clase-02.pdf
+PAGINAS: 32
+
+===== PAGINA 1 =====
+
+Metodologías de Desarrollo: Criterios de Selección
+
+●   Tamaño del Proyecto: Proyectos pequeños
+    pueden beneﬁciarse de metodologías ágiles,
+    mientras que proyectos grandes y complejos
+    pueden requerir enfoques más estructurados.
+●   Equipo y Habilidades: La experiencia y
+    habilidades del equipo inﬂuyen en la elección de
+    la metodología. Equipos experimentados
+    pueden manejar metodologías ágiles más
+    ﬂexibles.
+●   Requisitos del Cliente: La claridad y estabilidad
+    de los requisitos del cliente determinan la
+    adaptabilidad necesaria en la metodología
+    seleccionada.
+
+
+
+
+                                                        3
+
+===== PAGINA 2 =====
+
+Metodología Estructurada
+
+• Deﬁnición: Es una metodología que divide el
+ desarrollo en fases secuenciales y bien deﬁnidas,
+ como análisis, diseño, implementación y pruebas.
+
+• Ventajas: Proporciona un marco claro y
+ estructurado, facilita la gestión de proyectos
+ grandes y la estimación de tiempos y costos.
+
+• Desventajas: Poca ﬂexibilidad para cambios
+ durante el desarrollo y puede no ser adecuada para
+ proyectos con requisitos no bien deﬁnidos desde el
+ inicio.
+
+
+
+
+                                                      5
+
+===== PAGINA 3 =====
+
+ Metodología Estructurada
+
+Structured Systems Analysis and Design Method - SSADM
+
+
+
+
+                                                        7
+
+===== PAGINA 4 =====
+
+Metodología Orientada a Objetos
+
+ • Deﬁnición: Se basa en el concepto de 'objetos'
+  que representan entidades del mundo real con
+  atributos y comportamientos, facilitando la
+  reutilización y modularidad del código.
+
+ • Ventajas: Promueve la reutilización de código,
+  facilita el mantenimiento y la escalabilidad, y mejora
+  la gestión de la complejidad.
+
+ • Desventajas: Puede ser más compleja de aprender
+  y aplicar, y requiere una buena planiﬁcación y
+  diseño para aprovechar sus beneﬁcios.
+
+
+
+
+                                                           8
+
+===== PAGINA 5 =====
+
+RUP (Rational Uniﬁed Process)
+
+ • Deﬁnición: Modelo de desarrollo de software
+  iterativo e incremental que busca mejorar la
+  productividad y la calidad de los proyectos de
+  software. Fue desarrollado por la empresa Rational
+  Software, que más tarde fue adquirida por IBM.
+
+ • Estructurado en torno a cuatro fases principales:
+  inicio, elaboración, construcción y transición, cada
+  una con objetivos y actividades especíﬁcas..
+
+ • Utiliza UML como notación estándar
+
+
+
+
+                                                         9
+
+===== PAGINA 6 =====
+
+RUP (Rational Uniﬁed Process)
+
+
+
+
+                                10
+
+===== PAGINA 7 =====
+
+RUP (Rational Uniﬁed Process)
+
+
+
+
+                                11
+
+===== PAGINA 8 =====
+
+Metodología PRINCE2
+
+●   Origen y Deﬁnición: PRINCE2 (PRojects IN
+    Controlled Environments) es una metodología de
+    gestión de proyectos desarrollada en el Reino
+    Unido, ampliamente adoptada a nivel mundial.
+    Su enfoque se centra en la organización, gestión
+    y control de proyectos.
+●   Principales Características: Deﬁne roles y
+    responsabilidades claros, procesos
+    estructurados y la importancia de la justiﬁcación
+    continua del negocio durante todo el ciclo de
+    vida del proyecto.
+
+
+
+
+                                                        13
+
+===== PAGINA 9 =====
+
+Metodología PRINCE2
+
+●   Inicio de Proyecto: Deﬁnición de los objetivos
+    del proyecto, el equipo y la organización. Se
+    crea el acta de constitución del proyecto.
+●   Dirección de Proyecto: Tomar decisiones
+    estratégicas, aprobar fases y resolver problemas
+    escalados. Se mantiene la justiﬁcación del
+    negocio.
+●   Control de Fase: Monitoreo y control de la
+    ejecución de una fase del proyecto. Se
+    gestionan riesgos y problemas.
+
+
+
+
+                                                       14
+
+===== PAGINA 10 =====
+
+Metodología PRINCE2
+
+●   Justiﬁcación Continua del Negocio: Asegura
+    que el proyecto sigue siendo viable y rentable a
+    lo largo de su ciclo de vida.
+●   Gestión de Riesgos: Identiﬁcación, evaluación y
+    control de riesgos que puedan afectar al
+    proyecto.
+●   Calidad: Deﬁnición y control de los estándares
+    de calidad requeridos para cumplir con los
+    objetivos del proyecto.
+
+
+
+
+                                                       15
+
+===== PAGINA 11 =====
+
+XP (Extreme Programming)
+
+• Deﬁnición: XP es una metodología ágil que se
+ enfoca en mejorar la calidad del software y la
+ capacidad de respuesta a los cambios a través de
+ ciclos de desarrollo cortos y feedback continuo.
+
+• Prácticas Clave: Incluye prácticas como la
+ programación en pareja, desarrollo dirigido por
+ pruebas (TDD), integración continua y
+ refactorización constante.
+
+• Ventajas: Promueve la comunicación constante, la
+ calidad del código y la ﬂexibilidad para adaptarse a
+ cambios en los requisitos del cliente.
+
+
+
+
+                                                        20
+
+===== PAGINA 12 =====
+
+Los 5 Valores de XP
+
+1. Comunicación
+2. Simplicidad
+3. Feedback
+4. Respeto
+5. Coraje
+
+
+
+
+                      21
+
+===== PAGINA 13 =====
+
+Las 12 prácticas de XP
+
+1. Cliente In-Situ
+2. Semana de 40 Horas
+3. Uso de Metáforas
+4. Diseño Simple
+5. Refactoring
+6. Pair Programming
+7. Entregas Cortas
+8. Pruebas
+9. Estándares de Código
+10. Propiedad Colectiva
+11. Integración Continua
+12. Juego de Planiﬁcación
+
+
+
+
+                            22
+
+===== PAGINA 14 =====
+
+Lean
+
+• Deﬁnición: Lean es una metodología que busca
+ maximizar el valor para el cliente y minimizar el
+ desperdicio a través de la mejora continua y la
+ eﬁciencia en los procesos.
+
+• Principios: Incluyen la identiﬁcación y eliminación
+ del desperdicio, la creación de ﬂujo continuo, y la
+ mejora continua mediante ciclos de
+ retroalimentación.
+
+• Aplicación en Software: En el desarrollo de
+ software, Lean se enfoca en entregar valor
+ rápidamente, reducir tiempos de espera y evitar
+ tareas que no aporten directamente al objetivo del
+ proyecto.
+
+                                                        23
+
+===== PAGINA 15 =====
+
+Test-Driven Development (TDD)
+
+• Deﬁnición: TDD es una metodología de desarrollo de
+ software en la que las pruebas se escriben antes del
+ código, guiando el desarrollo y asegurando que el
+ software cumpla con los requisitos especiﬁcados.
+
+• Ciclo TDD: Consta de tres etapas: escribir una prueba
+ que falle, escribir el código mínimo necesario para pasar
+ la prueba, y refactorizar el código para mejorar su
+ estructura manteniendo las pruebas verdes.
+
+• Ventajas: Ayuda a prevenir errores, facilita el diseño
+ modular, mejora la calidad del código y proporciona
+ documentación actualizada del comportamiento
+ esperado del software.
+
+
+
+
+                                                             24
+
+===== PAGINA 16 =====
+
+Kanban
+
+• Deﬁnición: Kanban es una metodología ágil que
+ utiliza tarjetas visuales en un tablero para gestionar
+ y optimizar el ﬂujo de trabajo, permitiendo ver el
+ estado de las tareas en tiempo real.
+
+• Principios: Se basa en la visualización del trabajo,
+ la limitación del trabajo en progreso, la gestión del
+ ﬂujo, y la mejora continua.
+
+• Ventajas: Facilita la identiﬁcación de cuellos de
+ botella, mejora la comunicación del equipo y
+ aumenta la ﬂexibilidad para adaptarse a cambios en
+ las prioridades.
+
+
+
+
+                                                          25
+
+===== PAGINA 17 =====
+
+Scrum
+
+• Deﬁnición: Scrum es un marco de trabajo ágil que
+ facilita el desarrollo y la entrega de productos
+ complejos a través de iteraciones cortas llamadas
+ sprints.
+
+• Roles Clave: Incluye tres roles principales: el
+ Product Owner, el Scrum Master y el equipo de
+ desarrollo, cada uno con responsabilidades
+ especíﬁcas.
+
+• Eventos (“ceremonias”): Los eventos clave en
+ Scrum son el Sprint Planning, Daily Scrum, Sprint
+ Review y Sprint Retrospective, que ayudan a
+ planiﬁcar, ejecutar y revisar el trabajo realizado.
+
+
+                                                       27
+
+===== PAGINA 18 =====
+
+Scrum
+
+Jeﬀ Sutherland → proceso de Scrum → 1993
+
+Componentes:
+  • Organización → Sprints
+  • Roles
+  • Artefactos
+  • Eventos (“ceremonias”)
+
+
+
+
+                                           28
+
+===== PAGINA 19 =====
+
+Sprints
+
+ • Sprint → iteración
+ • Duración ﬁja para todos los sprints: una a cuatro semanas
+ • Se ejecutan uno tras el otro respetando está duración, sin tiempo muerto entre el sprint que termina y el sprint
+  que empieza.
+ • Objetivo: transformar un conjunto acordado de ítems del Backlog de Producto en un Incremento de
+  Funcionalidad de Producto Potencialmente Deployable
+
+
+
+
+                                                                                                                      29
+
+===== PAGINA 20 =====
+
+Roles 1/3
+
+Dueño del Producto
+
+  •   Voz del cliente
+  •   Establece una visión del producto a desarrollar
+  •   Prioriza continuamente los requisitos para alcanzar dicha visión
+  •   Es parte del equipo
+  •   Responsable de canalizar las necesidades del negocio para el producto a desarrollar, maximizar el valor para
+      el negocio respecto a la inversión, inspeccionar y adaptar el producto
+  •   Autoridad ﬁnal
+  •   Asegurarse que el equipo entiende la visión del producto y sus distintos requisitos
+
+
+
+
+                                                                                                                     30
+
+===== PAGINA 21 =====
+
+Roles 2/3
+
+Scrum Master
+
+ •   Facilitador y agente de cambio para la aplicación adecuada de Scrum
+ •   Coaching al equipo para ser más productivo y a generar productos de mejor calidad
+ •   Eliminar los impedimentos que frenan el trabajo del equipo
+ •   Proteger al equipo de potenciales interferencias proveniente de la organización
+
+
+
+
+                                                                                         31
+
+===== PAGINA 22 =====
+
+Roles 3/3
+
+Equipo
+
+ •   Grupo auto-organizados, multidisciplinario (programación, pruebas, análisis funcional, arquitectura, diseño de
+     interfaz gráﬁca o diseño de base de datos) y con autonomía que desarrolla el producto.
+ •   Responsabilidad: transformar el Backlog de Producto en incrementos de funcionalidad potencialmente
+     entregable en cada sprint.
+ •   Promover el aprendizaje y perfeccionamiento de todos los miembros del equipo de todas las tareas involucradas
+     en el desarrollo.
+ •   Auto-gestión: de ninguna manera el Scrum Master o el Dueño de Producto le explica al equipo como transformar
+     el Backlog de Producto en incrementos de funcionalidad potencialmente entregable.
+ •   El equipo tiene autonomía para deﬁnir cómo se debe cumplir este objetivo y cómo organizar el trabajo de todos
+     sus miembros para hacerlo de la mejor manera posible, pidiendo claridad y apoyo del Dueño de Producto
+     cuando es necesario.
+ •   Tamaño recomendado: 7 persona +/- 2 (sin Dueño de Producto y Scrum Master)
+        • Cuando son menos de cinco, hay menos interacciones y como consecuencia hay menos productividad.
+        • Si hay más de nueve personas, se requiere demasiada coordinación y se puede generar demasiada
+            complejidad en las actividades grupales de Scrum.                                                       32
+
+===== PAGINA 23 =====
+
+Artefactos 1/4
+
+Backlog de Producto
+
+  •   Deﬁnición: es una lista única, pública y dinámica priorizada de requerimientos
+  •   Algunos de estos requerimientos tienen una estimación de alto nivel de esfuerzo o complejidad.
+  •   Representa el "qué" esperado del producto, sin preocuparse por el "cómo"
+
+Historias de Usuario:
+
+  •   Forma de escribir un ítem del Backlog de Producto que se enfoca en la necesidad de los involucrados de
+      entender como la funcionalidad se va a usar.
+  •   Permite al equipo entender la perspectiva del usuario antes de elegir una forma de implementarlo.
+  •   Se escribe de la forma siguiente:
+        • Como [un usuario], puedo [una funcionalidad] para [un beneﬁcio].
+        • Por ejemplo: "Como usuario no registrado, puedo reservar consultar los vuelos precios de los vuelos
+             para calcular el presupuesto de mi viaje ".
+  •   Épica: historia de usuario que no puede ser entregada tal y como se ha deﬁnido dentro de una sola iteración,
+      o que es suﬁcientemente grande como para ser partida en historias de usuario más pequeñas.                   33
+
+===== PAGINA 24 =====
+
+Artefactos 2/4
+
+Backlog de Sprint
+
+  •   Deﬁnición: conjunto reducido negociado de ítems del Backlog
+      de Producto que el equipo se compromete a completar
+      durante el tiempo alocado al Sprint.
+  •   Cada ítem incluido en el sprint es dividido en tareas
+      detalladas que el equipo va a completar, con una estimación
+      de duración que no supere un día de esfuerzo.
+  •   Es actualizado diariamente por el equipo, y muestra en cada
+      momento las tareas pendientes, en curso y terminadas para
+      completar los ítems del sprint, así como una estimación del
+      esfuerzo pendiente de cada tarea no terminada y a quién está
+      asignada la tarea.
+  •   Se suele utilizar un Tablero de Sprint como forma de
+      visualizar el Backlog de Sprint, o algún otro soporte
+      herramental que permite darle visibilidad.
+                                                                     34
+
+===== PAGINA 25 =====
+
+Artefactos 3/4
+
+Diagrama de Burndown
+
+ •   Forma gráﬁca de mostrar el avance de un sprint
+
+
+
+
+ •   En este ejemplo vemos un sprint de 20 días de duración, con un esfuerzo restante estimado inicial de 190
+     horas.                                                                                                     35
+
+===== PAGINA 26 =====
+
+Artefactos 4/4
+
+Estimaciones de Alto-Nivel
+
+  •   El Equipo determina una estimación de alto nivel de cada uno de los elementos del Backlog de Producto
+      presentados
+  •   Para eso puede ser necesario tomar algunas decisiones iniciales de diseño y hacer preguntas adicionales al
+      Dueño de Producto para asegurar un buen entendimiento del ítem.
+
+
+Técnicas de estimación
+
+  •   Planning Poker
+  •   T-Shirt Sizing
+  •   Wideband Delphi
+
+
+
+
+                                                                                                                   36
+
+===== PAGINA 27 =====
+
+Ceremonias 1/4
+
+Planiﬁcación
+
+  •   ¿Cuándo?: Al iniciar el sprint, es la primera actividad de cada sprint.
+  •   Participantes: Dueño de Producto + Scrum Master + Equipo
+  •   Objetivos: que el equipo entienda los ítems más prioritarios, que el equipo y Dueño de Producto acuerden el
+      Sprint Backlog, que el equipo deﬁna las tareas requeridas para construir las funcionalidades
+  •   Duración: entre dos y ocho horas.
+  •   Artefactos Involucrados
+        • Backlog de Producto
+        • Backlog de Sprint
+  •   Dinámica
+        • Entendimiento y Selección de Ítems del Backlog de Producto
+        • Deﬁnición del Backlog de Sprint
+
+
+
+
+                                                                                                                    37
+
+===== PAGINA 28 =====
+
+Ceremonias 2/4
+
+Reunión diaria
+
+  •   ¿Cuándo?: Una vez por día, en un horario ﬁjo. Se recomienda la primera hora del día de trabajo.
+  •   Participantes: Scrum Master + Equipo + Dueño de Producto (opcional)
+  •   Objetivos: Que los miembros del Equipo de Desarrollo sincronicen sus tareas, comuniquen sus avances y
+      reporten al Scrum Master cualquier impedimento que pueda frenar o bloquear su trabajo.
+  •   Duración: Menor a quince minutos
+  •   Artefactos Involucrados:
+        • Backlog de Sprint
+  •   Dinámica: se hacen las siguientes preguntas a cada miembro del equipo uno por uno:
+        • ¿Qué hiciste desde la última reunión diaria?
+        • ¿Qué vas a hacer hasta la próxima reunión diaria?
+        • ¿Hay algún obstáculo que frena o bloquea tu trabajo?
+  •   Finalmente el Scrum Master suele actualizar el Diagrama de Burndown
+
+
+
+                                                                                                              38
+
+===== PAGINA 29 =====
+
+Ceremonias 3/4
+
+Revisión
+
+  •   ¿Cuándo? El último día del sprint.
+  •   Participantes: Scrum Master + Equipo + Dueño de Producto + Otros Involucrados/Interesados
+  •   Objetivos
+        • Que los interesados en el producto puedan visualizar y/o experimentar las funcionalidades construidas
+             durante el sprint.
+        • Que el Dueño de Producto pueda aceptar o rechazar dichas funcionalidades.
+        • Que los interesados en el producto puedan elaborar eventuales mejoras al producto en base a lo visto.
+  •   Duración: una o dos horas para exponer todas las funcionalidades desarrolladas.
+  •   Artefactos Involucrados:
+        • Incremento de Funcionalidad Potencialmente Deployable
+  •   Dinámica
+        • Breve presentación de los ítems del Backlog de Producto comprometidos
+        • Demostración con el software andando de las funcionalidades desarrolladas
+        • El Dueño de Producto puede pedir pasar a producción algunas funcionalidades terminadas
+        • El Scrum Master anuncia la fecha y lugar de la próxima reunión de Revisión                            39
+
+===== PAGINA 30 =====
+
+Ceremonias 4/4
+
+Retrospectiva
+  • ¿Cuándo? Al ﬁnalizar el sprint, es la última actividad del sprint.
+  • Participantes: Scrum Master + Equipo + Dueño de Producto (opcional)
+  • Objetivos: Inspeccionar los procesos de trabajo y las interacciones que ocurrieron en el último sprint para
+      detectar fortalezas del equipo y oportunidades de mejora. Se busca acordar unas pocas acciones concretas
+      de mejora a implementar en el próximo sprint para hacerlo más productivo.
+  • Duración: entre una y tres horas (varía según la cantidad de personas y la duración del sprint).
+  • Artefactos Involucrados:
+        • No aplica.
+  • Dinámica: Actividades grupales facilitadas por el Scrum Master los puntos siguientes:
+        • ¿Qué mecanismos, procedimientos o interacciones han funcionado bien en este sprint?
+        • ¿Qué mecanismos, procedimientos o interacciones hay que mejorar?
+
+OPTATIVA: Reﬁnamiento del Backlog
+ • ¿Cuándo? Durante el sprint
+ • Objetivo: Revisión, ordenamiento, unión de HU, reestimación, etc.
+                                                                                                                  40
+
+===== PAGINA 31 =====
+
+Deﬁnition of Ready (DoR)
+
+Deﬁnición de “listo”
+ ●   Sirve para evaluar el trabajo antes de que el equipo comience a desarrollarlo.
+ ●   Deﬁne una tarea, historia de usuario o punto de historia, y permite actuar de inmediato si se trabaja con
+     Scrum.
+ ●   A qué clientes se dirige: sus motivaciones, problemas y necesidades.
+ ●   Las tareas requeridas: si aportan valor para el negocio y el usuario, y si son claras y factibles.
+ ●   Los requisitos técnicos: recursos disponibles, enfoque o solución técnica y capacidad de prueba.
+ ●   Las estimaciones de tiempo: plazos para completar el trabajo y acuerdo con los interesados.
+
+
+
+
+                                                                                                                 42
+
+===== PAGINA 32 =====
+
+Deﬁnition of Done (DoD)
+
+Deﬁnición de “terminado”
+
+  •   Conjunto de criterios que deﬁnen cuándo un incremento de producto se considera completo y listo para
+      su entrega a los clientes.
+  •   Entendimiento común entre todos los miembros del equipo.
+  •   Tener criterios claros ayuda a enfocarse en la entrega de valor en cada sprint y a minimizar retrabajos.
+  •   Toda la organización participa en la creación de la DoD, incluidos desarrolladores, testers, product owners
+      y demás interesados.
+  •   Se garantiza que todos utilicen la misma guía y checklist antes de marcar una tarea como ﬁnalizada
+
+
+
+
+                                                                                                                    43
+

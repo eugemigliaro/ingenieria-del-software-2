@@ -1,5 +1,7 @@
 # Fundamentos, procesos y ciclos de vida
 
+> **Primer parcial:** entran las tres definiciones de Ingeniería de Software y los modelos cascada, prototipo, incremental y espiral. Quedan fuera SWEBOK, vocabulario operativo, crisis del software, Deming/PDCA, ética y *No Silver Bullet*. Ver [alcance detallado](../parcial-1-alcance.md#introducción-y-ciclos-de-vida). [N-2026-09-07-alcance-primer-parcial]
+
 ## Ingeniería de Software
 
 La Ingeniería de Software abarca todos los aspectos de producción de software, desde la especificación inicial hasta el mantenimiento. El material reúne tres énfasis complementarios: Sommerville pone el foco en el ciclo completo; Pressman, en la combinación de proceso, métodos y herramientas para entregar calidad bajo restricciones; Jacobson, en métodos para construir software complejo, orientación a objetos y casos de uso. [CL01-P, p. 2]; [CL01-P, p. 3]; [CL01-P, p. 4]

@@ -1,6 +1,6 @@
 # Preguntas de repaso
 
-Preguntas para recuperación activa. Las cinco preguntas finales reproducen los ejes del Parcial 1; conviene responderlas conectando páginas temáticas y justificando las relaciones.
+Preguntas para recuperación activa. Para el primer parcial vigente, priorizar las preguntas 1, 3–4, 7–21, 23–25, 28–32 y 34–38. Las preguntas 2, 5–6, 22, 26–27 y 33 incluyen contenido retirado del recorte; se conservan como ampliación. Las cinco preguntas finales pertenecen al parcial anterior, pero trabajan relaciones entre temas que siguen dentro del alcance actual. Ver [alcance detallado](../parcial-1-alcance.md). [N-2026-09-07-alcance-primer-parcial] [N-2026-09-07-parkinson-primer-parcial]
 
 ## Fundamentos, procesos y ciclos de vida
 
@@ -33,7 +33,7 @@ Preguntas para recuperación activa. Las cinco preguntas finales reproducen los 
 ## Estimación
 
 20. Diferenciá tamaño, esfuerzo, complejidad y duración con un ejemplo propio.
-21. ¿Cómo influyen la Ley de Parkinson y la presión por dar un único número en la calidad de una estimación?
+21. ¿Qué plantea la Ley de Parkinson y cómo puede afectar la planificación y la estimación de un proyecto?
 22. ¿Cuándo preferirías PCU, PF, Story Points, PERT o COCOMO?
 23. Aplicá PERT a un escenario optimista de 4 días, más probable de 7 y pesimista de 16.
 24. ¿Por qué los Story Points no deben interpretarse directamente como horas?
@@ -50,9 +50,9 @@ Preguntas para recuperación activa. Las cinco preguntas finales reproducen los 
 32. Redactá un caso positivo y uno negativo en Given-When-Then para una regla de negocio.
 33. ¿Qué dimensiones adicionales deben probarse en un sistema que incorpora IA generativa?
 
-## Ejes del Parcial 1
+## Ejes del parcial anterior
 
-34. ¿Cómo abordan las técnicas ágiles el impacto de la Ley de Parkinson frente a los enfoques predictivos, especialmente con requisitos cambiantes? [PARCIAL1, p. 1]
+34. ¿Cómo abordan las técnicas ágiles el impacto de la Ley de Parkinson frente a los enfoques predictivos, especialmente con requisitos cambiantes? [PARCIAL1, p. 1] [N-2026-09-07-parkinson-primer-parcial]
 35. ¿Qué relación existe entre los modelos de ciclo de vida y la deuda técnica? [PARCIAL1, p. 1]
 36. ¿Cómo se relacionan las prácticas de XP con planificación, aseguramiento y control de calidad? [PARCIAL1, p. 1]
 37. ¿Cómo se conectan las técnicas de estimación informales con Business Model Canvas durante las etapas iniciales? [PARCIAL1, p. 1]

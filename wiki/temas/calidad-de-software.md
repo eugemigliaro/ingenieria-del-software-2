@@ -1,5 +1,7 @@
 # Calidad de software
 
+> **Primer parcial:** entran gestión, costos, deuda técnica, QA/QC, verificación/validación, pruebas, documentos y el concepto de Given–When–Then. Quedan fuera las cinco perspectivas, casos, herramientas y calidad con IA. Deuda técnica, sus cuadrantes, QC y QA están marcados como muy importantes. Ver [alcance detallado](../parcial-1-alcance.md#calidad). [N-2026-09-07-alcance-primer-parcial]
+
 ## Calidad como concepto multidimensional
 
 La calidad no equivale solamente a ausencia de bugs: incluye objetivos funcionales y no funcionales, tiempo, costo y capacidad sostenible de mantenimiento y evolución. [CL06-A, p. 1] Puede observarse desde cinco perspectivas:

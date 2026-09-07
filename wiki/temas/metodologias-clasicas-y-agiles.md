@@ -1,5 +1,7 @@
 # Metodologías clásicas y ágiles
 
+> **Primer parcial:** entran criterios de selección, enfoque estructurado/SSADM, orientación a objetos, RUP, PRINCE2, XP, Lean, TDD, Kanban y Scrum. Quedan fuera la introducción general a agilidad, Manifiesto Ágil, variantes, críticas e IA. Ver [alcance detallado](../parcial-1-alcance.md#metodologías). [N-2026-09-07-alcance-primer-parcial]
+
 ## Elegir según el contexto
 
 La gestión de proyectos busca controlar alcance, tiempo, costo y calidad para satisfacer necesidades de cliente y negocio. La selección metodológica depende, entre otros factores, del tamaño y complejidad, la experiencia del equipo y la claridad o estabilidad de los requisitos. [CL02-P, p. 2]; [CL02-P, p. 3]

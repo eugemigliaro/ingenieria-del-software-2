@@ -1,5 +1,7 @@
 # Estimación de proyectos de software
 
+> **Primer parcial:** entran Ley de Parkinson, PCU —sin la lámina de cálculo final—, Planning Poker, Story Points, PERT, juicio experto, T-Shirt Sizing y conceptos clave. Quedan fuera Puntos de Función, COCOMO y estimadores personalizados. Parkinson es una excepción confirmada al recorte del PDF. Ver [alcance detallado](../parcial-1-alcance.md#estimación). [N-2026-09-07-parkinson-primer-parcial]
+
 ## Qué se intenta estimar
 
 Estimar sostiene decisiones de alcance, presupuesto, recursos, riesgo y viabilidad; una cifra deficiente puede producir sobrecostos, retrasos, mala asignación y problemas de calidad. [CL05-A, p. 1]; [CL05-A, p. 2] Antes de elegir una técnica hay que separar:
@@ -15,7 +17,7 @@ El material distingue explícitamente estas cuatro variables. [CL05-P, p. 22]; [
 
 ## Incertidumbre y Ley de Parkinson
 
-La Ley de Parkinson sostiene que el trabajo tiende a expandirse hasta ocupar el tiempo disponible. En planificación, alerta contra plazos arbitrariamente holgados y contra confundir una fecha impuesta con una estimación realista. [CL05-P, p. 5]; [CL05-P, p. 6]; [CL05-A, p. 1]
+La Ley de Parkinson sostiene que el trabajo tiende a expandirse hasta ocupar el tiempo disponible. En planificación, alerta contra plazos arbitrariamente holgados y contra confundir una fecha impuesta con una estimación realista. El tema entra en el primer parcial aunque sus diapositivas no aparezcan en `P1-CL05`. [CL05-P, p. 5]; [CL05-P, p. 6]; [CL05-A, p. 1]; [N-2026-09-07-parkinson-primer-parcial]
 
 La actividad inicial de la cátedra remarca dos buenas prácticas: expresar rangos y supuestos, y admitir cuando falta información en lugar de fabricar precisión. [CL05-P, p. 2]; [CL05-P, p. 4]
 

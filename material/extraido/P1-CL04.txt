@@ -1,0 +1,700 @@
+FUENTE: P1-CL04
+TITULO: Primer parcial: selección oficial de Productos Digitales
+ORIGINAL: material/catedra/teoria/parcial-1-seleccion-productos-digitales.pdf
+PAGINAS: 32
+
+===== PAGINA 1 =====
+
+Ingeniería de Software
+
+
+
+
+       Productos digitales con Design Thinking +
+       Canvas + Lean Startup
+
+===== PAGINA 2 =====
+
+Lean Startup
+
+Introducción a Lean Startup
+
+ ●   Lean Startup es un enfoque para
+     construir negocios y productos de
+     manera eﬁciente.
+ ●   Popularizado por Eric Ries (2011), se centra
+     en
+     validar ideas rápidamente con los clientes.
+ ●   Reduce el riesgo y fomenta la iteración
+     rápida.
+
+
+
+
+                                                    2
+
+===== PAGINA 3 =====
+
+Lean Startup
+
+Build-Measure-Learn: Concepto Central
+
+ ●    Construir: Crear prototipos rápidos o MVPs.
+ ●    Medir: Recopilar datos de los clientes.
+ ●    Aprender: Ajustar el producto basándose
+      en los datos.
+
+
+Ciclo B-M-L Completo
+
+1. Formular hipótesis → 2. Construir PMV → 3.
+Lanzar a clientes.
+4. Medir comportamiento → 5. Analizar resultados.
+6. Aprender y decidir próximo experimento o pivot.
+
+Meta: acortar el tiempo total de la vuelta al
+mínimo posible.                                      3
+
+===== PAGINA 4 =====
+
+Lean Startup - Construir
+
+●   Desarrollar un Producto Mínimo Viable (PMV - MVP) orientado a hipótesis.
+●   Plantear hipótesis de valor y de crecimiento antes de codiﬁcar.
+●   Diseñar experimentos rápidos; minimizar desperdicio y tiempo de ciclo.
+●   Herramientas:
+     ○ Prototipos rápidos (rapid prototyping): maquetas o versiones simpliﬁcadas del producto —a veces
+          solo un boceto interactivo— en horas o pocos días. Permiten validar hipótesis de valor con
+          usuarios reales antes de invertir en desarrollo completo
+     ○ Feature ﬂags (banderas de funcionalidades): Interruptores en el código que activan o desactivan
+          características para segmentos de usuarios sin necesidad de volver a desplegar. Facilitan
+          experimentos A/B, lanzamientos graduales y la opción de revertir rápidamente si una hipótesis no
+          se conﬁrma.
+
+
+
+
+                                                                                                             4
+
+===== PAGINA 5 =====
+
+Lean Startup - Construir - MVP
+
+MVP (Minimum Viable Product): Definición y Ejemplos
+
+ ●   Un MVP es un producto con las características mínimas necesarias para probar una
+     hipótesis.
+ ●   Permite ahorrar tiempo y recursos mientras se valida la idea.
+ ●   Ejemplo:
+      ○ Dropbox utilizó un video para validar el interés del público antes de construir la
+           plataforma.
+      ○ MVP: video animado que mostraba la experiencia de uso.
+      ○ Métricas: lista de espera creció de 5.000 a 75.000 suscriptores.
+      ○ Aprendizaje: alta demanda → inversión en desarrollo completo.
+      ○ Reduce riesgo antes de construir infraestructura costosa.
+
+
+
+
+                                                                                             5
+
+===== PAGINA 6 =====
+
+Lean Startup - Medir
+
+●   Deﬁnir métricas accionables y comparables (evitar métricas vanidosas).
+●   Usar experimentos controlados (A/B testing, cohortes).
+●   Capturar datos cuantitativos y cualitativos en tiempo real.
+●   Instrumentación:
+      ○ Analytics (analítica de producto): Plataformas que recopilan y visualizan métricas de uso
+          (tiempo de sesión, tasa de retención, etc.). Su objetivo es traducir el comportamiento real
+          de los usuarios en indicadores accionables para validar hipótesis de valor o crecimiento.
+      ○ Logging (registro de eventos y errores): Registro estructurado de lo que sucede en la aplicación—
+          interaccio estados, fallos— con marcas de tiempo. Permite detectar patrones, diagnosticar problemas
+          rápidamente y medir el impacto técnico de cada experimento sin adivinar.
+      ○ Tracking de funnels (seguimiento de embudos): Instrumentación especíﬁca que mapea
+          los pasos clave del usuario (p. ej. visitar → registrarse → activar → pagar) y calcula las
+          tasas de conversión entre etapas. Revela dónde se “caen” los usuarios, priorizando
+          qué hipótesis probar o qué mejoras lanzar primero.
+
+
+
+                                                                                                            6
+
+===== PAGINA 7 =====
+
+Lean Startup - Medir - A/B testing
+
+Definición
+
+A/B Testing (o prueba A/B) es una técnica de
+experimentación que consiste en comparar dos
+versiones (A y B) de un elemento (página web,
+producto, funcionalidad, anuncio, etc.) para
+medir cuál obtiene mejores resultados en
+función de una métrica deﬁnida (conversión,
+clics, ventas, etc.).
+
+
+
+
+                                                7
+
+===== PAGINA 8 =====
+
+Lean Startup - Medir - A/B testing
+
+Características
+
+Objetivo principal: Validar hipótesis y mejorar
+la experiencia del usuario o los resultados de
+negocio.
+
+ ●    Comparación directa: Muestra dos
+      variantes de un mismo elemento a
+      grupos de usuarios similares.
+ ●    Basado en datos: Las decisiones se
+      fundamentan en métricas objetivas, no
+      en suposiciones.
+ ●    Iterativo: Se repite varias veces para
+      reﬁnar y optimizar de forma continua.
+
+                                                  8
+
+===== PAGINA 9 =====
+
+Lean Startup - Medir - A/B testing
+Fases / Componentes
+
+ ●   Hipótesis: Deﬁnir el cambio que se quiere probar y el objetivo de dicho cambio.
+ ●   Población y muestra: Seleccionar los usuarios o el tráfico que participará en el
+     experimento.
+ ●   Variante A: Versión de control (la versión actual o la más estable).
+ ●   Variante B: Versión experimental (con la modiﬁcación propuesta).
+ ●   Métricas: Deﬁnir qué se va a medir (tasa de clics, conversión, etc.).
+
+Proceso
+ ●   Planteamiento de la hipótesis: << qué se espera mejorar y por qué >>.
+ ●   Diseño del experimento: Conﬁgurar las variantes, el porcentaje de tráﬁco asignado, las herramientas
+     de medición, etc.
+ ●   Ejecución: Mostrar simultáneamente la versión A y la versión B a diferentes usuarios.
+ ●   Recolección de datos: Registrar interacciones, conversión, tiempo de permanencia, etc.
+ ●   Análisis de resultados: Comparar métricas y evaluar si la diferencia es estadísticamente signiﬁcativa.
+ ●   Conclusión y acción: Adoptar la versión ganadora o diseñar un nuevo experimento.                         9
+
+===== PAGINA 10 =====
+
+Lean Startup - Medir - A/B testing
+
+Buenas prácticas
+
+ ●   Deﬁnir métricas claras antes de iniciar la prueba (conversiones, clics, etc.).
+ ●   Tener una sola variable de cambio por prueba para aislar el efecto.
+ ●   Usar herramientas de análisis y seguimiento para garantizar exactitud en los datos.
+ ●   Mantener la prueba el tiempo suficiente para obtener resultados estadísticamente
+     signiﬁcativos.
+ ●   Documentar todo el proceso (hipótesis, resultados, conclusiones) para reutilizar el
+     aprendizaje.
+
+
+
+
+                                                                                           10
+
+===== PAGINA 11 =====
+
+Lean Startup - Medir - A/B testing
+
+Casos de uso
+
+ ●    Optimización de páginas de aterrizaje (landing pages): Probar diferentes diseños y llamadas a la acción
+      para aumentar conversiones.
+ ●    Mejora de funnels de compra: Ajustar pasos en el proceso de checkout para reducir carritos
+      abandonados.
+ ●    Pruebas en campañas de email marketing: Evaluar asuntos, contenidos o botones de llamada a la
+      acción.
+ ●    Diseño de interfaces: Experimentar con distintos layouts, colores, tamaños de botones o mensajes.
+
+  ●  Página web de e-commerce: Cambiar el color de un botón “Comprar ahora” (A: azul, B: verde) para
+Ejemplos
+     medir el impacto en las ventas.
+  ●  Aplicación móvil de reservas: Probar distintos textos o iconos para el botón de “Reservar” y analizar la
+     tasa de reservas conﬁrmadas.
+  ●  Sitio de noticias: Comparar dos versiones de la portada (A: portada con una imagen principal
+     grande, B: portada con titulares principales en texto) y medir el tiempo de permanencia.                   11
+
+===== PAGINA 12 =====
+
+Lean Startup - Aprender
+
+●   Convertir datos en aprendizaje validado.
+●   Decidir “pivotar o perseverar” basados en evidencia.
+     ○      Pivotar: cambiar de rumbo —ajustar la propuesta de valor, el segmento de clientes, el
+          modelo de ingresos o la tecnología— porque la evidencia muestra que la hipótesis principal
+          no se confirma. No es “empezar de cero”; es redirigir la energía hacia una oportunidad mejor
+          fundamentada.
+     ○      Perseverar: seguir por el mismo camino porque los datos indican tracción, las métricas
+          clave mejoran de forma consistente y el problema-cliente parece bien encajado con la
+          solución.
+●   Documentar hallazgos y actualizar el backlog / hoja de ruta.
+●   Comunicación transparente para alinear al equipo e inversores.
+
+
+
+
+                                                                                                         12
+
+===== PAGINA 13 =====
+
+Design Thinking
+
+Introducción a Design Thinking
+
+ ●   Design Thinking es un
+     enfoque centrado en las
+     personas para resolver
+     problemas de manera
+     creativa.
+ ●   Se utiliza ampliamente en el
+     diseño de productos, servicios
+     y estrategias empresariales.
+ ●   Este enfoque fomenta la
+     innovación mediante la
+     combinación de empatía,
+     ideación y experimentación.
+
+
+                                      13
+
+===== PAGINA 14 =====
+
+Design Thinking
+
+Historia y Origen de Design Thinking
+
+ ●   Design Thinking surgió en la década de
+     1960 como un enfoque formalizado
+     para resolver problemas.
+ ●   Popularizado por ﬁrmas de diseño
+     como IDEO (Palm V, mouse de Apple),
+     su propósito es innovar en diversas
+     disciplinas.
+ ●   Conecta las ideas del diseño tradicional
+     con la resolución creativa de
+     problemas.
+
+
+
+
+                                                14
+
+===== PAGINA 15 =====
+
+Design Thinking
+
+Principios Fundamentales
+
+ ●    Empatía: Comprender profundamente las
+      necesidades de las personas.
+ ●    Colaboración: Trabajar con equipos
+      multidisciplinarios.
+ ●    Iteración: Probar, aprender y ajustar
+      continuamente.
+
+
+
+
+     Disclaimer: cualquier parecido con el Plan-Do-Check-Act
+     de
+              W. Edwards Deming NO es coincidencia.
+
+
+                                                               15
+
+===== PAGINA 16 =====
+
+Design Thinking - Empatizar
+
+Empatizar
+ ● Se observa y se conversa con los usuarios para entender sus motivaciones y problemas reales.
+ ● Se profundiza en sus experiencias cotidianas para descubrir necesidades ocultas.
+ ● El objetivo es obtener una visión clara de su contexto y emociones.
+ ● Herramientas clave: entrevistas, observación (registrar lo que la gente Actúa, el Entorno, las
+     Interacciones, los Objetos y los Usuarios) y mapas de empatía (lo que la persona dice, hace,
+     piensa y siente tras las entrevistas/observaciones).
+
+¿Cómo se aplica?
+Ingeniería de software – app de gestión de turnos médicos
+  ● Shadowing en recepciones de clínicas, entrevistas con pacientes y personal administrativo para
+      descubrir frustraciones: colas, llamados que se pierden, re-trabajo manual.
+
+Otro ámbito – Sistema de vasos reutilizables en el campus universitario
+ ● Observación en cafeterías/kioskos del campus, registro de hábitos: cuántos vasos descartables se
+      usan por hora, encuestas rápidas sobre barreras para llevar un vaso/termo propio.
+                                                                                                      16
+
+===== PAGINA 17 =====
+
+Design Thinking - Definir
+
+Definir
+ ● Se sintetiza toda la información recopilada para identiﬁcar patrones y problemáticas clave.
+ ● Se formula un reto de diseño que reﬂeje las necesidades esenciales del usuario.
+ ● Esta deﬁnición sirve como norte para orientar las soluciones posteriores.
+
+
+¿Cómo se aplica?
+Ingeniería de software – app de gestión de turnos médicos
+  ●         “Pacientes y recepcionistas necesitan un modo de reservar, conﬁrmar y reprogramar turnos que
+      reduzca esperas y llamadas fallidas, porque la experiencia actual les hace perder tiempo y genera
+      ausentismo del 18 %.”
+
+Otro ámbito – Sistema de vasos reutilizables en el campus
+ ●          “Los estudiantes y el personal desean consumir bebidas calientes sin generar residuos; sin
+      embargo, la falta de incentivos y logística de devolución produce 4000 vasos descartables al día.”
+
+                                                                                                           17
+
+===== PAGINA 18 =====
+
+Design Thinking - Idear (1 de 2)
+
+Idear
+  ● Se generan múltiples propuestas sin censura, promoviendo la creatividad y la colaboración.
+  ● Se valoran tanto las ideas realistas como las más arriesgadas o divergentes.
+  ● El ﬁn es obtener un abanico amplio de posibles respuestas al problema.
+  ● Utiliza técnicas como brainstorming (mayor número posible de ideas en poco tiempo, sin críticas),
+      mapas mentales (de una idea central, se ramiﬁcan en sub-ideas) y lluvias de ideas enfocadas (se
+      parte de una consigna muy acotada).
+
+
+¿Cómo se aplica?
+Ingeniería de software – app de gestión de turnos médicos
+  ● Taller de co-creación con médicos, recepcionistas y usuarios ﬁnales: mapas de viaje, Crazy 8s, dot
+      voting; surgen ideas como recordatorios vía WhatsApp, cola virtual y kioscos de auto-check-in.
+
+Otro ámbito – Sistema de vasos reutilizables en el campus
+ ● Brainstorming con estudiantes, kioskeros y personal de limpieza; se proponen depósitos
+      inteligentes, “tarro-token” de ﬁdelidad, aplicación que muestra puntos de devolución más cercanos.   22
+
+===== PAGINA 19 =====
+
+Design Thinking - Idear (2 de 2)
+
+Idear - Técnicas de Brainstorming y
+adaptaciones
+  ● Lluvia de ideas: Reunir al equipo para generar una lista de ideas sin restricciones.
+  ● Mapas mentales: Organizar ideas visualmente en un mapa para encontrar relaciones.
+  ● Mapas de viaje (Customer Journey Maps): visualiza, paso a paso, cómo una persona (cliente,
+      usuario, estudiante, etc.) interactúa con tu producto o servicio a lo largo del tiempo.
+        ○ Objetivo: descubrir puntos de dolor, momentos de verdad y oportunidades de mejora.
+        ○ Componentes típicos: fases del viaje, acciones del usuario, emociones, puntos de contacto,
+            métricas y oportunidades.
+  ● Crazy 8s: ideación exprés surgido en Google Ventures.
+        ○ Dinámica: cada participante dobla una hoja A4 tres veces ⇒ 8 secciones. En 8 minutos dibuja 8
+            ideas (1 minuto por cuadro).
+        ○ Objetivo: forzar cantidad sobre calidad inicial; rompe bloqueos creativos y saca a la luz
+            soluciones insospechadas.
+  ● Dot Voting (votación por puntos): método democrático y rápido para priorizar ideas en grupo.
+        ○ Cómo funciona: se pegan las ideas (post-its, bocetos) en la pared. Cada persona recibe X
+            adhesivos (“dots”) y los coloca sobre las propuestas que le parecen más valiosas.                23
+        ○ Resultado: las ideas con más puntos son las que pasan a la siguiente ronda (prototipado, testeo,
+
+===== PAGINA 20 =====
+
+Design Thinking - Prototipar
+
+Prototipar
+ ● Se crean representaciones simples o maquetas de las ideas más prometedoras.
+ ● Estas versiones iniciales permiten materializar conceptos y detectar fallos temprano.
+ ● Se busca aprender rápido y ajustar la solución a bajo costo.
+ ● Tipos comunes: mockups (apariencia), wireframes (estructura), prototipos funcionales y storyboards.
+ ● Herramientas: software de diseño, materiales físicos, plataformas digitales.
+
+
+¿Cómo se aplica?
+Ingeniería de software – app de gestión de turnos médicos
+  ● Mockups en Figma de la app, más un prototipo físico de tótem de auto-check-in impreso en
+      3D; se conectan a una API simulada.
+
+Otro ámbito – Sistema de vasos reutilizables en el campus
+ ● Prototipo de vaso reusable con código QR grabado láser y un contenedor retornable hecho con
+      cartón reciclado; ﬂujo de la app de escaneo en papel impreso.
+                                                                                                         24
+
+===== PAGINA 21 =====
+
+Design Thinking - Testear
+
+Testear
+ ● Se evalúan los prototipos con usuarios o personas implicadas.
+ ● Se recogen opiniones y sugerencias para mejorar la propuesta.
+ ● Con los hallazgos, se afinan o modifican las soluciones antes de implementarlas.
+ ● Métodos comunes incluyen pruebas de usuario, entrevistas, y prototipos interactivos.
+ ● Estas herramientas permiten obtener feedback valioso, identiﬁcar fallas, y realizar mejoras antes de
+      la implementación ﬁnal.
+
+
+¿Cómo se aplica?
+Ingeniería de software – app de gestión de turnos médicos
+  ● “Marcha blanca”: Prueba piloto en dos consultorios durante dos semanas: se mide reducción de
+      llamadas en un 42 % y satisfacción en 4,6/5; se detecta que adultos mayores necesitan tipografía más
+      grande → nueva iteración.
+
+Otro ámbito – Sistema de vasos reutilizables en el campus
+ ● Prueba piloto en una cafetería/kiosko: recuperación de vasos del 72 % la primera semana; entrevistas      25
+      revelan miedo a las multas por no devolver → se agrega recordatorio push 24 hs antes y se baja la
+
+===== PAGINA 22 =====
+
+Canvas
+
+Introducción al Business Model Canvas
+
+ ●   El Business Model Canvas es una
+     herramienta visual para diseñar modelos
+     de negocio.
+ ●   Fue creado por Alexander Osterwalder
+     en 2008.
+ ●   Permite entender y analizar los
+     componentes clave de un negocio
+
+
+
+
+                                               22
+
+===== PAGINA 23 =====
+
+Canvas
+
+1. Segmentos de Clientes
+
+  ●   Identiﬁcar a los grupos específicos de personas o empresas que se quieren
+      atender.
+  ●   Analizar sus necesidades, comportamientos y características demográﬁcas.
+  ●   Herramientas: encuestas, entrevistas y análisis de datos.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ Pacientes ambulatorios de clínicas privadas.
+      ○ Recepcionistas / personal administrativo.
+      ○ Médicos y gestores de agenda.
+ ● Sistema de vasos reutilizables en el campus
+      ○ Estudiantes y personal universitario que consumen bebidas “para llevar”.
+      ○ Operadores de cafeterías internas.
+      ○ Área de sostenibilidad del campus.                                         23
+
+===== PAGINA 24 =====
+
+Canvas
+
+2. Propuesta de Valor
+
+  ●   Describe cómo un producto o servicio resuelve problemas o satisface necesidades de los
+      clientes.
+  ●   Herramientas comunes: benchmarking y desarrollo de prototipos.
+  ●   Se centra en ofrecer algo único o mejor que la competencia.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ “Reservá, conﬁrmá o reprogramá turnos en 3 clics”.
+      ○ Cola virtual que reduce esperas presenciales.
+      ○ Recordatorios automáticos/conﬁrmaciones de turnos para minimizar ausentismo.
+ ● Sistema de vasos reutilizables en el campus
+      ○ “Tomá tu café sin generar basura”.
+      ○     Incentivos
+       ○ Sistema       (puntos
+                   simple de o descuentos)  por cada
+                             préstamo–devolución     vasoy penalización digital.
+                                                  con QR
+       devuelto.                                                                               24
+
+===== PAGINA 25 =====
+
+Canvas
+
+3. Canales
+
+  ●   Los canales describen cómo una empresa entrega su propuesta de valor a los
+      clientes.
+  ●   Tipos: canales directos (ventas propias) e indirectos (distribuidores, socios).
+  ●   Ejemplos: tiendas físicas, e-commerce, apps móviles.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ App móvil (iOS/Android).
+      ○ Portal web.
+      ○ Kioscos de auto-check-in en la recepción.
+ ● Sistema de vasos reutilizables en el campus
+      ○ App/web para registro y escaneo de vasos.
+      ○    Puntos en
+       ○ Carteleríafísicos de depósito cony redes
+                        kioskos/cafeterías lectoresociales del campus.
+       QR.                                                                              25
+
+===== PAGINA 26 =====
+
+Canvas
+
+4. Relaciones con Clientes
+
+  ●   Describen cómo una empresa interactúa con los clientes durante el ciclo de vida del
+      producto.
+  ●   Estrategias: autoservicio, asistencia personalizada, comunidades de usuarios.
+  ●   Ejemplos: atención al cliente 24/7, foros en línea, programas de ﬁdelización.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ Autoservicio digital 24/7.
+      ○ Chatbot de soporte integrado con WhatsApp.
+      ○ Onboarding asistido para clínicas (B2B).
+ ● Sistema de vasos reutilizables en el campus
+      ○ Comunidad online con ranking de “eco-puntos”.
+      ○○     Stands
+           Emails/pushde notiﬁcations
+                         concientización
+                                      de en eventos de devolución.
+                                         recordatorio
+       estudiantiles.                                                                       26
+
+===== PAGINA 27 =====
+
+Canvas
+
+5. Fuentes de Ingresos
+
+  ●   Las fuentes de ingresos describen cómo una empresa genera ingresos por cada segmento de
+      clientes.
+  ●   Modelos: venta de productos, suscripciones, licencias, publicidad.
+  ●   Ejemplo: Netﬂix (suscripción), Google Ads (publicidad).
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ Suscripción SaaS para clínicas (tier por cantidad de profesionales).
+      ○ Tarifa por transacción para SMS/WhatsApp optional.
+      ○ Integraciones premium con HIS/ERP.
+ ● Sistema de vasos reutilizables en el campus
+      ○ Convenio de prestación con la universidad (fee por servicio gestionado).
+      ○○     Venta de de
+           Sponsoreo  vasos de de
+                              repuesto
+                         marcas    caféalsustentable.
+       público.                                                                                 27
+
+===== PAGINA 28 =====
+
+Canvas
+
+6. Recursos Clave
+
+  ●   Los recursos clave son los activos esenciales que una organización necesita para funcionar.
+  ●   Incluyen infraestructura, talento humano, tecnología y otros recursos especíﬁcos según la
+      industria.
+  ●   La gestión adecuada de estos recursos es crucial para la sostenibilidad del negocio.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ Plataforma cloud (servidores, bases de datos).
+      ○ Equipo de desarrollo y UX.
+      ○ Data de turnos para analítica.
+ ● Sistema de vasos reutilizables en el campus
+      ○ Stock de vasos con QR durables.
+      ○○ App  Puntos
+                 de de    recolección
+                     tracking y backend.
+       inteligentes.                                                                                28
+
+===== PAGINA 29 =====
+
+Canvas
+
+7. Actividades Clave
+
+  ●   Las actividades clave son los procesos esenciales para el éxito de la iniciativa.
+  ●   Incluyen tareas como producción, distribución y desarrollo de productos o
+      servicios.
+  ●   Identiﬁcar y optimizar estas actividades es crucial para la sostenibilidad.
+
+
+ Ejemplos:
+  ● App de gestión de turnos médicos
+       ○ Desarrollo y mantenimiento del software.
+       ○ Soporte a clínicas y entrenamiento de usuarios.
+       ○ Monitoreo de analítica y uptime.
+  ● Sistema de vasos reutilizables en el campus
+       ○ Logística de limpieza y redistribución de vasos.
+       ○○    Campañas dede
+           Mantenimiento  engagement
+                             máquinas ylectoras y app.
+        gamiﬁcación.                                                                      29
+
+===== PAGINA 30 =====
+
+Canvas
+
+8. Socios Clave
+
+  ●   Los socios clave son alianzas estratégicas necesarias para el éxito.
+  ●   Incluyen proveedores, socios tecnológicos y colaboraciones comerciales.
+  ●   Una buena gestión de estas relaciones es esencial para maximizar
+      recursos.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ Proveedores de mensajería (Twilio, WhatsApp Business).
+      ○ Integradores de software médico.
+      ○ Empresas de hardware para kioskos autoservicio.
+ ● Sistema de vasos reutilizables en el campus
+      ○ Lavandería industrial o planta de lavado interna.
+      ○ Cafeterías concesionadas del campus.
+      ○ Fabricante de vasos reutilizables con QR.                               37
+
+===== PAGINA 31 =====
+
+Canvas
+
+9. Estructura de Costos
+
+  ●   La estructura de costos analiza los gastos relacionados con las actividades clave y los recursos
+      clave.
+  ●   Incluye costos ﬁjos, variables y de economías de escala.
+  ●   Optimizar estos costos mejora la sostenibilidad y rentabilidad del negocio.
+
+
+Ejemplos:
+ ● App de gestión de turnos médicos
+      ○ Infraestructura cloud y licencias.
+      ○ Sueldos del equipo tech y soporte.
+      ○ Marketing B2B y ventas consultivas.
+ ● Sistema de vasos reutilizables en el campus
+      ○ Compra y reposición de vasos.
+      ○ Operación del lavado y logística.
+      ○ Mantenimiento de puntos de depósito y la app.                                                    31
+
+===== PAGINA 32 =====
+
+Canvas
+
+Puntos clave
+
+ ●   Cada bloque se puede profundizar con métricas: CAC (cuánto se gasta para lograr un nuevo cliente),
+     LTV (valor total que un cliente aportará a la empresa durante toda su relación comercial), % de usuarios
+     activos, tasa de devolución de vasos, etc.
+ ●   Funciona como base para talleres: validar (o refutar) supuestos de cada celda con datos
+     reales o entrevistas.
+ ●   Armar indicadores clave: reducción de llamadas en la clínica; toneladas de residuos evitadas en el
+     campus.
+
+
+
+
+                                                                                                                32
+

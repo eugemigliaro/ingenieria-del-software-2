@@ -1,0 +1,118 @@
+FUENTE: P1-CL01
+TITULO: Primer parcial: selección oficial de Introducción a la Ingeniería de Software
+ORIGINAL: material/catedra/teoria/parcial-1-seleccion-clase-01.pdf
+PAGINAS: 12
+
+===== PAGINA 1 =====
+
+Introducción a la Ingeniería de Software
+
+
+
+• Sommerville: La ingeniería de software es una
+disciplina de la ingeniería que se ocupa de todos los
+aspectos de la producción de software, desde las
+primeras etapas de la especificación del sistema hasta el
+mantenimiento del sistema después de que ha entrado
+en uso.
+
+===== PAGINA 2 =====
+
+Introducción a la Ingeniería de Software
+
+
+
+• Pressman: La ingeniería de software es una
+tecnología en capas compuesta de un proceso, métodos
+y herramientas, cuyo objetivo es la producción de
+software de alta calidad que sea entregado a tiempo,
+dentro del presupuesto y que cumpla con los requisitos
+establecidos.
+
+===== PAGINA 3 =====
+
+Introducción a la Ingeniería de Software
+
+
+
+• Ivar Jacobson: La ingeniería de software es un
+conjunto de métodos y técnicas que se utilizan
+para construir software complejo. Jacobson
+destaca la importancia de la orientación a objetos
+y el uso de casos de uso como parte fundamental
+del desarrollo de software.
+
+===== PAGINA 4 =====
+
+Procesos de Desarrollo de Software
+
+
+
+• Introducción a los Ciclos de Vida: Los ciclos de vida
+del software son modelos que describen las fases y
+actividades desde la concepción hasta el retiro del
+software. Estos modelos ayudan a organizar y
+estructurar el desarrollo del software.
+
+===== PAGINA 5 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción del Modelo en Cascada: El modelo en
+cascada es un enfoque secuencial para el desarrollo de
+software, donde cada fase debe completarse antes de
+que la siguiente comience. Las fases típicas incluyen:
+requisitos, diseño, implementación, pruebas, despliegue
+y mantenimiento.
+
+===== PAGINA 6 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 7 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción del Modelo de Prototipo: El modelo de
+prototipo se centra en la creación rápida de un prototipo
+funcional que pueda ser evaluado por los usuarios. Este
+enfoque permite identificar y solucionar problemas
+desde etapas tempranas en el desarrollo del software.
+
+===== PAGINA 8 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 9 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción de los Modelos Incrementales: Los
+modelos incrementales implican desarrollar el software
+en    pequeños   incrementos    funcionales.     Cada
+incremento es una versión completa del producto,
+permitiendo la entrega rápida de funcionalidades
+esenciales.
+
+===== PAGINA 10 =====
+
+Modelos de Ciclo de Vida
+
+===== PAGINA 11 =====
+
+Modelos de Ciclo de Vida
+
+
+• Descripción del Modelo en Espiral: El modelo en
+espiral combina elementos de diseño y prototipado en
+un esfuerzo iterativo para construir un sistema. Este
+modelo se centra en la identificación y reducción de
+riesgos a través de iteraciones sucesivas.
+
+===== PAGINA 12 =====
+
+Modelos de Ciclo de Vida
+

@@ -1,5 +1,7 @@
 # Desarrollo de productos digitales
 
+> **Primer parcial:** entran Lean Startup, MVP, A/B testing, Design Thinking y los nueve bloques de Canvas. Quedan fuera las aplicaciones y casos de estudio indicados en el [alcance detallado](../parcial-1-alcance.md#productos-digitales). [N-2026-09-07-alcance-primer-parcial]
+
 ## Tres preguntas complementarias
 
 Un producto de software es una solución técnica a requisitos y problemas de usuario o negocio, pero también participa de un mercado y de una experiencia. [CL04-P, p. 15]; [CL04-A, p. 1] El material articula tres enfoques:
