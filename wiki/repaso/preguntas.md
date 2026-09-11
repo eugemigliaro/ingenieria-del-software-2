@@ -1,6 +1,6 @@
 # Preguntas de repaso
 
-Preguntas para recuperación activa. Para el primer parcial vigente, priorizar las preguntas 1, 3–4, 7–21, 23–25, 28–32 y 34–38. Las preguntas 2, 5–6, 22, 26–27 y 33 incluyen contenido retirado del recorte; se conservan como ampliación. Las cinco preguntas finales pertenecen al parcial anterior, pero trabajan relaciones entre temas que siguen dentro del alcance actual. Ver [alcance detallado](../parcial-1-alcance.md). [N-2026-09-07-alcance-primer-parcial] [N-2026-09-07-parkinson-primer-parcial]
+Preguntas para recuperación activa. Para el primer parcial vigente, priorizar las preguntas 1, 3–4, 7–21, 23–25, 28–32 y 34–38. Las preguntas 2, 5–6, 22, 26–27 y 33 incluyen contenido retirado del recorte; se conservan como ampliación. Las cinco preguntas finales pertenecen al parcial anterior, pero trabajan relaciones entre temas que siguen dentro del alcance actual. Ver [alcance detallado](../parcial-1-alcance.md). Para practicar con respuestas desarrolladas y en ciclos de dificultad creciente, ver el [banco del primer parcial](parcial-1-banco.md). [N-2026-09-07-alcance-primer-parcial] [N-2026-09-07-parkinson-primer-parcial]
 
 ## Fundamentos, procesos y ciclos de vida
 

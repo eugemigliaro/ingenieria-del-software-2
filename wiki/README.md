@@ -7,6 +7,7 @@ Este es el índice del conocimiento canónico compilado para Ingeniería del Sof
 - [Glosario](glosario.md)
 - [Dudas y conflictos](dudas-y-conflictos.md)
 - [Preguntas de repaso](repaso/preguntas.md)
+- [Banco de preguntas y respuestas del primer parcial](repaso/parcial-1-banco.md): 60 preguntas en cuatro ciclos de dificultad creciente, con respuestas desarrolladas y citadas.
 - [Alcance del primer parcial](parcial-1-alcance.md): detalle de qué diapositivas y temas entran y cuáles quedaron fuera.
 
 ## Temas
@@ -23,6 +24,7 @@ Este es el índice del conocimiento canónico compilado para Ingeniería del Sof
 2. Continuar con metodologías y luego con productos digitales.
 3. Estudiar estimación y calidad como capacidades transversales de planificación, seguimiento y mejora.
 4. Usar el [glosario](glosario.md) para recuperación rápida y las [preguntas](repaso/preguntas.md) para práctica activa.
+5. Para preparar el primer parcial, recorrer el [banco de preguntas y respuestas](repaso/parcial-1-banco.md) ciclo por ciclo: el primero cubre los cinco temas con definiciones, y cada ciclo siguiente vuelve sobre los mismos temas con mayor profundidad.
 
 ## Cobertura del material
 
