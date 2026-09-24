@@ -1,0 +1,637 @@
+FUENTE: CL08-P
+TITULO: Clase 8: vistas y estilos de arquitectura
+ORIGINAL: material/catedra/teoria/clase-08-presentacion-estilos-de-arquitectura.pdf
+PAGINAS: 59
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Estilos de arquitectura
+
+===== PAGINA 2 =====
+
+2
+
+===== PAGINA 3 =====
+
+3
+
+===== PAGINA 4 =====
+
+4
+
+===== PAGINA 5 =====
+
+5
+
+===== PAGINA 6 =====
+
+Views and Viewpoints
+
+•   Idea central: la arquitectura de un sistema es demasiado compleja para describirla desde un único
+    ángulo. Por eso se documenta mediante vistas (views) y puntos de vista (viewpoints).
+
+•   View: una representación de la arquitectura, hecha con un objetivo y para un grupo de interés (ej. vista
+    lógica, vista de procesos, vista de despliegue).
+
+•   Viewpoint: la plantilla o “receta” que deﬁne cómo construir una vista: qué notación usar, qué elementos
+    incluir, para quién está pensada.
+
+
+La vista lógica es un view, y el punto de vista lógico (que dice qué diagramas UML usar, qué mostrar, etc.) es
+el viewpoint.
+Ejemplo:
+  ● View: “diagrama de clases del sistema de ventas”
+  ● Viewpoint: “uso UML, muestro clases de dominio, omito infraestructura, target: devs”
+                                                                                                                 6
+
+===== PAGINA 7 =====
+
+Views and Beyond
+
+•    Es un método práctico para documentar arquitecturas usando el enfoque de views and viewpoints.
+
+•    Propone tres categorías de vistas:
+    • Módulo: cómo se organiza el software en unidades de código.
+    • Componente y conector: cómo interactúan los elementos en tiempo de ejecución.
+    • Asignación: cómo se mapean esos elementos al hardware, equipos o procesos.
+
+•    El “beyond” del título señala que además de vistas, hay que incluir información adicional: escenarios,
+     decisiones arquitectónicas, justiﬁcaciones, etc.
+
+                  Es como un “manual práctico” para aplicar la idea de views and viewpoints.
+
+
+
+
+                                                                                                              7
+
+===== PAGINA 8 =====
+
+IEEE 1471 (ahora ISO/IEC/IEEE 42010)
+
+•   IEEE 1471: reemplazado por 42010 en 20211
+
+•   Fue el primer estándar formal de descripción de arquitectura de software (año 2000).
+
+•   Introdujo oﬁcialmente los conceptos de views y viewpoints.
+
+•   Objetivo: que las arquitecturas sean documentadas de forma consistente y comprensible para distintos
+    stakeholders.
+
+•   Evolucionó al estándar actual ISO/IEC/IEEE 42010, que amplía y formaliza la práctica.
+
+•   ISO/IEC/IEEE 42010:2011: primer versión.
+
+•   ISO/IEC/IEEE 42010:2022: segunda versión y estándar vigente.
+
+                                                                                                       8
+
+===== PAGINA 9 =====
+
+9
+
+===== PAGINA 10 =====
+
+10
+
+===== PAGINA 11 =====
+
+11
+
+===== PAGINA 12 =====
+
+12
+
+===== PAGINA 13 =====
+
+13
+
+===== PAGINA 14 =====
+
+Vista Lógica y Vista de Procesos
+
+Vista lógica
+• Pregunta: ¿Cómo está organizado el sistema desde el punto de vista de las funcionalidades?
+• Foco: Estructura del software y sus elementos estáticos.
+• Contenido típico:
+  • Clases, objetos, módulos, capas.
+  • Relaciones de herencia, composición, asociaciones.
+  • Diagramas UML de clases o diagramas de componentes.
+
+Vista de procesos
+• Pregunta: ¿Cómo se comporta el sistema en tiempo de ejecución?
+• Foco: Aspectos dinámicos: concurrencia, comunicación, sincronización, rendimiento.
+• Contenido típico:
+  • Procesos, hilos, tareas concurrentes.
+  • Mensajes, colas, comunicación entre procesos.
+  • Diagramas UML de secuencia, de actividades, o de comunicación.
+                                                                                               14
+
+===== PAGINA 15 =====
+
+Vistas de Desarrollo y Vista Física
+
+Vista de desarrollo (o de implementación)
+• Pregunta: ¿Cómo se organiza el software en el entorno de desarrollo?
+• Foco: Estructura estática a nivel de módulos, componentes y paquetes, pensada para los desarrolladores.
+• Contenido típico:
+  • Paquetes, bibliotecas, frameworks.
+  • Organización en repositorios o directorios.
+  • Dependencias entre módulos.
+  • Diagramas UML de componentes o de paquetes.
+
+Vista física (o de despliegue)
+• Pregunta: ¿Dónde y cómo se ejecuta el sistema en la infraestructura física?
+• Foco: Asignación del software al hardware y redes.
+• Contenido típico:
+  • Nodos, servidores, contenedores, dispositivos.
+  • Topología de red, balanceadores de carga.
+  • Diagramas UML de despliegue.                                                                      15
+
+===== PAGINA 16 =====
+
+Vista de Escenarios
+
+Vista de escenarios (o casos de uso)
+• Pregunta: ¿Qué comportamientos clave validan que las otras vistas funcionan en conjunto?
+• Foco: Historias concretas de uso que atraviesan las demás vistas.
+• Contenido típico:
+  • Casos de uso detallados.
+  • Diagramas UML de casos de uso o secuencia.
+  • Narrativas de interacción usuario–sistema.
+
+
+
+
+                                                                                             16
+
+===== PAGINA 17 =====
+
+17
+
+===== PAGINA 18 =====
+
+18
+
+===== PAGINA 19 =====
+
+Documentación con Vista 4+1
+
+
+
+
+                              19
+
+===== PAGINA 20 =====
+
+Documentación con Vista 4+1 → Uso de UML
+
+
+
+
+                                           20
+
+===== PAGINA 21 =====
+
+Actividad
+
+https://www.researchgate.net/publication/282847758_Multi-View_Software_Architecture_Design_Case_St
+udy_of_a_Mission-Critical_Defense_System
+
+
+Identiﬁcar a qué vista corresponden las 10 ﬁguras
+
+Resumen:
+• Lógica = estructura funcional.
+• Procesos = ejecución dinámica.
+• Desarrollo = organización de código.
+• Física = despliegue en hardware.
+• Escenarios = validación de todas las anteriores.
+
+
+
+                                                                                                 21
+
+===== PAGINA 22 =====
+
+ Actividad                                                             Lógica   Desarrollo   Procesos   Física   Escenarios
+
+Figura 1: Mine Neutralization System main components                     X
+
+Figura 2: High-level use cases                                                                                       X
+
+Figura 3: Conceptual view (MVC aplicado al sistema)                      X
+
+Figura 4: Star-controller architectural style                                       X
+
+Figura 5: Mine Neutralization Vehicle subsystems                        ¿X?        ¿X?
+
+Figura 6: Layered architecture of the MNS                               ¿X?                    ¿X?
+
+Figura 7: Domain model of the MNS                                        X
+
+Figura 8: Detection and classification sonar suite high-level design     X
+
+
+Figura 9: MNS controller high-level design                               X
+
+
+Figura 10: High-level statechart of vehicle control operation                                   X
+                                                                                                                              22
+
+===== PAGINA 23 =====
+
+De la documentación al diseño de la Arquitectura
+
+- El Modelo 4+1 → 4 vistas técnicas + escenarios que validan todo
+
+- Describimos la arquitectura
+
+- ¿Cómo la diseñamos? → Estilos
+
+
+
+
+                                                                    23
+
+===== PAGINA 24 =====
+
+24
+
+===== PAGINA 25 =====
+
+25
+
+===== PAGINA 26 =====
+
+Dataﬂow en modo batch secuencial
+
+Compiladores clásicos (ej. GCC, Clang, JavaC)
+• Pipeline secuencial: Análisis léxico (scanner) → Análisis
+  sintáctico (parser) → Análisis semántico → Optimización
+  → Generación de código.
+• Cada fase consume el output de la anterior, de
+  manera estrictamente secuencial
+
+ - Problema: procesar grandes volúmenes de datos
+    oﬄine
+ - Cómo: etapas una detrás de otra
+ - Cuándo usar:
+       - ETL
+       - procesamiento nocturno
+       - pipelines donde no importa la latencia
+
+ - Trade-oﬀ: simple pero lento (alta latencia)                26
+
+===== PAGINA 27 =====
+
+Dataﬂow en modo Pipes & Filters
+
+Renderizado y edición de imágenes / vídeo
+• Los editores aplican transformaciones encadenadas:
+   Imagen → Filtro de contraste → Filtro de nitidez →
+   Reducción de ruido → Guardado.
+• En algunos programas, los ﬁltros son “streaming”:
+   producen resultados parciales visibles mientras
+   procesan.
+
+ - Problema: procesar datos en ﬂujo continuo
+ - Cómo: ﬁltros independientes conectados
+ - Cuándo usar:
+       - streaming
+       - sistemas que requieren paralelismo
+       - Apache Camel, Spring Integration
+
+ - Trade-oﬀ: más ﬂexible, más complejo de coordinar     27
+
+===== PAGINA 28 =====
+
+Dataﬂow en modo Hierarchical Layers
+
+Protocolos de red (modelo OSI o TCP/IP)
+• El clásico ejemplo de capas jerárquicas:
+   Aplicación → Transporte → Red → Enlace → Física.
+• Los datos bajan capa por capa, cada una agrega
+   su header o transforma la información, y luego
+   suben en el receptor deshaciendo las
+   transformaciones.
+
+ - Problema: organizar complejidad
+ - Cómo: cada capa abstrae a la inferior
+ - Cuándo usar:
+       - sistemas grandes
+       - arquitecturas enterprise
+       - separación de responsabilidades
+ - Trade-oﬀ: claridad vs posible impacto en
+performance                                           28
+
+===== PAGINA 29 =====
+
+29
+
+===== PAGINA 30 =====
+
+30
+
+===== PAGINA 31 =====
+
+31
+
+===== PAGINA 32 =====
+
+32
+
+===== PAGINA 33 =====
+
+Cómo elegir un estilo Dataﬂow
+- ¿Tengo datos en lotes grandes? → Batch. Palabra clave: “volumen”
+      - Sistemas de facturación (SAP, sistemas bancarios)
+      - Liquidaciones, cierres diarios, cálculo de intereses: todo corre en batch nocturno.
+      - Motores de recomendación oﬄine (ej. Netﬂix en parte de su pipeline)
+- ¿Tengo ﬂujo continuo? → Pipes & Filters. Palabra clave: “ﬂujo”
+      - Apache Kafka:
+             - Filters: Los servicios o aplicaciones de procesamiento de streams que leen un mensaje, realizan
+             una operación especíﬁca (validar, transformar, enriquecer o ﬁltrar) y escriben el resultado.
+             - Pipes: Son los topics. Transportan los ﬂujos de mensajes de un ﬁltro a otro de forma desacoplada
+             y persistente
+- ¿Necesito organizar el sistema? → Capas. Palabra clave: “organización”
+      - Hardware → kernel → servicios → aplicaciones.
+      - Aplicaciones web típicas (por ejemplo con Django o Spring Framework)
+      - Android: Framework → runtime → kernel → hardware
+                                                                                                            33
+
+===== PAGINA 34 =====
+
+34
+
+===== PAGINA 35 =====
+
+35
+
+===== PAGINA 36 =====
+
+Broker
+
+  -   Hay un intermediario central
+  -   Coordina productores y consumidores
+  -   Ejemplo: WhatsApp, email
+
+
+
+Problema que resuelve: desacoplar y enrutar
+
+
+
+
+                                              36
+
+===== PAGINA 37 =====
+
+Aplicaciones de usuario ﬁnales basadas en Broker
+
+Plataformas de mensajería instantánea
+• WhatsApp, Telegram, Slack, Discord: Los mensajes no van directo de usuario a usuario, pasan por
+    brokers (servidores intermedios) que los enrutan, almacenan temporalmente, y entregan según
+    disponibilidad.
+
+Aplicaciones de delivery
+• Uber, Rappi, PedidosYa: El broker aquí conecta pasajeros con conductores, o usuarios con repartidores.
+    La app del cliente hace la solicitud 🡪 broker central recibe 🡪 busca un proveedor disponible 🡪 reenvía la
+    tarea.
+
+Servicios de correo electrónico
+• Gmail, Outlook, Yahoo Mail: El broker de mensajería (SMTP/IMAP servers, colas internas) enruta mails
+   entre dominios y usuarios.
+
+
+                                                                                                           37
+
+===== PAGINA 38 =====
+
+38
+
+===== PAGINA 39 =====
+
+Publish - Subscribe
+
+  -   Productores publican eventos
+  -   Consumidores se suscriben
+  -   No se conocen entre sí
+
+Problema que resuelve: desacoplamiento total + escalabilidad
+
+
+
+
+                                                               39
+
+===== PAGINA 40 =====
+
+40
+
+===== PAGINA 41 =====
+
+Aplicaciones de usuario ﬁnales basadas en Publish–Subscribe
+
+Redes sociales
+• Twitter/X, Instagram, Facebook: Seguir a alguien = suscribirse a sus publicaciones.
+
+IoT (Internet of Things)
+ • MQTT es un protocolo pub-sub muy usado.
+ • Ejemplo: sensores de temperatura publican datos en un tópico, y diferentes aplicaciones (monitoreo,
+    control, dashboards) se suscriben.
+
+Logística y transporte
+• Sistemas tipo Uber Eats / PedidosYa: Los repartidores se suscriben a eventos de pedidos en su zona.
+• Cuando un pedido se publica, solo los suscriptores relevantes lo reciben.
+
+
+
+
+                                                                                                         41
+
+===== PAGINA 42 =====
+
+42
+
+===== PAGINA 43 =====
+
+Forwarder–Receiver
+
+Peers: Son los componentes de la aplicación que necesitan comunicarse. No saben cómo viaja la
+información, solo invocan al Forwarder para enviar y escuchan al Receiver para recibir.
+
+Forwarder: Se encarga de recibir el mensaje del Peer de origen, transformar los datos a un formato apto
+para la red (serialización) y enviarlos a través del canal de comunicación.
+
+Receiver: Se encarga de escuchar el canal de comunicación, recibir los bytes binarios, transformarlos de
+vuelta a un formato que el Peer de destino entienda (deserialización) y entregárselos.
+
+
+
+Problema que resuelve: transparencia en sistemas distribuidos para comunicación directa
+
+
+
+
+                                                                                                           43
+
+===== PAGINA 44 =====
+
+44
+
+===== PAGINA 45 =====
+
+Client - Dispatcher - Server
+
+  -   Un dispatcher decide a qué servidor ir
+  -   Balancea carga
+
+Problema que resuelve: distribución y disponibilidad
+
+
+
+
+                                                       45
+
+===== PAGINA 46 =====
+
+Aplicaciones de usuario ﬁnales basadas en Client – Dispatcher – Server
+
+
+Balanceadores de carga (Load Balancers)
+• Nginx, HAProxy, AWS ELB, Google Cloud Load Balancer.
+• Los clientes hacen la petición al balanceador (dispatcher).
+• El balanceador la distribuye a uno de varios servidores disponibles.
+
+Sistemas de bases de datos distribuidas
+• Ejemplo: Oracle RAC, MongoDB Sharded Clusters.
+• Un coordinador/dispatcher recibe queries y decide a qué nodo de datos enviarlas.
+
+
+
+
+                                                                                     46
+
+===== PAGINA 47 =====
+
+Sistemas Distribuidos
+
+Todos buscan lo mismo: desacoplar + escalar + distribuir
+
+
+
+
+                                                           47
+
+===== PAGINA 48 =====
+
+48
+
+===== PAGINA 49 =====
+
+49
+
+===== PAGINA 50 =====
+
+50
+
+===== PAGINA 51 =====
+
+51
+
+===== PAGINA 52 =====
+
+52
+
+===== PAGINA 53 =====
+
+53
+
+===== PAGINA 54 =====
+
+Estilos de procesamiento de eventos
+ Tipo de procesamiento                  Definición                                         Ejemplo
+
+                                                                    Sensor IoT que dispara alarma si supera temperatura
+                           Procesa eventos de a uno, en forma
+Single Event Processing                                             Cajero automático: retiro → valida saldo → entrega
+                           aislada.
+                                                                    dinero
+                                                                    Google Analytics (realtime): clicks en vivo
+                           Procesa un flujo continuo de eventos,    Twitter: timeline en tiempo real
+Event Stream Processing    aplicando transformaciones,              Uber: tracking de viajes en vivo
+                           agregaciones o filtros en línea.
+                                                                    Tecnologías típicas: Apache Kafka
+                                                                    Bancos: fraude (muchos retiros pequeños + ubicación
+                           Detecta patrones complejos a partir de
+                                                                    inusual) → alerta
+Complex Event Processing   múltiples eventos simples,
+                                                                    Seguridad: múltiples intentos de login fallidos →
+                           correlacionados en tiempo y espacio.
+                                                                    bloqueo
+                           Procesa eventos en tiempo real, casi
+                                                                    Amazon: agregás al carrito → se actualiza al instante
+Online Event Processing    sin latencia, para reaccionar
+                                                                    Sistemas de trading: compra/venta en milisegundos
+                           inmediatamente al suceso.
+                                                                                                                            54
+
+===== PAGINA 55 =====
+
+¿Dónde aparece el procesamiento de eventos hoy?
+
+Arquitecturas modernas basadas en eventos
+
+  -   Microservicios
+  -   Sistemas en tiempo real
+  -   Plataformas de streaming (Play → evento, Pause → evento, Skip → evento, Fin → evento…)
+  -   IoT
+
+Ejemplos:
+
+  -   Netﬂix: eventos de reproducción, pausas, búsquedas
+  -   Amazon: eventos de compra, pagos, envíos
+  -   Uber: solicitudes de viaje, ubicación en tiempo real
+  -   Spotify: reproducciones, skips, recomendaciones
+
+
+                                                                                               55
+
+===== PAGINA 56 =====
+
+56
+
+===== PAGINA 57 =====
+
+57
+
+===== PAGINA 58 =====
+
+Cierre
+
+●   Arquitectura de software = vistas + estilos
+●   Vistas: Cómo describir el sistema
+     ○ Diferentes perspectivas
+     ○ Cada una responde a una pregunta distinta
+     ○ Ejemplo: lógica, procesos, desarrollo, física, escenarios (casos de uso)
+●   Estilos arquitectónicos: Cómo diseñar el sistema
+     ○ Conjunto de decisiones de alto nivel
+     ○ Restringen y guían el diseño
+     ○ Ejemplo: layers, pipes & ﬁlters, broker, pub-sub
+●   Mismo sistema
+     ○ Distintas preguntas → distintas vistas
+     ○ Distintas decisiones → distintos diseño
+
+
+                                                                                  58
+
+===== PAGINA 59 =====
+
+59
+

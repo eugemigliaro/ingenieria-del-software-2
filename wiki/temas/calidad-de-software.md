@@ -73,3 +73,4 @@ Las métricas posibles incluyen densidad de defectos, tasa de errores, tiempo me
 - PDCA enlaza calidad con [mejora continua](fundamentos-procesos-y-ciclos-de-vida.md).
 - XP, TDD, Scrum, Kanban y DoD integran calidad en las [metodologías](metodologias-clasicas-y-agiles.md).
 - El costo de prevención, pruebas y deuda debe incluirse en la [estimación](estimacion-de-proyectos.md).
+- La calidad del producto se traduce en decisiones de diseño mediante los [atributos de calidad](arquitectura-y-atributos-de-calidad.md) de la clase 7. Esa clase presenta un modelo ISO de seis características que no coincide con las ocho que estos apuntes atribuyen a ISO/IEC 25010; ver [Dudas y conflictos](../dudas-y-conflictos.md). [CL07-P, p. 14]; [CL06-A, p. 1]

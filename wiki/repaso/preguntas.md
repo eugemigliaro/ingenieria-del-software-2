@@ -2,6 +2,8 @@
 
 Preguntas para recuperación activa. Para el primer parcial vigente, priorizar las preguntas 1, 3–4, 7–21, 23–25, 28–32 y 34–38. Las preguntas 2, 5–6, 22, 26–27 y 33 incluyen contenido retirado del recorte; se conservan como ampliación. Las cinco preguntas finales pertenecen al parcial anterior, pero trabajan relaciones entre temas que siguen dentro del alcance actual. Ver [alcance detallado](../parcial-1-alcance.md). Para practicar con respuestas desarrolladas y en ciclos de dificultad creciente, ver el [banco del primer parcial](parcial-1-banco.md). [N-2026-09-07-alcance-primer-parcial] [N-2026-09-07-parkinson-primer-parcial]
 
+Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1, material posterior al recorte del primer parcial.
+
 ## Fundamentos, procesos y ciclos de vida
 
 1. ¿Qué tienen en común y en qué difieren las definiciones de Ingeniería de Software de Sommerville, Pressman y Jacobson?
@@ -57,3 +59,32 @@ Preguntas para recuperación activa. Para el primer parcial vigente, priorizar l
 36. ¿Cómo se relacionan las prácticas de XP con planificación, aseguramiento y control de calidad? [PARCIAL1, p. 1]
 37. ¿Cómo se conectan las técnicas de estimación informales con Business Model Canvas durante las etapas iniciales? [PARCIAL1, p. 1]
 38. ¿Cómo contribuyen Scrum, XP, TDD y Kanban a la calidad, al costo de no calidad y a mitigar —o generar— deuda técnica? [PARCIAL1, p. 1]
+
+## Arquitectura y atributos de calidad
+
+39. ¿Qué elementos componen la definición de arquitectura de IEEE 1471/ISO 42010 y por qué incluye principios además de componentes? [CL07-P, p. 3]
+40. Explicá el Architecture Business Cycle: ¿qué influye sobre la arquitectura y cómo se cierra el ciclo? [CL07-P, p. 4]; [CL07-P, p. 9]
+41. Diferenciá disponibilidad, tolerancia a fallos y confiabilidad con un ejemplo sobre un mismo sistema. [CL07-P, p. 18]; [CL07-P, p. 19]
+42. Clasificá en run-time, diseño, sistema o usuario: escalabilidad, testeabilidad, integridad conceptual, accesibilidad, auditabilidad y soportabilidad. [CL07-P, p. 21]
+43. ¿Qué son los drivers de arquitectura y qué relación tienen con Attribute Driven Design? [CL07-P, p. 16]; [CL07-P, p. 24]
+44. Elegí uno de los trade-offs de la clase y argumentá una decisión para un sistema concreto. [CL07-P, p. 28]
+45. Distinguí restricciones de negocio y de arquitectura con dos ejemplos de cada una. [CL07-P, p. 22]
+
+## Documentación y modelo 4+1
+
+46. ¿Qué diferencia hay entre una view y un viewpoint? Da un ejemplo de cada una. [CL08-P, p. 6]
+47. Para cada vista del modelo 4+1, indicá qué pregunta responde, a qué stakeholder sirve y qué diagrama UML usarías. [CL08-P, p. 11]; [CL08-P, p. 12]
+48. ¿Por qué los escenarios son el «+1» y qué dos funciones cumplen según Kruchten? [B01, p. 10]
+49. ¿Cuándo pueden omitirse o combinarse vistas del modelo 4+1? [B01, p. 14]; [CL08-P, p. 17]
+50. Describí el proceso iterativo guiado por escenarios que propone Kruchten y cuándo se considera estable la arquitectura. [B01, p. 14]
+51. ¿Por qué la vista lógica y la de desarrollo no tienen una correspondencia uno a uno en proyectos grandes? [B01, p. 13]
+52. ¿En qué difiere la aplicación del 4+1 a sitios web de Robal et al. respecto del planteo original de Kruchten? [B02, p. 5]; [B01, p. 3]
+
+## Estilos arquitectónicos
+
+53. Compará batch secuencial, pipes & filters y capas según el problema que resuelven, cuándo usarlos y su trade-off. [CL08-P, p. 26]; [CL08-P, p. 27]; [CL08-P, p. 28]
+54. ¿Qué ventajas y desventajas tienen las arquitecturas en capas? ¿Qué agrega cada capa al pasar de dos a cuatro? [CL08-P, p. 29]; [CL08-P, p. 32]
+55. Compará broker, publish–subscribe y client–dispatcher–server: ¿qué papel cumple el intermediario en cada uno? [CL08-P, p. 35]; [CL08-P, p. 38]; [CL08-P, p. 44]
+56. Explicá MVC: responsabilidades, flujo entre componentes, ventajas y desventajas. [CL08-P, p. 49]; [CL08-P, p. 50]; [CL08-P, p. 51]
+57. Diferenciá single event, event stream, complex event y online event processing con un ejemplo propio. [CL08-P, p. 54]
+58. ¿Por qué se dice que arquitectura = vistas + estilos? Relacioná un estilo con los atributos de calidad que favorece y penaliza. [CL08-P, p. 58]

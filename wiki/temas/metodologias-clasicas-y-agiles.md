@@ -68,3 +68,4 @@ Esta comparación es una síntesis de los rasgos de metodología estructurada [C
 - Los sprints y retrospectivas realizan ciclos de [mejora PDCA](fundamentos-procesos-y-ciclos-de-vida.md).
 - Backlogs, Planning Poker y burndown conectan Scrum con [estimación](estimacion-de-proyectos.md).
 - TDD, integración continua y DoD conectan las metodologías con [calidad](calidad-de-software.md).
+- La arquitectura de RUP se describe con el [modelo 4+1](documentacion-de-arquitectura-y-modelo-4-mas-1.md), que usa las vistas lógica, de desarrollo, de procesos y física más los casos de uso. [CL02-A, p. 7]

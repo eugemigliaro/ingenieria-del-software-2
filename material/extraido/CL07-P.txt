@@ -1,0 +1,198 @@
+FUENTE: CL07-P
+TITULO: Clase 7: atributos de calidad
+ORIGINAL: material/catedra/teoria/clase-07-presentacion-atributos-de-calidad.pdf
+PAGINAS: 28
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Atributos de calidad
+
+===== PAGINA 2 =====
+
+2
+
+===== PAGINA 3 =====
+
+Momeeento… ¿Arquitectura?
+
+Arquitectura de software (IEEE 1471/ISO 42010) es la organización fundamental de un sistema expresada en sus
+componentes, sus relaciones entre ellos y con el entorno, y los principios y lineamientos que gobiernan su
+diseño y evolución.
+
+•   Organización fundamental: la “estructura de alto nivel” del sistema.
+•   Componentes: las piezas (módulos, servicios, capas, bases de datos,...).
+•   Relaciones: cómo interactúan entre sí (interfaces, protocolos, dependencias,…).
+•   Entorno: otros sistemas con los que se comunica (propios o de terceros).
+•   Principios: decisiones de diseño que orientan su construcción y mantenimiento (ej.: uso de microservicios,
+    separación de capas, stack de tecnologías,…).
+
+
+
+
+                                                                                                                 3
+
+===== PAGINA 4 =====
+
+4
+
+===== PAGINA 5 =====
+
+5
+
+===== PAGINA 6 =====
+
+6
+
+===== PAGINA 7 =====
+
+7
+
+===== PAGINA 8 =====
+
+8
+
+===== PAGINA 9 =====
+
+9
+
+===== PAGINA 10 =====
+
+10
+
+===== PAGINA 11 =====
+
+Actividad – Iteración 1
+
+-   Armen grupos
+
+-   Elijan una app, web, sistema, que todos conozcan y usan frecuentemente
+
+-   Detecten 2 problemas que puedan asociar con la “sensación de mala calidad”
+
+-   Describan los problemas, cómo y porqué les afecta
+
+-   Indiquen por qué creen que ocurre y qué les dirían o preguntarían a los devs
+    que la hicieron y/o mantienen
+
+
+                                                                                   11
+
+===== PAGINA 12 =====
+
+12
+
+===== PAGINA 13 =====
+
+13
+
+===== PAGINA 14 =====
+
+14
+
+===== PAGINA 15 =====
+
+15
+
+===== PAGINA 16 =====
+
+16
+
+===== PAGINA 17 =====
+
+17
+
+===== PAGINA 18 =====
+
+18
+
+===== PAGINA 19 =====
+
+19
+
+===== PAGINA 20 =====
+
+20
+
+===== PAGINA 21 =====
+
+Actividad – Iteración 2
+
+¿En qué categoría estarían los problemas detectados?
+
+-   Run-time: disponibilidad, tolerancia a fallos, interoperabilidad, gestionabilidad,
+    customizabalidad, performance, precisión, confiabilidad, escalabilidad,
+    auditabilidad, seguridad
+
+-   Diseño: integridad conceptual, mantenibilidad, portabilidad, reusabilidad
+
+-   Sistema: soportabilidad, testeabilidad
+
+-   Usuario: accesibilidad, usabilidad
+                                                                                         21
+
+===== PAGINA 22 =====
+
+22
+
+===== PAGINA 23 =====
+
+23
+
+===== PAGINA 24 =====
+
+24
+
+===== PAGINA 25 =====
+
+25
+
+===== PAGINA 26 =====
+
+26
+
+===== PAGINA 27 =====
+
+Actividad
+
+Vuelvan a los 4 grupos
+
+-   Grupo 1: Run-time: Tolerancia a los fallos
+-   Grupo 2: Design: Mantenibilidad
+-   Grupo 3: System: Testeabilidad
+-   Grupo 4: User: Accesibilidad
+
+Preparar un mini argumento sobre por qué
+su atributo es el más crítico en el éxito de un
+sistema de software
+
+
+
+
+                                                  27
+
+===== PAGINA 28 =====
+
+Actividad – Cierre: “It's all about trade-offs”
+
+Seguridad vs. Usabilidad: Autenticación de 2 factores aumenta la seguridad, pero complica la experiencia de
+usuario. Pregunta: ¿Qué preferís en una app bancaria: máxima seguridad o rapidez para entrar?
+
+Performance vs. Mantenibilidad: Código optimizado al extremo suele ser difícil de entender y mantener.
+Pregunta: ¿Conviene exprimir la performance si después nadie puede tocar el código sin romperlo?
+
+Disponibilidad vs. Costo: Tener un sistema “24/7 sin caídas” implica redundancia e infraestructura cara.
+Pregunta: ¿Vale la pena gastar el doble en servidores para ganar un 0,1% más de uptime?
+
+Portabilidad vs. Eficiencia: Un sistema multiplataforma (corre en cualquier SO) puede perder optimizaciones
+específicas. Pregunta: ¿Es mejor que el software corra en todos lados aunque sea un poco más lento?
+
+Escalabilidad vs. Complejidad: Diseñar un sistema para escalar a millones de usuarios desde el día uno puede
+hacerlo innecesariamente complejo y costoso. Pregunta: ¿Conviene diseñar para el “hipotético futuro” o resolver
+el presente y refactorizar después?
+                                                                                                                  28
+
