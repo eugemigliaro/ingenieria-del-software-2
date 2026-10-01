@@ -1,0 +1,301 @@
+FUENTE: CL09-P
+TITULO: Clase 9: evaluación de arquitecturas
+ORIGINAL: material/catedra/teoria/clase-09-presentacion-evaluacion-de-arquitecturas.pdf
+PAGINAS: 33
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Evaluación de arquitecturas
+
+===== PAGINA 2 =====
+
+ Actividad 1
+
+Cada grupo trabaja sobre su producto
+Consigna:
+• Definir un pipeline dataflow interno.
+• Seleccionar un estilo distribuido (broker, pub-sub, etc.) para la comunicación.
+• Seleccionar manejo de eventos
+
+
+
+
+                                                                                    2
+
+===== PAGINA 3 =====
+
+3
+
+===== PAGINA 4 =====
+
+4
+
+===== PAGINA 5 =====
+
+Diferencia según tamaño del proyecto
+
+•       10.000 LOC: El punto óptimo está muy a la izquierda. Conviene
+        dedicar poco tiempo a arquitectura (porque el proyecto es
+        chico, los riesgos son manejables).
+•       100.000 LOC : El sweet spot está en un punto intermedio: hay
+        que balancear, dedicar una proporción moderada de tiempo
+        upfront.
+•       10 millones LOC: El óptimo se va mucho a la derecha: se necesita
+        invertir bastante tiempo inicial en arquitectura y gestión de
+        riesgos, porque el rework sería carísimo.
+
+    Conclusión
+
+    •    El momento y el esfuerzo para definir la arquitectura dependen del tamaño del proyecto y del nivel de certeza
+         requerido.
+    •    En proyectos chicos → más agilidad, menos arquitectura upfront.
+    •    En proyectos grandes o críticos → más inversión inicial en arquitectura y resolución de riesgos.                5
+
+===== PAGINA 6 =====
+
+Requisitos Arquitectónicamente Significativos (ASR):
+RQFy RQNF que tienen un impacto directo y medible
+en el diseño de la arquitectura                        6
+
+===== PAGINA 7 =====
+
+ASR
+
+Un ASR es cualquier requisito (funcional o de calidad) cuya satisfacción obliga a tomar decisiones
+arquitectónicas clave.
+
+Si cambiaras ese requisito, probablemente cambiaría la arquitectura del sistema.
+
+Ejemplos de ASR
+
+•    Requisitos de calidad (no funcionales):
+    • Escalabilidad: “El sistema debe soportar 1 millón de usuarios concurrentes”.
+    • Seguridad: “Debe cumplir con GDPR y encriptar datos sensibles en tránsito y en reposo”.
+    • Disponibilidad: “El sistema debe tener 99,999% de uptime”.
+
+•    Requisitos funcionales que afectan arquitectura:
+    • “El sistema debe integrarse en tiempo real con sistemas externos de pago”.
+    • “Debe permitir plug-ins de terceros sin redeployar el core”.
+                                                                                                     7
+
+===== PAGINA 8 =====
+
+8
+
+===== PAGINA 9 =====
+
+9
+
+===== PAGINA 10 =====
+
+Ejemplo: Si una empresa sabe que en el próximo trimestre deberá habilitar
+pagos internacionales, una parte del architectural runway puede ser diseñar e
+implementar servicios de seguridad, escalabilidad y compliance antes de que
+lleguen esas features.
+Así, cuando se prioriza la funcionalidad, ya hay una base que lo soporta sin
+frenar el delivery.                                                          10
+
+===== PAGINA 11 =====
+
+Architectural runway
+
+•   Incluye arquitectura emergente (lo que se va construyendo sprint a sprint) y arquitectura intencional (lo
+    que se planifica a propósito para soportar el crecimiento).
+
+•   Architectural Runway != diseñar todo al inicio.
+
+•   Se trata de anticipar lo necesario a corto/mediano plazo para no frenar el desarrollo, pero sin intentar
+    adivinar todo el futuro del sistema.
+
+•   Está compuesto por componentes reutilizables, servicios compartidos, infraestructura de integración y
+    despliegue, APIs y tecnologías ya adoptadas.
+
+•   No es estático: se amplía y ajusta continuamente en sincronía con el avance de los Product Increments
+    (PIs).
+
+
+                                                                                                               11
+
+===== PAGINA 12 =====
+
+12
+
+===== PAGINA 13 =====
+
+13
+
+===== PAGINA 14 =====
+
+14
+
+===== PAGINA 15 =====
+
+MODELO DE
+ESCENARIOS
+ “LIVIANO”
+
+
+
+
+             15
+
+===== PAGINA 16 =====
+
+16
+
+===== PAGINA 17 =====
+
+SLI – Service Level Indicator: métrica concreta y cuantificable
+SLO – Service Level Objective: objetivo o meta que fijás para un SLI
+SLA – Service Level Agreement: acuerdo formal/contractual entre
+proveedor y cliente (SLO + penalidades)
+                                                                 17
+
+===== PAGINA 18 =====
+
+CARO ++
+          18
+
+===== PAGINA 19 =====
+
+CARO ++++
+            19
+
+===== PAGINA 20 =====
+
+MODELO DE
+ESCENARIOS
+ “PESADO”    20
+
+===== PAGINA 21 =====
+
+21
+
+===== PAGINA 22 =====
+
+Atributos de calidad - Repaso
+
+FUNCIONAMIENTO
+•   Rendimiento (Performance): tiempo de respuesta, throughput, latencia.
+•   Disponibilidad (Availability): tiempo en línea, tolerancia a fallos, redundancia.
+•   Seguridad (Security): confidencialidad, integridad, autenticación, autorización.
+•   Escalabilidad (Scalability): capacidad de crecer en volumen de usuarios o datos.
+•   Interoperabilidad (Interoperability): integración con otros sistemas.
+•   Administrabilidad (Manageability): facilidad para configurar, monitorear y operar el sistema en producción.
+•   Confiabilidad (Reliability): capacidad de funcionar de manera consistente y recuperarse de fallos sin pérdida de datos ni
+    interrupciones críticas.
+USUARIO
+•   Usabilidad (Usability): facilidad de aprendizaje, eficiencia de uso.
+DISEÑO
+•   Modificabilidad / Mantenibilidad (Modifiability): facilidad para cambiar, reparar o evolucionar el sistema.
+•   Portabilidad (Portability): facilidad para mover a otro entorno tecnológico.
+•   Reusabilidad (Reusability): posibilidad de aprovechar componentes en otros contextos.
+SISTEMA
+•   Testabilidad (Testability): facilidad para validar requisitos.
+                                                                                                Ojo: Esto implementa
+                                                                                                    Parcializable               22
+
+===== PAGINA 23 =====
+
+23
+
+===== PAGINA 24 =====
+
+                Kickoff
+
+
+
+
+          equipo de expertos en arquitectura que conducen la evaluación
+
+                               documentar todo lo que surge en la sesión.
+
+
+                   hacer preguntas difíciles y profundas
+               Facilita la sesión para que sea productiva y ordenada
+
+             priorizar atributos de calidad y tomar decisiones sobre el alcance
+
+aporta perspectivas diversas sobre el sistema
+
+
+
+
+                                                                          24
+
+===== PAGINA 25 =====
+
+Ejecución
+
+
+
+
+            25
+
+===== PAGINA 26 =====
+
+26
+
+===== PAGINA 27 =====
+
+MODELO DE
+ESCENARIOS
+ “LIVIANO”
+
+
+
+
+             27
+
+===== PAGINA 28 =====
+
+Hint: “no requiere…”, “alcanza
+con…”, “se podrán cambiar…”
+
+
+
+
+ De los atributos de
+       calidad
+
+
+
+
+                                 28
+
+===== PAGINA 29 =====
+
+29
+
+===== PAGINA 30 =====
+
+30
+
+===== PAGINA 31 =====
+
+31
+
+===== PAGINA 32 =====
+
+32
+
+===== PAGINA 33 =====
+
+    Actividad 2
+
+Definiciones de Arquitectura
+
+•    Documentar atributos de calidad prioritarios en un árbol de utilidad (atributos y escenarios).
+•    Documentar al menos 2 vistas del Modelo 4+1 (1 o 2 diagramas por cada una)
+•    Incorporar los estilos de arquitectura definidos en la clase pasada (Actividad 1)
+
+
+
+
+                                                                                                      33
+

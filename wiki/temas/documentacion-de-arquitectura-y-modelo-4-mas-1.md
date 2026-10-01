@@ -111,4 +111,5 @@ La clase 2 ya presentaba el 4+1 como la forma en que RUP representa su arquitect
 
 - La vista describe *cómo es* la arquitectura; los [estilos arquitectónicos](estilos-arquitectonicos.md) guían *cómo diseñarla*. [CL08-P, p. 23]; [CL08-P, p. 58]
 - Los escenarios y drivers conectan el 4+1 con los [atributos de calidad](arquitectura-y-atributos-de-calidad.md).
+- Los escenarios vuelven a aparecer como base de la [evaluación de arquitecturas](evaluacion-de-arquitecturas.md) con ATAM. [CL09-P, p. 20]; [CL09-P, p. 21]
 - RUP y su arquitectura en vistas aparecen en [metodologías](metodologias-clasicas-y-agiles.md).

@@ -69,3 +69,4 @@ Esta comparación es una síntesis de los rasgos de metodología estructurada [C
 - Backlogs, Planning Poker y burndown conectan Scrum con [estimación](estimacion-de-proyectos.md).
 - TDD, integración continua y DoD conectan las metodologías con [calidad](calidad-de-software.md).
 - La arquitectura de RUP se describe con el [modelo 4+1](documentacion-de-arquitectura-y-modelo-4-mas-1.md), que usa las vistas lógica, de desarrollo, de procesos y física más los casos de uso. [CL02-A, p. 7]
+- Cuándo definir la arquitectura en cascada (BDUF), en ágil (YAGNI), en Scrum (big up-front, sprint-zero, in-sprints o equipo separado) y en SAFe (architectural runway) se trata en [evaluación de arquitecturas](evaluacion-de-arquitecturas.md). [CL09-P, p. 3]; [CL09-P, p. 6]; [CL09-P, p. 8]

@@ -126,4 +126,5 @@ Las actividades de clase piden detectar problemas asociados a la «sensación de
 
 - Los atributos de calidad llevan al diseño la visión de producto de la [calidad de software](calidad-de-software.md), y la deuda técnica aparece cuando la mantenibilidad se sacrifica sin plan.
 - La arquitectura se describe mediante vistas, como las del [modelo 4+1](documentacion-de-arquitectura-y-modelo-4-mas-1.md), y se diseña con [estilos arquitectónicos](estilos-arquitectonicos.md) que favorecen unos atributos a costa de otros.
+- La [evaluación de arquitecturas](evaluacion-de-arquitecturas.md) comprueba estos atributos: ATAM los baja a escenarios en un árbol de utilidad y detecta riesgos, puntos sensibles y trade-offs. La clase 9 repasa los atributos con una agrupación algo distinta. [CL09-P, p. 22]; [CL09-P, p. 26]
 - **Inferencia:** los trade-offs de disponibilidad o escalabilidad tienen costo directo, por lo que conviene hacerlos explícitos durante la [estimación](estimacion-de-proyectos.md).

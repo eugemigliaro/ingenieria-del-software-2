@@ -88,3 +88,19 @@ Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1,
 56. Explicá MVC: responsabilidades, flujo entre componentes, ventajas y desventajas. [CL08-P, p. 49]; [CL08-P, p. 50]; [CL08-P, p. 51]
 57. Diferenciá single event, event stream, complex event y online event processing con un ejemplo propio. [CL08-P, p. 54]
 58. ¿Por qué se dice que arquitectura = vistas + estilos? Relacioná un estilo con los atributos de calidad que favorece y penaliza. [CL08-P, p. 58]
+
+## Evaluación de arquitecturas
+
+59. ¿Qué trade-off hay entre BDUF y YAGNI? ¿Cómo cambia el sweet spot de Boehm y Turner con el tamaño del proyecto y con la necesidad de alta garantía? [CL09-P, p. 3]; [CL09-P, p. 4]; [CL09-P, p. 5]
+60. Compará las cuatro opciones para definir la arquitectura en Scrum según quién la elabora y cuándo se evalúa. ¿Cuál elegirías para un equipo nuevo en el dominio y por qué? [CL09-P, p. 6]
+61. ¿Qué es un ASR? Proponé un requisito funcional y uno de calidad que lo sean, y uno que no, y justificá con la prueba del cambio. [CL09-P, p. 7]
+62. Explicá el architectural runway de SAFe: qué lo compone, quién lo construye, por qué se consume y en qué se diferencia de diseñar todo al inicio. [CL09-P, p. 9]; [CL09-P, p. 10]; [CL09-P, p. 11]
+63. ¿Qué debe responder una evaluación de arquitectura? Clasificá las técnicas en cualitativas y cuantitativas e indicá cuáles reserva la clase para sistemas de alta criticidad. [CL09-P, p. 13]; [CL09-P, p. 14]; [CL09-P, p. 19]
+64. Diferenciá SLI, SLO y SLA con un ejemplo propio, y asigná una métrica a disponibilidad, confiabilidad, performance y mantenibilidad. [CL09-P, p. 17]
+65. Distinguí simulación, experimento y prototipo como técnicas de evaluación. [CL09-P, p. 18]
+66. Compará SAAM, ATAM y Lightweight ATAM según foco y esfuerzo. [CL09-P, p. 20]
+67. Describí las fases de ATAM y los roles de la fase 0. [CL09-P, p. 23]; [CL09-P, p. 24]; [CL09-P, p. 25]
+68. Construí un árbol de utilidad para un sistema conocido, con tres atributos y al menos cinco escenarios anotados con [importancia, dificultad]. ¿Cuáles analizarías primero? [CL09-P, p. 26]
+69. ¿Qué diferencia hay entre riesgo, no riesgo, punto sensible y trade-off? Da un ejemplo de cada uno para la misma decisión arquitectónica. [CL09-P, p. 28]
+70. ¿Qué pasos omite Lightweight ATAM respecto de ATAM y qué se pierde con esa reducción? [CL09-P, p. 30]; [CL09-P, p. 31]
+71. Clasificá en funcionamiento, usuario, diseño o sistema: confiabilidad, testabilidad, reusabilidad, administrabilidad y usabilidad. ¿Qué cambia respecto de la clasificación de la clase 7? [CL09-P, p. 22]; [CL07-P, p. 21]
