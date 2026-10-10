@@ -104,3 +104,27 @@ Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1,
 69. ¿Qué diferencia hay entre riesgo, no riesgo, punto sensible y trade-off? Da un ejemplo de cada uno para la misma decisión arquitectónica. [CL09-P, p. 28]
 70. ¿Qué pasos omite Lightweight ATAM respecto de ATAM y qué se pierde con esa reducción? [CL09-P, p. 30]; [CL09-P, p. 31]
 71. Clasificá en funcionamiento, usuario, diseño o sistema: confiabilidad, testabilidad, reusabilidad, administrabilidad y usabilidad. ¿Qué cambia respecto de la clasificación de la clase 7? [CL09-P, p. 22]; [CL07-P, p. 21]
+72. ¿Qué diferencia una revisión externa de una de pares y de una autoevaluación? ¿Por qué ATAM usa revisores externos? [B03, p. 3]; [B03, p. 5]; [B03, p. 33]
+73. ¿Qué es un tema de riesgo y en qué se diferencia de un riesgo aislado? Explicalo con el caso CAAS. [B03, p. 24]; [B03, p. 39]
+74. En el caso CAAS, clasificá como riesgo, punto sensible o trade-off: la falta de hooks para simuladores, aislar las dependencias del sistema operativo y permitir que el piloto fije el límite de temperatura de la turbina. Justificá cada clasificación. [B03, p. 23]
+75. Calculá la disponibilidad de un sistema con un servidor primario y uno en standby en caliente si cada uno falla con probabilidad 0,02. ¿Qué supuesto hace el cálculo? [B03, p. 31]
+76. Un escenario del árbol de utilidad del sistema judicial tiene valor de negocio alto e impacto arquitectónico bajo. ¿Cómo se traduce al par [importancia, dificultad] de la clase y qué prioridad le darías? [B03, p. 8]; [CL09-P, p. 26]
+
+## Persistencia
+
+77. Definí persistencia y explicá por qué es necesaria. ¿Qué tres factores considerarías al elegir un mecanismo? [CL11-P, p. 2]; [CL11-P, p. 3]
+78. Explicá cómo funciona la prevalencia con el command log y los snapshots. ¿Por qué Redis es prevalencia «más o menos»? [CL11-P, p. 7]
+79. ¿Cuándo no recomendarías la prevalencia y cuándo no recomendarías archivos? [CL11-P, p. 23]
+80. Definí cada propiedad ACID con un ejemplo propio distinto del de la clase. [CL11-P, p. 14]
+81. ¿Qué problema resuelve un ORM y qué cuesta usarlo? ¿Qué alternativa evita el mapeo? [CL11-P, p. 12]; [CL11-P, p. 13]
+82. Compará una base multidimensional con una relacional según normalización, uso y tipo de carga (OLAP u OLTP). [CL11-P, p. 10]; [CL11-P, p. 11]; [CL11-P, p. 24]
+83. ¿Por qué una base por columnas acelera las proyecciones de pocas columnas y dificulta las escrituras? [CL11-P, p. 15]; [CL11-P, p. 16]
+84. Elegí un mecanismo de persistencia para cada caso y justificá: sesiones de usuario, catálogo de productos con atributos variables, transferencias bancarias, dashboard histórico de ventas y búsqueda semántica de documentos. [CL11-P, p. 23]; [CL11-P, p. 24]; [CL11-P, p. 25]
+85. ¿Qué lección sobre la elección de persistencia deja la adopción de MarkLogic en HealthCare.gov? [B04, p. 24]; [B04, p. 25]
+
+## Caso HealthCare.gov
+
+86. Describí los cuatro componentes clave de HealthCare.gov y qué contratista construyó cada uno. [B04, p. 10]; [B04, p. 21]
+87. ¿Por qué el EIDM se volvió el primer cuello de botella del lanzamiento? Relacionalo con la postergación de la herramienta *anonymous shopper*. [B04, p. 41]; [CASO-HCG, p. 3]
+88. Enumerá tres causas técnicas y tres organizacionales del fracaso y una medida de recuperación para cada una. [B04, p. 5]; [B04, p. 6]; [B04, p. 44]
+89. ¿Qué hay que hacer en las fases 0 y 1 de ATAM al evaluar HealthCare.gov? Proponé tres atributos de calidad para el primer nivel del árbol de utilidad, con un escenario medible cada uno. [CASO-HCG, p. 7]; [CASO-HCG, p. 9]

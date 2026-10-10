@@ -70,3 +70,4 @@ Esta comparación es una síntesis de los rasgos de metodología estructurada [C
 - TDD, integración continua y DoD conectan las metodologías con [calidad](calidad-de-software.md).
 - La arquitectura de RUP se describe con el [modelo 4+1](documentacion-de-arquitectura-y-modelo-4-mas-1.md), que usa las vistas lógica, de desarrollo, de procesos y física más los casos de uso. [CL02-A, p. 7]
 - Cuándo definir la arquitectura en cascada (BDUF), en ágil (YAGNI), en Scrum (big up-front, sprint-zero, in-sprints o equipo separado) y en SAFe (architectural runway) se trata en [evaluación de arquitecturas](evaluacion-de-arquitecturas.md). [CL09-P, p. 3]; [CL09-P, p. 6]; [CL09-P, p. 8]
+- El [caso HealthCare.gov](caso-healthcare-gov.md) muestra un desarrollo ágil sin requisitos estables al inicio de cada sprint y sin una gestión disciplinada de cambios, una de las causas de su fracaso. [B04, p. 24]; [B04, p. 26]

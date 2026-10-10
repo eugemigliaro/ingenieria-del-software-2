@@ -1,0 +1,573 @@
+FUENTE: B03
+TITULO: Hariharan (BITS Pilani): ATAM — caso de estudio de evaluación de arquitectura
+ORIGINAL: material/catedra/bibliografia/hariharan-atam-caso-de-estudio.pdf
+PAGINAS: 41
+
+===== PAGINA 1 =====
+
+              Software Architecture
+
+              ATAM Case study
+              (Architecture evaluation)
+BITS Pilani                      Viswanathan Hariharan
+
+===== PAGINA 2 =====
+
+Introduction
+
+Software projects come in different colours and shapes
+
+
+
+                                               Complex mission
+                                                  critical
+                       Functionality
+   Small
+                      enhancements
+improvement
+
+
+
+   Improve          Add Loyalty module      Build a satellite system
+response time
+
+===== PAGINA 3 =====
+
+Introduction
+
+Review techniques differ
+
+
+
+                                       Complex mission
+                                          critical
+                       Functionality
+   Small
+                      enhancements
+improvement
+
+
+
+Self evaluation        Peer review     External review
+
+===== PAGINA 4 =====
+
+Today…
+
+                  ATAM
+
+   Architecture Trade-off Analysis Method
+
+
+
+     Method          +          Case study
+
+===== PAGINA 5 =====
+
+Method
+
+Reviewers: External, from different organization
+
+
+
+
+        Unbiased                         Independent
+         opinion                          perspective
+
+===== PAGINA 6 =====
+
+Process steps…
+
+
+                     Detailed
+                      view
+ Macro view                            Findings
+   1-2 days            2 days            1 week
+
+
+
+    Sponsor             Sponsor       Evaluation team
+    Architect          Architect
+ Evaluation team   Evaluation team
+                           +
+                   All stakeholders
+
+===== PAGINA 7 =====
+
+    Process steps…
+
+
+                                     Detailed
+                                      view
+      Macro view                                              Findings
+
+•   Goals & Business functions   •   Detailed scenarios   •    Risks
+
+•   Architectural approach       •   Prioritization       •    Sensitivity
+
+•   Utility tree                 •   Tactics used         •    Trade-offs
+
+===== PAGINA 8 =====
+
+    Process steps
+
+                                                    Judiciary system
+
+                                 •   Goal: Improve efficiency of court operations
+
+                                 •   Functions: Filing case, Proceedings, Judgement
+
+                                 •   Quality attributes: Security of information, Usability
+      Macro view
+                                                          Utility tree
+
+•   Goals & Business functions
+
+•   Architectural approach
+
+•   Utility tree
+
+===== PAGINA 9 =====
+
+Process steps
+
+
+                    Detailed
+                     view
+
+
+
+                •   Detailed scenarios
+
+                •   Prioritization       Voting
+
+                •   Tactics used
+
+===== PAGINA 10 =====
+
+    Process steps
+•   Risks: Ex. Certain data access services are not secure enough. Hackers can get access to
+    private data (such as date of birth) using these services.
+
+•   Sensitivity: Ex. An eComm system’s interface to telecom gateway is sensitive to changes in
+    gateway interface
+
+•   Trade-offs: Ex. Multiple levels of security (user pwd, txn pwd, OTP) may impact usability.
+
+                                                                                 Findings
+
+                                                                             •    Risks
+
+                                                                             •    Sensitivity
+
+                                                                             •    Trade-offs
+
+===== PAGINA 11 =====
+
+         Case study: CAAS
+
+Common Avionics Architecture System
+
+===== PAGINA 12 =====
+
+Case study: CAAS
+Common Avionics Architecture System
+
+
+
+
+               https://youtu.be/da9MHLeTwvY
+
+===== PAGINA 13 =====
+
+    Case study: CAAS
+    Common Avionics Architecture System
+
+
+
+
+CAAS Cockpit integrates multiple sub-systems - communications, navigation, weapons,
+                                   mission sensor
+Ref:
+https://www.rockwellcollins.com/Products_and_Services/Defense/Avionics/Integrated_Cockpit_Solutions/Common_Avionics_Architec
+ture_System.aspx
+
+===== PAGINA 14 =====
+
+Rockwell Collins avionics management
+system caters to different types of helicopters
+
+===== PAGINA 15 =====
+
+Background
+
+
+Two different proprietary avionics systems were in use
+
+
+
+This resulted in greater effort to enhance and maintain
+
+===== PAGINA 16 =====
+
+Case study: CAAS
+Common Avionics Architecture System
+
+
+                               Goal
+
+ Create a scalable system that meets the needs of multiple helicopter
+              cockpits to address modernization issues
+
+
+                1. Easier to maintain
+                2. Allow third-party upgrades
+                3. Provide a common ‘look and feel’
+
+===== PAGINA 17 =====
+
+Case study: CAAS
+Common Avionics Architecture System
+
+
+
+                           Approach
+
+  Use a single, open, common avionics architecture system for all
+             platforms to reduce the cost of ownership
+
+===== PAGINA 18 =====
+
+CAAS: Quality attributes
+
+
+                Availability
+
+
+
+               Performance
+
+
+
+              Maintainability
+
+===== PAGINA 19 =====
+
+CAAS: Architectural approach
+                   Sample structure within a system
+
+  Partition #1               Partition #2              Partition #3
+
+                 Interface
+    Memory                      Memory                    Memory
+       &                           &                         &
+      CPU                         CPU                       CPU
+   allocation                  allocation                allocation
+
+
+    Graphics                  Application             Communication
+
+
+
+                             Layers
+                         POSIX based system
+
+===== PAGINA 20 =====
+
+CAAS: Architectural approach
+
+            Distributed system
+
+
+
+
+                                 Application Location
+                                    transparency
+
+                                 Redundant software
+                                   (Master-slave)
+
+===== PAGINA 21 =====
+
+CAAS Utility tree
+
+===== PAGINA 22 =====
+
+CAAS: Scenario generation &
+prioritization
+
+===== PAGINA 23 =====
+
+CAAS: Sample observations
+from analysis
+              There are no built-in hooks to connect to simulators.
+
+   Risk       So the software can not drive both the simulators and the
+              actual helicopters
+
+
+
+
+              Isolating operating system dependencies will enhance
+Sensitivity   portability.
+
+
+
+              Letting pilots set parameters such as turbine gas
+ Trade-off    temperature limits, increases flexibility but decreases
+              safety
+
+===== PAGINA 24 =====
+
+CAAS: Sample observations
+from analysis
+
+
+
+           Several scenarios dealt with performance. However
+  Themes   performance requirements were not spelled out
+           clearly
+
+===== PAGINA 25 =====
+
+Additional risks
+
+
+
+ External evaluation can also reveal additional risks not
+                   previously imagined
+
+===== PAGINA 26 =====
+
+Case study: Battlefield Control
+system
+ This system is used by army battalions to control the movement and
+           operations of troops in real time in the battle-field.
+
+===== PAGINA 27 =====
+
+New risk discovered during
+evaluation…
+The pattern of communication between Control and backup
+   is distinct from communication with other nodes. They
+           exchange far more data than other nodes
+
+
+
+                          Risk
+
+Enemy may detect this pattern and attack the Control node
+                   and Backup node
+
+===== PAGINA 28 =====
+
+Conclusion
+
+• In large and complex mission critical systems, external
+  reviews add a lot of value
+
+• Such reviews brings together all stakeholders
+
+• Apart from risk identification, the exercise generates very
+  useful artifacts about the system such as Utility tree,
+  Scenarios, Architecture diagrams, etc.
+
+===== PAGINA 29 =====
+
+Appendix
+
+Reference:
+
+Rockwell Collins case study:
+
+https://resources.sei.cmu.edu/asset_files/TechnicalNote/20
+   03_004_001_14150.pdf
+
+===== PAGINA 30 =====
+
+Examples of self evaluation
+checklists
+Availability:
+   –   Do we have a mechanism to detect failure?
+   –   Do we have a mechanism to switch to a backup component?
+   –   Do we have a mechanism to inform the client about the failure?
+   –   Do we have a mechanism to save state periodically?
+
+
+Performance:
+   – What is the mechanism to add & remove more resources dynamically?
+   – If there is a common resource that is needed by multiple clients, what is the
+     mechanism to reduce the bottleneck?
+
+===== PAGINA 31 =====
+
+Example of Self evaluation
+models
+How to evaluate the availability of a system that has 2
+  servers – one primary & one hot standby?
+
+   – If probability of server failure is 1% (1/100 = 0.01), what is the probability of 2
+     servers failing at the same time?
+   – Compare the availability of the system with one server and 2 servers
+
+   – Given that a server has failed, what is the probability that the second server also
+     fails
+   – P * P = P2 = 0.01 * 0.01 = 0.0001
+   – Availability = 1 - Probability of failure = 1 - .0001 = .9999 = 99.99% (Availability
+     with one server = 1 – 0.01 = .99 = 99%)
+
+===== PAGINA 32 =====
+
+Example of Self evaluation
+models
+How to calculate the latency (performance)?
+
+   – Let us say, in order to satisfy a client request, the request needs to pass via 3
+     modules one after another.
+   – The latency of 1st module is 0.1 milli sec, latency of 2nd module is 0.2 milli
+     second, latency of 3rd module is 0.3 milli second
+   – What is the latency experienced by the client?
+   – Sum of Latency of each module = 0.1 + 0.2 + 0.3 = 0.6 milli second
+
+
+
+
+              Module               Module                 Module
+                1                    2                      3
+
+               1 sec                2 sec                  3 sec            Total 6 seconds
+
+===== PAGINA 33 =====
+
+Architecture Trade-off
+Analysis Method (ATAM)
+• ATAM is a method used to evaluate architecture of large
+  systems
+
+• It assumes that reviewers are not familiar with the
+  business goals and the architecture of the system
+
+• It is suitable for many domains such as
+   •   Finance
+   •   Defence
+   •   Automotive
+   •   Etc.
+
+===== PAGINA 34 =====
+
+ATAM
+
+Participants
+
+   •   Evaluation team
+   •   Project decision makers – Business stakeholder, Project manager
+   •   Arch stakeholders – Users, developers, testers, maintenance staff
+   •   Scenario scribe – Writes down scenarios discussed in the workshop
+   •   Proceedings scribe – Captures the entire proceedings including goals,
+       architecture approach, evaluation observations
+
+===== PAGINA 35 =====
+
+ATAM
+
+Output of ATAM
+   –   Concise presentation of architecture
+   –   Business goals
+   –   Prioritized quality attribute scenarios
+   –   Set of Risks and Non-risks
+   –   Set of risk themes
+   –   Mapping of architecture decisions to quality requirements (scenarios)
+   –   Sensitivity & Trade-off points
+
+===== PAGINA 36 =====
+
+ATAM
+
+Phases
+Phase     Activity             Participants                            Duration
+Phase 0   Partnership &        Eval team + Proj decision makers        Few
+          Preparation                                                  weeks
+Phase 1   Evaluation           Eval team + Proj decision makers +      1-2 days
+                               Architect
+Phase 2   Evaluation           Eval team + Proj decision makers +      2 days
+                               Architect + Stakeholders (view & view
+                               points)
+Phase 3   Follow up (Prepare   Eval team                               1 week
+          report)
+
+===== PAGINA 37 =====
+
+ATAM - Steps
+Phase 1
+1. Present ATAM – Evaluation leader
+2. Present business drivers – Proj decision maker (Bus goals, major functions)
+3. Present architecture – Lead architect
+4. Identify architectural approaches – Evaluation team
+5. Generate utility tree – Eval team + Project decision makers
+6. Analyse architectural approaches (sufficiency of architecture, risks, sensitivity &
+    trade-off)
+
+Phase 2
+7. Brainstorm & prioritize business scenarios - Eval team + Project decision makers +
+    Stakeholders
+8. Analyze architectural approaches
+
+Phase 3
+9. Present results
+
+===== PAGINA 38 =====
+
+Conceptual flow of ATAM
+
+
+
+
+Ref: http://www.sei.cmu.edu/library/assets/best_practices.pdf
+
+===== PAGINA 39 =====
+
+ATAM - Results
+
+Results consist of
+
+•   Arch approaches (ex. Layering, distributed processing)
+•   Prioritized scenarios
+•   Risks, Non risks (Risks are arch decisions that may lead to undesirable
+    consequences)
+•   Sensitivity points & Trade-offs (arch decisions that have a marked effect on one or
+    more Quality attributes)
+•   Risk themes (Systemic weaknesses in architecture)
+
+===== PAGINA 40 =====
+
+Case study: CAAS
+Common Avionics Architecture System
+•   Overall, the goal of the CAAS is to create a scalable system that meets the
+    needs of multiple helicopter cockpits to address modernization issues.
+
+•   Its approach is to use a single, open, common avionics architecture system
+    for all platforms to reduce the cost of ownership.
+
+•   This approach is based on Rockwell Collins’ Cockpit Management System
+    (CMS) in its Flight 2 family of avionics systems, augmented with IAS 2
+    functionality.
+
+===== PAGINA 41 =====
+
+CAAS: Arch approaches
+1. Partitioning: Partitioning of memory and utilization of CPU time (availability,
+    safety, modifiability, testability, maintainability)
+2. Encapsulation: used to isolate partitions. Between partitions, applications
+    can share only their state via the network. The remote service interface
+    (RSI) and remote service provider (RSP) are examples of encapsulation
+    that isolate the network implementation details. (modifiability, availability)
+3. Interface strategy: Accessing components only via their interfaces is strictly
+    followed. Besides controlling interactions and eliminating the back-door
+    exploitation of changeable implementation details, this strategy reduces the
+    number of inputs and outputs per partition. (modifiability, maintainability)
+4. Layers: used to partition and isolate high-level graphics services (portability,
+    modifiability)
+5. Distributed processing: Predominantly, a client-server approach is used to
+    decouple “parts” of the system. Also, the Broadcast feature is used to
+    broadcast information periodically. (maintainability, modifiability)
+

@@ -1,6 +1,6 @@
 # Evaluación de arquitecturas
 
-> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuente principal: presentación de la clase 9 `CL09-P`. La mayoría de sus diapositivas son imagen y el texto extraído está incompleto. Por eso las páginas se revisaron renderizadas y esta síntesis cubre también ese contenido.
+> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuente principal: presentación de la clase 9 `CL09-P`. La mayoría de sus diapositivas son imagen y el texto extraído está incompleto. Por eso las páginas se revisaron renderizadas y esta síntesis cubre también ese contenido. La sección [ATAM en la práctica](#atam-en-la-práctica-caso-de-estudio-de-hariharan) suma la presentación de Hariharan, `B03`, entregada por la cátedra como bibliografía.
 
 ## Cuándo definir la arquitectura: anticipar o adaptarse
 
@@ -271,7 +271,7 @@ El análisis identifica el enfoque, recorre los escenarios del árbol de utilida
 | Punto sensible | — | Propiedad de uno o más componentes que es crítica para lograr la respuesta de un atributo |
 | Trade-off | Entre atributos de calidad | Punto sensible que afecta a más de un atributo: mejora uno y empeora otro |
 
-La columna de pistas reproduce [CL09-P, p. 28]. Las definiciones no están en la diapositiva y se marcan como conocimiento general.
+La columna de pistas reproduce [CL09-P, p. 28]. Las definiciones no están en la diapositiva y se marcan como conocimiento general. La bibliografía de la cátedra las respalda: los riesgos son decisiones arquitectónicas que pueden tener consecuencias indeseadas, y los puntos sensibles y trade-offs son decisiones con un efecto marcado sobre uno o más atributos de calidad. [B03, p. 39]
 
 **Ejemplo (inferencia):** «cifrar todas las comunicaciones entre servicios» es un punto sensible para la seguridad. También es un trade-off, porque agrega latencia y empeora la performance. «El volumen previsto alcanza con una sola instancia de base de datos» se formula como un no riesgo.
 
@@ -285,6 +285,130 @@ Se genera un **reporte final** con estas partes: [CL09-P, p. 29]
 - lista de escenarios de las fases 1 y 2;
 - árbol de utilidad;
 - análisis de las fases 1 y 2: enfoques arquitectónicos, decisiones, riesgos y no riesgos, puntos sensibles y trade-offs.
+
+## ATAM en la práctica: caso de estudio de Hariharan
+
+La cátedra entregó una presentación de V. Hariharan (BITS Pilani) que aplica ATAM a casos reales, `B03`. Complementa la clase 9 con ejemplos concretos de cada salida del método.
+
+### Qué tipo de revisión corresponde
+
+Los proyectos de software tienen distintos «colores y formas», y la técnica de revisión se ajusta a cada uno: [B03, p. 2]; [B03, p. 3]
+
+| Proyecto | Ejemplo | Revisión |
+|---|---|---|
+| Mejora chica | Mejorar el tiempo de respuesta | Autoevaluación |
+| Mejoras funcionales | Agregar un módulo de fidelización | Revisión de pares |
+| Sistema complejo de misión crítica | Construir un sistema satelital | Revisión externa |
+
+En ATAM, los revisores son **externos**, de otra organización, para aportar una opinión imparcial y una perspectiva independiente. [B03, p. 5] El método supone que los revisores no conocen los objetivos de negocio ni la arquitectura del sistema, y sirve para dominios como finanzas, defensa o automotriz. [B03, p. 33]
+
+### Tres momentos del proceso
+
+| Momento | Duración | Participantes | Contenido |
+|---|---|---|---|
+| Vista macro (*macro view*) | 1–2 días | Sponsor, arquitecto y equipo evaluador | Objetivos y funciones de negocio, enfoque arquitectónico, árbol de utilidad |
+| Vista detallada (*detailed view*) | 2 días | Lo anterior más todos los stakeholders | Escenarios detallados, priorización por votación, tácticas usadas |
+| Hallazgos (*findings*) | 1 semana | Equipo evaluador | Riesgos, puntos sensibles, trade-offs |
+
+La tabla combina [B03, p. 6]; [B03, p. 7]; [B03, p. 9].
+
+Los ejemplos de hallazgos son estos: [B03, p. 10]
+
+- **Riesgo:** ciertos servicios de acceso a datos no son suficientemente seguros, y un atacante podría obtener datos privados como la fecha de nacimiento.
+- **Punto sensible:** la interfaz de un sistema de comercio electrónico con un gateway de telecomunicaciones es sensible a cambios en la interfaz del gateway.
+- **Trade-off:** varios niveles de seguridad, como contraseña de usuario, contraseña de transacción y OTP, pueden perjudicar la usabilidad.
+
+El ejemplo de la vista macro es un **sistema judicial**. Su objetivo es mejorar la eficiencia de los tribunales. Sus funciones son presentar una causa, tramitar los procedimientos y dictar sentencia, y sus atributos de calidad son la seguridad de la información y la usabilidad. Su árbol de utilidad anota cada escenario con **valor de negocio** e **impacto en la arquitectura** (alto, medio o bajo). [B03, p. 8] **Inferencia:** es el mismo par que la clase llama [importancia, dificultad]. [CL09-P, p. 26]
+
+### Fases, participantes y salidas
+
+| Fase | Actividad | Participantes | Duración |
+|---|---|---|---|
+| 0 | Asociación y preparación | Equipo evaluador y decisores del proyecto | Pocas semanas |
+| 1 | Evaluación | Lo anterior más el arquitecto | 1–2 días |
+| 2 | Evaluación | Lo anterior más los stakeholders | 2 días |
+| 3 | Seguimiento: preparar el reporte | Equipo evaluador | 1 semana |
+
+La tabla traduce [B03, p. 36]. Los pasos se reparten así: 1 a 6 en la fase 1, 7 y 8 en la fase 2 y el paso 9, presentar resultados, en la fase 3. [B03, p. 37] Esto coincide con la secuencia de la clase. [CL09-P, p. 25]
+
+Participan cinco roles: [B03, p. 34]
+
+- el equipo evaluador;
+- los decisores del proyecto, como el stakeholder de negocio o el project manager;
+- los stakeholders de la arquitectura: usuarios, desarrolladores, testers y mantenimiento;
+- un **escriba de escenarios**, que anota los escenarios discutidos;
+- un **escriba de actas**, que registra objetivos, enfoque arquitectónico y observaciones.
+
+Las salidas de ATAM son estas: [B03, p. 35]; [B03, p. 39]
+
+- una presentación concisa de la arquitectura y los objetivos de negocio;
+- los escenarios de atributos de calidad priorizados;
+- los riesgos y no riesgos;
+- los **temas de riesgo** (*risk themes*), es decir, debilidades sistémicas de la arquitectura;
+- el mapeo de decisiones arquitectónicas a escenarios;
+- los puntos sensibles y trade-offs.
+
+El flujo conceptual del SEI une los *business drivers* con los atributos de calidad y los escenarios, y la arquitectura con los enfoques y las decisiones. Ambas ramas entran al **análisis**, que produce trade-offs, puntos sensibles, no riesgos y riesgos. Los riesgos se destilan en temas de riesgo, que vuelven a impactar sobre los drivers y la arquitectura. [B03, p. 38]
+
+### Caso CAAS: aviónica de Rockwell Collins
+
+El *Common Avionics Architecture System* (CAAS) integra en la cabina varios subsistemas: comunicaciones, navegación, armas y sensores de misión. Debe servir a distintos tipos de helicóptero. [B03, p. 13]; [B03, p. 14] Antes había dos sistemas propietarios distintos, y eso exigía más esfuerzo para mejorarlos y mantenerlos. [B03, p. 15]
+
+- **Objetivo:** un sistema escalable para las cabinas de varios helicópteros, más fácil de mantener, que admita mejoras de terceros y ofrezca una apariencia común. [B03, p. 16]
+- **Enfoque:** una única arquitectura de aviónica abierta y común para todas las plataformas, que reduzca el costo total de propiedad. [B03, p. 17]
+- **Atributos de calidad:** disponibilidad, performance y mantenibilidad. [B03, p. 18]
+
+Los enfoques arquitectónicos identificados fueron cinco, cada uno con los atributos que favorece: [B03, p. 41]
+
+| Enfoque | Descripción | Atributos |
+|---|---|---|
+| Particionado | Memoria y tiempo de CPU asignados por partición | Disponibilidad, safety, modificabilidad, testabilidad, mantenibilidad |
+| Encapsulamiento | Aísla particiones; entre ellas solo se comparte estado por la red, mediante RSI y RSP | Modificabilidad, disponibilidad |
+| Estrategia de interfaces | Acceso a componentes solo por sus interfaces | Modificabilidad, mantenibilidad |
+| Capas | Aíslan los servicios gráficos de alto nivel | Portabilidad, modificabilidad |
+| Procesamiento distribuido | Cliente-servidor para desacoplar partes, más broadcast periódico | Mantenibilidad, modificabilidad |
+
+Los diagramas muestran tres particiones —gráficos, aplicación y comunicación— conectadas por interfaces, sobre capas en un sistema POSIX. Varias de esas estructuras se distribuyen con **transparencia de ubicación** y **software redundante maestro-esclavo**. [B03, p. 19]; [B03, p. 20]
+
+El **árbol de utilidad** de disponibilidad baja a tres preocupaciones: [B03, p. 21]
+
+- que el software no se caiga, incluso ante datos inválidos o un corte de energía de 1,9 s;
+- una degradación elegante ante fallas, como la pérdida del Doppler o la caída de una partición;
+- ninguna degradación ante fallas con componentes redundantes.
+
+En la fase 2, los stakeholders generaron escenarios y los votaron. Los más votados fueron dos: [B03, p. 22]
+
+- que ningún punto único de falla afecte la seguridad o la performance (10 votos);
+- que el 75 % del CAAS se construya con componentes reutilizados (9 votos).
+
+Las observaciones del análisis fueron estas: [B03, p. 23]; [B03, p. 24]
+
+- **Riesgo:** no hay *hooks* para conectar simuladores, así que el software no puede manejar a la vez el simulador y el helicóptero real.
+- **Punto sensible:** aislar las dependencias del sistema operativo mejora la portabilidad.
+- **Trade-off:** dejar que el piloto fije parámetros, como el límite de temperatura de la turbina, aumenta la flexibilidad pero reduce la seguridad.
+- **Tema de riesgo:** varios escenarios trataban sobre performance, pero los requisitos de performance no estaban explicitados.
+
+### Caso Battlefield Control System
+
+La revisión externa también puede revelar riesgos no imaginados. [B03, p. 25] Un sistema de control de batalla coordina en tiempo real a un comandante con varios soldados y con sistemas externos de comando y control. [B03, p. 26] Durante la evaluación se descubrió que el nodo de control y su respaldo intercambiaban mucho más datos que el resto. Ese patrón de comunicación distintivo permitiría al enemigo detectarlos y atacarlos. [B03, p. 27]
+
+**Conclusión del autor:** en sistemas grandes, complejos y de misión crítica, la revisión externa aporta mucho valor y reúne a todos los stakeholders. Además de identificar riesgos, deja artefactos útiles: árbol de utilidad, escenarios y diagramas de arquitectura. [B03, p. 28]
+
+### Autoevaluación: checklists y modelos
+
+Para revisiones chicas, la presentación propone **checklists**: [B03, p. 30]
+
+- **Disponibilidad:** ¿hay mecanismos para detectar fallas, conmutar a un respaldo, informar al cliente y guardar el estado periódicamente?
+- **Performance:** ¿cómo se agregan y quitan recursos dinámicamente? ¿Cómo se evita el cuello de botella de un recurso común?
+
+También propone **modelos** simples, que funcionan como técnicas cuantitativas: [B03, p. 31]; [B03, p. 32]
+
+- **Disponibilidad con respaldo en caliente:** si cada servidor falla con probabilidad 0,01, la probabilidad de que fallen ambos es 0,01 × 0,01 = 0,0001. La disponibilidad sube del 99 % al 99,99 %.
+- **Latencia en serie:** la latencia que percibe el cliente es la suma de los módulos que atraviesa la solicitud, por ejemplo 0,1 + 0,2 + 0,3 = 0,6 ms. La figura usa 1, 2 y 3 s, con un total de 6 s. Ver [Dudas y conflictos](../dudas-y-conflictos.md).
+
+**Inferencia:** el modelo de disponibilidad supone fallas independientes. Si ambos servidores comparten una causa de falla, como el mismo centro de datos, la disponibilidad real es menor.
+
+Para aplicar ATAM a un caso completo, ver el [caso HealthCare.gov](caso-healthcare-gov.md).
 
 ## Lightweight ATAM
 
@@ -342,3 +466,5 @@ La clase cierra con cinco ideas: [CL09-P, p. 32]
 - BDUF, YAGNI, sprint-zero y SAFe ubican la arquitectura dentro de las [metodologías clásicas y ágiles](metodologias-clasicas-y-agiles.md).
 - El gráfico de Boehm y Turner usa el factor RESL de COCOMO II; conecta la inversión en arquitectura con la [estimación](estimacion-de-proyectos.md). [CL09-P, p. 4]
 - YAGNI se apoya en refactorizar para eliminar [deuda técnica](calidad-de-software.md) [CL09-P, p. 3], y Lightweight ATAM funciona como revisión intermedia de QA. [CL09-P, p. 30]
+- El [caso HealthCare.gov](caso-healthcare-gov.md) es la consigna para simular las fases 0 y 1 de ATAM sobre un sistema real que falló en su lanzamiento. [CASO-HCG, p. 8]; [CASO-HCG, p. 9]
+- La elección del mecanismo de [persistencia](persistencia.md) es una decisión arquitectónica con trade-offs evaluables. **Inferencia.**

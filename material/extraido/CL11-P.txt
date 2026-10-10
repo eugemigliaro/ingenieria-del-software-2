@@ -1,0 +1,296 @@
+FUENTE: CL11-P
+TITULO: Clase 11: persistencia
+ORIGINAL: material/catedra/teoria/clase-11-presentacion-persistencia.pdf
+PAGINAS: 25
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Persistencia
+
+===== PAGINA 2 =====
+
+2
+
+===== PAGINA 3 =====
+
+3
+
+===== PAGINA 4 =====
+
+4
+
+===== PAGINA 5 =====
+
+               Logs                         Cada registro (fila lógica) ocupa una cantidad fija de caracteres, y
+                                            dentro de ese registro, cada campo también tiene un tamaño
+                                            predefinido
+
+
+                                       + JSON
+
+
+
+
+                              Intercambio
+                                de datos
+
+
+                Rendimiento
+Comunicación
+
+
+
+                                                                                                                   5
+
+===== PAGINA 6 =====
+
+Archivos binarios
+
+Formato no directamente legible por humanos → Para ser leído por un programa
+Ejemplos de archivos binarios: .jpg, .mp3, .mp4, .dat, .sqlite…
+
+  -   Archivos indexados
+       1. Permite acceder rápidamente a ciertos registros usando una clave o índice
+       2. Ventaja: búsqueda rápida.
+       3. Desventaja: hay que mantener actualizado el índice cuando se cambian los registros
+  -   Serialización
+       1. Convertir una estructura de datos (por ej, un objeto) en una secuencia de bytes o texto para
+             poder guardarla en un archivo o enviarla por red
+       2. Ejemplo de archivo binario serializable: formato Pickle de Python
+
+
+
+
+                                                                                                         6
+
+===== PAGINA 7 =====
+
+¿Redis? Más o menos
+❌ Prevalencia pura = se persiste el estado de objetos
+❌Redis = se persisten estructuras de datos clave-valor
+✅ Implementa el mismo principio arquitectónico
+
+
+
+
+                                                         7
+
+===== PAGINA 8 =====
+
+Los snapshots suelen ser serializaciones binarias del
+estado interno de los objetos (por ejemplo, usando
+ObjectOutputStream en Java o pickle en Python).
+
+
+                                                        8
+
+===== PAGINA 9 =====
+
+9
+
+===== PAGINA 10 =====
+
+10
+
+===== PAGINA 11 =====
+
+Caso típico: DWH
+• Los datos se extraen de sistemas transaccionales
+• Se transforman y agregan.
+• Se almacenan en estructuras multidimensionales optimizadas para lectura.
+
+
+
+
+                                                                             11
+
+===== PAGINA 12 =====
+
+Ejemplos:                             • En OO hay herencia, encapsulamiento y referencias.
+• ZODB: Python                        • En SQL hay tablas, claves y joins.
+• Objectivity/DB: C++, Java, Python   • No hay necesidad de hacer mapeos ni usar un ORM
+• db4o: Java y .NET                     (como Hibernate o SQLAlchemy).
+
+
+                                                                                             12
+
+===== PAGINA 13 =====
+
+13
+
+===== PAGINA 14 =====
+
+A - Atomicidad (Atomicity): Una transacción es una unidad indivisible de trabajo
+Ejemplo: Si transferís $100 de una cuenta A a una cuenta B, ambas operaciones (restar
+de A y sumar a B) deben completarse.
+
+C - Consistencia (Consistency): Una transacción lleva la base de datos de un
+estado válido a otro estado válido
+Ejemplo: Si hay una regla que dice "el saldo no puede ser negativo", ninguna transacción
+puede violar esta restricción.
+
+I - Aislamiento (Isolation): Las transacciones concurrentes se ejecutan de forma
+aislada, como si fueran secuenciales.
+Ejemplo: Si dos personas intentan comprar el último producto disponible
+simultáneamente, solo una transacción debe tener éxito.
+
+D - Durabilidad (Durability): Una vez que una transacción se confirma (commit), los
+cambios son permanentes, incluso ante fallos del sistema (caídas de energía, crashes).
+Ejemplo: Después de confirmar un pago, ese registro persiste aunque el servidor se
+reinicie inmediatamente después.
+                                                                                           14
+
+===== PAGINA 15 =====
+
+            Se usa principalmente en análisis
+            de grandes volúmenes de datos
+            (Big Data, BI, IoT, métricas, logs).
+
+
+
+
+ Apache
+Cassandra
+
+
+
+
+                                                   15
+
+===== PAGINA 16 =====
+
+16
+
+===== PAGINA 17 =====
+
+17
+
+===== PAGINA 18 =====
+
+18
+
+===== PAGINA 19 =====
+
+elegir qué columnas de una
+   tabla querés obtener
+
+
+
+
+                             19
+
+===== PAGINA 20 =====
+
+20
+
+===== PAGINA 21 =====
+
+  Bases de Datos Vectoriales
+Las bases de datos vectoriales almacenan y gestionan vectores multidimensionales (embeddings → representaciones
+numéricas de texto, imágenes, audio u otros datos generadas por modelos de IA)
+
+Su objetivo principal es buscar similitudes semánticas entre elementos, no coincidencias exactas.
+
+Ejemplos: Pinecone, Qdrant, Chroma
+
+Usos:
+• No reemplazan a las relacionales, se integran con ellas para ofrecer búsquedas semánticas
+• Fundamentales en sistemas modernos de IA generativa.
+
+Funcionamiento:
+• Codificación: un modelo (ej. BERT, OpenAI Embeddings) transforma el dato en un vector.
+• Almacenamiento: los vectores se guardan junto con metadatos.
+• Consulta: al buscar, el sistema calcula la distancia (coseno, euclidiana, etc.) entre el vector de consulta y los almacenados.
+• Resultado: devuelve los elementos más similares semánticamente.
+
+
+                                                                                                                                   21
+
+===== PAGINA 22 =====
+
+Bases de Datos Vectoriales
+              Qué hace la base de datos vectorial:
+              • La base de datos vectorial es como el mapa 3D de palabras (para un texto)
+              • Guarda las posiciones (los “vectores”) de cada palabra.
+              • Busca cuáles están más cerca de la que preguntás.
+              • Devuelve las más parecidas.
+
+
+
+
+                                                                                            22
+
+===== PAGINA 23 =====
+
+     Persistencia - Resumen
+1. Prevalencia: guarda todo el estado del sistema en memoria y lo persiste periódicamente mediante snapshots o logs de
+transacciones.
+ • Ejemplo: implementaciones caseras de in-memory persistence.
+ • Casos típicos: sistemas financieros o de simulación con datos complejos que deben responder rápido (baja latencia, pocos
+   usuarios).
+ • No recomendado: el conjunto de datos excede la memoria disponible, hay muchos usuarios concurrentes o se necesita consulta
+   ad hoc (no está optimizada para búsquedas).
+
+2. Archivos: almacenamiento en archivos planos o estructurados (CSV, JSON, XML, binarios, etc.).
+• Ejemplo: logs de auditoría, configuración, resultados de procesos batch.
+• Casos típicos: intercambio simple de datos, backups, persistencia mínima en apps de escritorio o scripts.
+• No recomendado: aplicaciones con concurrencia, integridad referencial o necesidad de consultas complejas. Falta atomicidad y
+   consistencia transaccional.
+
+3. Bases de datos relacionales: almacenamiento estructurado en tablas con relaciones (modelo entidad–relación) y lenguaje SQL.
+• Ejemplo: PostgreSQL, MySQL, SQL Server.
+• Casos típicos: sistemas transaccionales, ERP, CRM, sistemas bancarios.
+• No recomendado: datos no estructurados, grandes volúmenes de datos distribuidos o alta variabilidad de esquema.
+                                                                                                                                 23
+
+===== PAGINA 24 =====
+
+     Persistencia - Resumen
+4. Bases de datos multidimensionales: organizan los datos en cubos con dimensiones y medidas para análisis rápido (OLAP).
+• Ejemplo: Microsoft Analysis Services, Apache Kylin.
+• Casos típicos: inteligencia de negocios (BI), dashboards, análisis histórico, reportes agregados.
+• No recomendado: transacciones online (OLTP), actualizaciones frecuentes o escritura intensiva.
+
+5. Bases de datos orientadas a objetos (OODB): almacenan objetos completos con su estructura y relaciones, sin convertirlos a
+tablas.
+ • Ejemplo: db4o, ObjectDB, Versant.
+ • Casos típicos: aplicaciones que manejan jerarquías y grafos complejos.
+ • No recomendado: integración con sistemas externos o consultas SQL; baja adopción y soporte limitado.
+
+6. Bases de datos NoSQL por columnas: los datos se almacenan por columnas, no por filas; optimizadas para lectura analítica y
+compresión.
+• Ejemplo: Apache Cassandra, HBase.
+• Casos típicos: grandes volúmenes de datos distribuidos, telemetría, analítica en tiempo real.
+• No recomendado: transacciones fuertes o estructuras relacionales complejas.
+
+
+                                                                                                                                24
+
+===== PAGINA 25 =====
+
+     Persistencia - Resumen
+7. Bases de datos NoSQL por clave/valor: los datos se almacenan como pares {clave: valor}, sin estructura fija.
+• Ejemplo: Redis, Amazon DynamoDB.
+• Casos típicos: caché, sesiones de usuario, colas de mensajes.
+• No recomendado: búsquedas por atributos o relaciones; solo acceden por clave.
+
+8. Bases de datos NoSQL por documentos: almacenan documentos semiestructurados (JSON, XML). Cada documento contiene
+todo lo necesario.
+ • Ejemplo: MongoDB, CouchDB, Firestore.
+ • Casos típicos: catálogos de productos, APIs, apps móviles.
+ • No recomendado: cuando se requiere consistencia transaccional fuerte o relaciones complejas.
+
+9. Bases de datos vectoriales: almacenan embeddings o representaciones numéricas de datos (texto, imágenes, audio) para
+búsquedas por similitud.
+• Ejemplo: Pinecone, FAISS.
+• Casos típicos: búsqueda semántica, recomendadores, RAG (Retrieval-Augmented Generation), IA generativa.
+• No recomendado: datos estructurados, operaciones transaccionales o reportes agregados.
+
+
+                                                                                                                          25
+

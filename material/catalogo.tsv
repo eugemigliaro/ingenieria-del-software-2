@@ -20,3 +20,8 @@ CL08-P	presentacion	Clase 8: vistas y estilos de arquitectura	material/catedra/t
 B01	bibliografia	Kruchten (1995): Architectural Blueprints — The 4+1 View Model of Software Architecture	material/catedra/bibliografia/kruchten-1995-modelo-4-mas-1.pdf	16	2026	vigente	The_41_View_Model_of_Architecture.pdf
 B02	bibliografia	Robal, Viies y Kruus (2002): RUP con el modelo 4+1 para aplicaciones web	material/catedra/bibliografia/robal-2002-rup-4-mas-1-web.pdf	15	2026	vigente	The_Rational_Unified_Process_with_the_41_View_Mode.pdf
 CL09-P	presentacion	Clase 9: evaluación de arquitecturas	material/catedra/teoria/clase-09-presentacion-evaluacion-de-arquitecturas.pdf	33	2026	vigente	clase 9 - Evaluación de arquitecturas.pdf
+CL11-P	presentacion	Clase 11: persistencia	material/catedra/teoria/clase-11-presentacion-persistencia.pdf	25	2026	vigente	clase 11 - Persistencia.pdf
+B03	bibliografia	Hariharan (BITS Pilani): ATAM — caso de estudio de evaluación de arquitectura	material/catedra/bibliografia/hariharan-atam-caso-de-estudio.pdf	41	2026	vigente	ATAM-Case-study-in-Architecture-evaluation.pdf
+B04	bibliografia	HHS OIG (2016): HealthCare.gov — CMS Management of the Federal Marketplace, an OIG Case Study (OEI-06-14-00350)	material/catedra/bibliografia/hhs-oig-2016-healthcare-gov-caso.pdf	92	2026	vigente	Caso Healthcare.gov - informe oficial.pdf
+CASO-HCG	consigna	Caso HealthCare.gov: evaluación de la arquitectura con ATAM (fases 0 y 1)	material/catedra/practica/caso-healthcare-gov-consigna.pdf	9	2026	vigente	Caso Healthcare.gov.pdf
+CROSS-2026-05	consigna	Cross Challenge mayo 2026: tres casos de definición y evaluación de arquitectura	material/catedra/practica/cross-challenge-2026-05.pdf	2	2026	vigente	Cross Challenge Mayo 2026.pdf

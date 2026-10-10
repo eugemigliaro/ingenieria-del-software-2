@@ -103,3 +103,4 @@ El cierre de la clase resume: **arquitectura de software = vistas + estilos**. L
 - Por qué elegir un estilo u otro: drivers y trade-offs en [atributos de calidad](arquitectura-y-atributos-de-calidad.md).
 - Cómo comprobar que el estilo elegido cumple: [evaluación de arquitecturas](evaluacion-de-arquitecturas.md). La actividad de la clase 9 pide combinar un pipeline dataflow, un estilo distribuido y un manejo de eventos. [CL09-P, p. 2]
 - La degradación arquitectónica mencionada en [calidad de software](calidad-de-software.md) es, en parte, la erosión de estas decisiones de estilo. **Inferencia.**
+- El caso CAAS combina particionado, capas, cliente-servidor y broadcast, y en el [caso de estudio ATAM](evaluacion-de-arquitecturas.md#atam-en-la-práctica-caso-de-estudio-de-hariharan) cada enfoque se vincula con los atributos que favorece. [B03, p. 41]

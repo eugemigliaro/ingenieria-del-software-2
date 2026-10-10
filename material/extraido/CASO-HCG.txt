@@ -1,0 +1,83 @@
+FUENTE: CASO-HCG
+TITULO: Caso HealthCare.gov: evaluación de la arquitectura con ATAM (fases 0 y 1)
+ORIGINAL: material/catedra/practica/caso-healthcare-gov-consigna.pdf
+PAGINAS: 9
+
+===== PAGINA 1 =====
+
+The Healthcare.gov Case
+
+===== PAGINA 2 =====
+
+Background
+
+ ▶ March 2010: Obama signs Affordable Care Act
+
+
+ ▶ HealthCare.gov is a healthcare exchange website.
+   ▶ “One-stop shopping sites for health insurance”
+   ▶ CBO forecast: 7 million users during the first year
+
+
+
+
+ ▶ Development contracts awarded in September 2011
+
+
+ ▶ HealthCare.gov launched on October 1, 2013
+   ▶   Serious technological problems
+
+===== PAGINA 3 =====
+
+Process & Problems
+
+===== PAGINA 4 =====
+
+Architecture
+
+===== PAGINA 5 =====
+
+
+===== PAGINA 6 =====
+
+
+===== PAGINA 7 =====
+
+Launch Problems
+
+ ▶ Performance: response time (landing page) > 8s
+ ▶ Navigation: broken UI
+ ▶ Stability: intermittent crashes, availability ≈ 43%
+ ▶ Functionality: incorrect and incomplete data
+ ▶ Error rate (per page) ≈ 6%
+ ▶ Scalability: < 1,100 concurrent users
+ ▶ Enrollment completion rate < 30%
+
+===== PAGINA 8 =====
+
+Assignment
+
+ ▶ After the launch failure, you have been assigned to a
+   team of architects that has to evaluate the
+   architecture
+ ▶ You will use the ATAM model to evaluate the
+   architecture
+ ▶ This evaluation will be used as input for a new version
+   of the system
+ ▶ Starting point:
+   https://oig.hhs.gov/oei/reports/oei-06-14-00350.asp
+
+===== PAGINA 9 =====
+
+Assignment
+
+ ▶ Divide in two groups. Each group will simulate ATAM
+   Phase 0 and Phase 1
+ ▶ What should be done in Phase 0? Review and simulate
+ ▶ What should be done in Phase 1? Review and simulate
+   ▶ Evaluate situation
+   ▶ Create scenarios
+   ▶ Create utility tree
+   ▶ Presente including utility
+ ▶ Present to the class
+

@@ -1,0 +1,107 @@
+FUENTE: CROSS-2026-05
+TITULO: Cross Challenge mayo 2026: tres casos de definición y evaluación de arquitectura
+ORIGINAL: material/catedra/practica/cross-challenge-2026-05.pdf
+PAGINAS: 2
+
+===== PAGINA 1 =====
+
+Caso 1: Plataforma de minitiendas para cuentas PYME
+
+Un banco desea dar un servicio a sus cuentas PYME para que puedan crear sus propios
+sitios de venta de productos. Las cuentas PYME podrán montar minitiendas virtuales y usar
+los servicios de pago del banco para que sus clientes paguen las compras.
+
+El sistema debe permitir configurar minitiendas virtuales sin necesidad de programación, a
+partir de templates de estilos prefabricados, customizables en forma limitada en colores,
+fuentes y gráficos. Cada cuenta PYME contará con un perfil administrador para mantener
+productos, administrar clientes registrados y obtener reportes analíticos predefinidos.
+
+Los clientes podrán visitar las tiendas, ver productos, seleccionarlos en un carrito, elegir un
+método de envío y pagar. Para pagar deberán estar registrados y logueados. Las
+minitiendas usarán servicios de pago del banco y servicios logísticos de terceros. El sistema
+debe estar disponible 24x7, tener tiempos de respuesta aceptables para las transacciones
+de compra y soportar hasta 100.000 tiendas virtuales, con un promedio de 500 productos
+por tienda y alrededor de 100 transacciones diarias por tienda, con fuertes picos
+estacionales.
+
+El banco, además, deberá contar con funcionalidad de administración para consultar las
+minitiendas establecidas y las transacciones de las cuentas PYME, sin acceder a los datos
+confidenciales de cada minitienda.
+
+Consignas para el caso 1:
+
+1.a. Formular la necesidad del cliente en menos de 40 palabras.
+
+1.b. Listar las funcionalidades de alto nivel del sistema. Se esperan al menos 6
+funcionalidades.
+
+
+
+Caso 2: Portal corporativo de viajes de negocio
+
+Una compañía de turismo desea ofrecer un servicio de viajes de negocio para empresas,
+con tarifas especiales y posibilidad de emitir facturas A y B. Para esto, cada empresa debe
+registrarse con su CUIT y generar un portal propio, customizando paleta de colores, logos y
+otros aspectos visuales.
+
+El portal ofrece hoteles y vuelos, que se recuperan mediante integración con diversos
+canales agregadores, como Sabre, Booking.com u otros. Los proveedores externos son
+varios y diversos, y a futuro podrían agregarse nuevos. El sistema debe recolectar la oferta
+de todos estos canales, unificarla, ordenarla y priorizarla. Estos servicios externos son
+múltiples y complejos, por lo que se debe evitar que su complejidad afecte negativamente la
+experiencia de usuario al realizar una búsqueda.
+
+Cada compañía debe poder establecer reglas de política de viajes, definiendo compañías
+predilectas, costos máximos por noche, categorías de viaje según nivel jerárquico del
+empleado, entre otras. Es importante asegurar que los usuarios respeten estas políticas,
+
+===== PAGINA 2 =====
+
+que no accedan al portal personas ajenas a la compañía y que los precios promocionales
+no sean usados para viajes personales.
+
+Consignas para el caso 2:
+
+2.a. Construir un árbol de utilidad con los primeros 2 niveles.
+
+El árbol debe incluir atributos de calidad relevantes para el caso. Para cada atributo
+principal, indicar subatributos o escenarios generales asociados.
+
+2.b. Indicar riesgos, no riesgos, supuestos y tradeoffs tomados.
+
+La respuesta debe distinguir claramente entre riesgos, no riesgos, supuestos y tradeoffs. No
+alcanza con una lista genérica: los elementos deben estar vinculados con el caso.
+
+
+
+Caso 3: Cotizador y emisor online de pólizas y otros servicios comparables
+
+Una compañía desea ofrecer un servicio de cotización y emisión de pólizas de seguro para
+autos online. Para esto debe poder obtener y comparar presupuestos de múltiples
+aseguradoras en función de la información provista por el usuario, como DNI, marca,
+modelo, año del vehículo y otros datos relevantes. El objetivo es garantizar la mejor oferta
+para el usuario, considerando no sólo el costo sino también condiciones como la franquicia.
+
+El mantenimiento de marcas y modelos es anual y debe poder realizarse de forma sencilla.
+Si bien inicialmente el sistema se enfocará en pólizas para autos, el plan de la empresa es
+expandirse a otros rubros, como pólizas contra incendio, robo e incluso comparación de
+líneas de crédito, tarjetas de crédito u otros productos financieros. Se espera que el negocio
+crezca rápidamente y se expanda tanto en líneas de servicio como en países de la región.
+
+Consignas para el caso 3:
+
+3.a. Documentar dos vistas del modelo 4+1.
+
+Se espera al menos:
+
+   ●​ una vista lógica o de módulos, donde se observe la separación entre dominio del
+      negocio, integración con proveedores externos, reglas de comparación y emisión;
+   ●​ una vista de procesos o escenarios, que represente el flujo principal de cotización de
+      una póliza automotor.
+
+3.b. Indicar qué estilos arquitectónicos usarían y dónde.
+
+Se deben mencionar al menos tres estilos arquitectónicos, indicando en qué parte del
+sistema aplicarían y qué problema resuelve cada uno. No alcanza con nombrar estilos:
+deben estar justificados en relación con el caso.
+
