@@ -8,7 +8,7 @@
 | Clase 9 — Actividad 2: definiciones de arquitectura | [CL09-P, p. 33] | Árbol de utilidad, 4+1 y estilos | [practica/clase-09-actividad-2](../practica/clase-09-actividad-2/README.md) |
 | Caso HealthCare.gov: simular las fases 0 y 1 de ATAM | [CASO-HCG, p. 8]; [CASO-HCG, p. 9] | [Evaluación de arquitecturas](temas/evaluacion-de-arquitecturas.md#atam) y [Caso HealthCare.gov](temas/caso-healthcare-gov.md) | Pendiente |
 | Cross Challenge, mayo de 2026: tres casos | [CROSS-2026-05, p. 1]; [CROSS-2026-05, p. 2] | Necesidad y funcionalidades, árbol de utilidad, hallazgos de ATAM, 4+1 y estilos | Pendiente |
-| Ejercicio de parcial rotulado 2013: control de una fábrica | [EJ-2013, p. 1] | Necesidad y funcionalidades, árbol de utilidad, arquitectura candidata, resolución de atributos y hallazgos | Pendiente |
+| Ejercicio de parcial rotulado 2013: control de una fábrica | [EJ-2013, p. 1] | Necesidad y funcionalidades, árbol de utilidad, arquitectura candidata, resolución de atributos y hallazgos | 1.d en [practica/ejercicio-2013-control-de-fabrica](../practica/ejercicio-2013-control-de-fabrica/README.md); a, b, c, e y f pendientes |
 | Trabajo práctico general: cinco casos | [TP-GRAL, p. 1]; [TP-GRAL, p. 6] | Casos para definir una arquitectura; el documento no trae consignas | Pendiente |
 
 **Inferencia:** el ejercicio de 2013 y el Cross Challenge recorren la misma secuencia, que es el formato esperable de un ejercicio del segundo parcial. Ver [Alcance del segundo parcial](parcial-2-alcance.md#formato-de-ejercicio-esperable).
