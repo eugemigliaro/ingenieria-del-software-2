@@ -1,6 +1,6 @@
 # Evaluación de arquitecturas
 
-> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuente principal: presentación de la clase 9 `CL09-P`. La mayoría de sus diapositivas son imagen y el texto extraído está incompleto. Por eso las páginas se revisaron renderizadas y esta síntesis cubre también ese contenido. La sección [ATAM en la práctica](#atam-en-la-práctica-caso-de-estudio-de-hariharan) suma la presentación de Hariharan, `B03`, entregada por la cátedra como bibliografía.
+> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Sí entra en el segundo parcial: ver [alcance del segundo parcial](../parcial-2-alcance.md). Fuente principal: presentación de la clase 9 `CL09-P`. La mayoría de sus diapositivas son imagen y el texto extraído está incompleto. Por eso las páginas se revisaron renderizadas y esta síntesis cubre también ese contenido. La sección [ATAM en la práctica](#atam-en-la-práctica-caso-de-estudio-de-hariharan) suma la presentación de Hariharan, `B03`, entregada por la cátedra como bibliografía.
 
 ## Cuándo definir la arquitectura: anticipar o adaptarse
 

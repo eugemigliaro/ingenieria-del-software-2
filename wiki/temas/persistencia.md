@@ -1,6 +1,6 @@
 # Persistencia
 
-> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuente principal: presentación de la clase 11, `CL11-P`. Varias diapositivas son solo imagen, así que se revisaron renderizadas.
+> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Sí entra en el segundo parcial: ver [alcance del segundo parcial](../parcial-2-alcance.md). Fuente principal: presentación de la clase 11, `CL11-P`. Varias diapositivas son solo imagen, así que se revisaron renderizadas.
 
 ## Qué es y por qué hace falta
 

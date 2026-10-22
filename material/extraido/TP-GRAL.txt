@@ -1,0 +1,251 @@
+FUENTE: TP-GRAL
+TITULO: Trabajo práctico general: cinco casos para definir arquitectura (cuentas, cartilla online, compensación bancaria, tintométrico, gestor de documentos)
+ORIGINAL: material/catedra/practica/tp-general-cinco-casos.pdf
+PAGINAS: 6
+
+===== PAGINA 1 =====
+
+                      Ingeniería de software II – Trabajo Práctico
+
+
+Sistema de Administración de Cuentas para una empresa de
+logística
+
+Descripción.
+    El sistema de Administración de cuentas permitirá al usuario de los diferentes niveles
+ejecutivos, contar con una herramienta que sirva como soporte a la toma de decisiones,
+mediante la presentación de las estadísticas y reportes generados en base a la información
+obtenida, aportando además el resguardo y acceso a los datos.
+    A continuación se detallan las principales funcionalidades que se espera realice la
+aplicación:
+      Administración General de Datos: compendio de funcionalidades relacionadas con la
+       dirección y control de los datos tipificados utilizados posteriormente en los distintos
+       reportes.
+      Procesamiento de Archivos: se deben importar 15 archivos, provenientes de diferentes
+       sistemas, y en diferentes formatos. La importación se realizará una vez al mes y se
+       espera que se realice en forma automática. Se espera la generación de logs de
+       auditoría para poder identificar los errores detectados durante la importación. En caso
+       de fallas de la importación se espera retomar la misma en el punto de detención.
+      Visualización y Generación de Reportes: es el función principal de la herramienta. Se
+       espera integrar los datos obtenidos de los archivos importados para generar informes
+       mensuales.
+      Administración de seguridad: se requiere un módulo de seguridad que permita el
+       ingreso de usuarios / grupos. Los usuarios tienen permiso de acceso a datos según su
+       nivel jerárquico. Solo podrá ver los reportes de los ejecutivos de cuenta a su cargo.
+
+
+
+
+                                                                                             1
+
+===== PAGINA 2 =====
+
+Cartilla Online
+
+Descripción.
+Una importante empresa de salud actualmente dispone de una cartilla online (web) con varias
+limitaciones como ser: es estática (la información de los prestadores no está actualizada
+constantemente) y las opciones de búsqueda son reducidas.
+
+Una cartilla es un catalogo de prestadores (profesional médico, institución, hospital, clínica,
+centro de diagnostico, farmacia, etc.) en donde cada prestador brinda una o más prestaciones
+(un servicio médico). Cada prestación se corresponde a un tipo como ser: Consultas Médicas,
+Farmacia, Guardia, Internación, Odontología, etc.). Por ejemplo: El tipo de prestación Guardia
+agrupa las prestaciones Servicio de Guardia 24 hs, Guardias pediátricas, Guardias
+odontológicas, etc.
+
+Por lo tanto el objetivo de la empresa es crear un nuevo sistema que le permita acercarse y
+mejorar la comunicación con sus clientes/asociados.
+El sistema debe cubrir al menos los siguientes requisitos:
+      Acceso desde la web y desde dispositivos móviles: El sistema debe ser accedido desde
+         internet usando un navegador (multibrowser) o desde un dispositivo móvil con
+         sistema operativo Android.
+      La cartilla es de libre acceso pero para alguna funcionalidad se requerirá autenticación.
+      Facilidades de búsqueda: Búsqueda por varios criterios como por ejemplo: Por zona,
+         por plan, por tipo de prestación, etc.
+      Geo-localización de profesionales e instituciones: Búsqueda (disponible únicamente
+         desde dispositivo móvil) en donde se buscan prestadores cercanos a la localización
+         actual.
+      Información de prestadores actualizada: Actualización constante a partir del sistema
+         de prestadores.
+      Posibilidad de dar votos (ser fan) a un prestador. (requiere autenticación).
+      Ver mapa: Opción disponible solo para la aplicación web. Se muestra en un mapa la
+         dirección del prestador.
+      Prestadores Favoritos: Listado de prestadores usados recurrentemente. (requiere
+         autenticación)
+      Calendario: Permite tener un calendario en donde agregar citas con prestadores
+         (requiere autenticación).
+
+El resultado final de consultar la cartilla debe ser un conjunto de prestadores que se
+correspondan con los criterios de la búsqueda
+
+El sistema deberá acceder a otros sistemas de la compañía:
+     1. Sistema de prestadores: Base de datos de los actuales prestadores. Aquí hay datos
+         como: Nombre completo del prestador, teléfono de contacto, dirección completa,
+         especialidad (si corresponde), etc.
+     2. Sistema de contratos: Administra las prestaciones que brindan los prestadores según
+         plan y tipo de prestación.
+El resto de la información necesaria para el sistema debe ser mantenida por este.
+
+Uno de los objetivos de este sistema es que se vaya convirtiendo de a poco en un centro de
+comunicación con los asociados, esto significa que se ira agregando mas funcionalidad
+
+
+                                                                                              2
+
+===== PAGINA 3 =====
+
+Red de compensación bancaria
+
+Descripción.
+El grupo empresario y bancario Negoxio, que tiene en su poder varios bancos de la región y del
+país, tiene planes de crear una nueva empresa dentro del grupo. Dicha empresa tendrá un
+único objetivo que es la implementación y posterior explotación de un sistema compensador
+de redes bancarias.
+
+Una red bancaria es un conjunto de bancos intercomunicados sobre los cuales se permite
+realizar transferencias entre ellos. En una red, cada banco "aporta" un monto de dinero
+determinado al comienzo del día, antes de las 10 de la mañana dado que el sistema debe estar
+operable en el llamado horario bancario (en argentina es de 10 a 15 hs.). De esta forma el
+banco tiene crédito para garantizar las transacciones de sus clientes. Cuando se realiza una
+transferencia desde el banco A (banco de debito) al banco B (banco de crédito) el sistema
+verificará que el banco A tenga las garantías (saldo suficiente) para afrontar la transferencia, si
+la verificación es positiva, se registrará, aprobará y ejecutará la transferencia, descontando del
+saldo del banco A (banco de debito) el monto de la transferencia e incrementando en dicho
+saldo del banco B (banco de crédito). Si la verificación es negativa, la transferencia sería
+rechazada y se notificará al banco A indicando que no tiene saldo suficiente para realizar la
+transferencia. Esta operación debe ser sincrónica online, aunque también el sistema soportará
+una interface asincrónica, y debe realizarse en un tiempo siempre menos a los 5 segundos. El
+sistema también debe permitir que los bancos tengan saldos negativos (un porcentaje del
+"aporte").
+
+Al finalizar el día el sistema compensará la red, es decir verificará los saldos finales y acreditará
+en caso de saldo positivo o solicitará al banco un depósito para finalizar con los saldos en cero.
+Este último proceso se debe iniciar entre las 18 y 19 hs. y es necesario que finalice
+obligatoriamente antes de las 12 hs. del mismo día.
+
+El sistema además soporta solamente transacciones entre bancos de la misma red, por lo que
+debe evitar que bancos fuera de la red ejecuten transferencias. Para lograr esto se utiliza un
+método de criptografía asimétrica de claves públicas y privadas para asegurar la autenticación
+del remitente y la confidencialidad del mensaje.
+
+Además de la funcionalidad de compensación de redes, el sistema provee a sus clientes (los
+bancos) una interface grafica para que puedan gestionar sus datos, monitorear el saldo en su
+cuenta de aporte y generar nuevas garantías, es decir ejecutar depósitos para incrementar el
+monto en la cuenta de aporte (incrementar el saldo). Esta UI debe ser una web 2.0.
+Finalmente el sistema debe ser concebido para que pueda ser implementado en diferentes
+países de la región lo que implica que el sistema de poder adaptarse a cada una de las culturas,
+leyes y reglamentaciones
+
+
+
+
+                                                                                                    3
+
+===== PAGINA 4 =====
+
+Sistema Tintométrico
+
+Descripción.
+Se trata de un sistema para una fábrica de pinturas. El objetivo de la aplicación es poder
+administrar las fórmulas de los colores. A la hora de obtener un determinado color para un
+determinado producto, es necesario obtener la fórmula correcta. Se desarrollan productos
+para: Hogar y Obra, Industria y Automotor. Cada uno de estos tiene su propio laboratorio, que
+se ocupa de administrar las fórmulas. Los laboratorios son los encargados de registrarlas en el
+sistema.
+Existen además productos con los que se confeccionan las fórmulas y sobre los cuales se
+aplican las mismas. Estos productos se importan al sistema, así como sus respectivos precios.
+Los destinatarios de este sistema son las pinturerías que deben vender estos productos y para
+ello requieren de la fórmula adecuada. Los usuarios deben acceder al sistema, ingresar el
+producto y el color, y este devolver la fórmula que indica que productos debe utilizar para
+generar el color y las cantidades necesarias según el producto sobre el cual se va a aplicar y los
+litros del mismo.
+El sistema también calcula el precio del producto. Este valor contempla el costo del producto
+base y los productos utilizados para generar el color. Cada pinturería puede asignar un
+porcentaje de ganancia para poder obtener el precio de venta al público. El sistema provee el
+costo de los productos.
+El sistema debe también permitir a las pinturerías generar y guardar sus propias fórmulas de
+color, sin que estas afecten a la lista de fórmulas que genera la fábrica y sin que estas sean
+vistas por otras pinturerías.
+Es necesario un esquema de seguridad para poder dar permisos de acceso por rol.
+
+
+
+
+                                                                                                 4
+
+===== PAGINA 5 =====
+
+Gestor de documentos
+Descripción.
+Un gestor de documentos distribuido permite trabajar de manera colaborativa a un grupo de
+personas, posiblemente miembros de una misma institución, empresa o una comunidad
+abierta en Internet. Cada una de las estaciones de trabajo de los usuarios que conforman la
+red se comporta como consumidor y proveedor de documentos de manera transparente y
+simultánea. Debido a las capacidades de tolerancia a fallos de las redes P2P (Peer‐to‐Peer), el
+sistema funciona con este tipo de infraestructura de comunicación. En principio, los recursos
+que se comparten en esta red son archivos tales como texto, imágenes, xml, audio, video,
+entre otros. Un conjunto de usuarios se pone de acuerdo para compartir un conjunto de
+documentos.
+Los usuarios pueden también listar o buscar los recursos disponibles según sus permisos sin
+conocer necesariamente la ubicación física dentro de la red. Cuando el usuario lo desea, puede
+obtener alguno de esos documentos para su edición.
+Eventualmente el usuario puede hacer modificaciones al documento en modo off‐line (sin
+estar conectado a la red). Cuando el usuario lo considere, podrá actualizar el documento o
+bien publicarlo en caso de que sea un archivo inexistente previamente.
+Aquellos usuarios con privilegios de administrador pueden decidir deshacer los cambios
+sufridos por un documento.
+
+A continuación se detalla una lista de requerimientos del sistema (funcional y no funcional)
+1. Los documentos administrados por la aplicación deben poder clasificarse o agruparse de
+manera que ciertos usuarios o roles puedan o no, tener permiso sobre ellos. Cada usuario
+tiene permitido un conjunto de operaciones los distintos grupos de documentos.
+2. Debe permitirse la asignación de roles a usuarios. Un rol permite definir un conjunto de
+operaciones sobre todos o algunos grupos de datos.
+3. Deberán existir al menos un rol de administración general, que permite administrar (crear,
+eliminar, modificar) documentos, roles, usuarios y grupos de documentos dentro de toda la
+red. También puede decidir que usuarios excluir del sistema.
+4. Algunos usuarios o roles pueden tener el permiso especial para deshacer cambios sobre uno
+o más documentos. El administrador general siempre puede hacerlo.
+5. El sistema debe permitir buscar documentos en base a atributos tales como: creador del
+documento, fecha de creación, fecha de última modificación, grupo y en ciertos casos, por
+contenido. Solo puede buscarse sobre archivos públicos, es decir, aquellos a los cuales el
+usuario tiene al menos acceso de lectura.
+6. Si el usuario trabajó desconectado, puede decidir sincronizar sus cambios con los de la
+aplicación en cualquier momento en que se encuentre conectado a la red.
+7. El sistema debe permitir al usuario definir una cantidad predeterminada de espacio de
+almacenamiento en su estación de trabajo.
+8. Las estaciones de trabajo pueden ser equipos PC de escritorio o también dispositivos
+móviles con conexiones de peor calidad como teléfonos celulares, PDAs o laptops con
+conectividad intermitente.
+9. El sistema debe permitir que un usuario trabaje con documentos gestionados por la
+aplicación sin verse afectado por intermitencias en la conexión a la red o porque algunas
+estaciones de trabajo puedan encontrarse fuera de servicio.
+10. Siempre que una modificación haya sido publicada a la red, ésta debe estar disponible para
+el resto de los usuarios. En otras palabras, todos deben ver los mismos datos, dentro de un
+cierto período umbral.
+11. La historia de operaciones realizadas sobre un documento siempre debe estar accesible,
+junto con la fecha y usuario que la realizó.
+
+                                                                                             5
+
+===== PAGINA 6 =====
+
+12. Debe ser posible identificar cuando un dato haya sido adulterado intencionalmente por
+una persona no identificada (que no sea usuario registrado), evitando su propagación por el
+resto de la red.
+13. El sistema debe funcionar con un desempeño razonable no solo en redes cerradas
+(privadas) sino también en ambientes abiertos como pueden serlo diferentes tipos de
+comunidades basadas en Internet.
+14. El sistema debe desarrollarse de forma tal que en el futuro otras aplicaciones puedan
+utilizarlo como plataforma para almacenar datos.
+
+
+Features de referencias
+http://www.zyncro.com/features
+
+
+
+
+                                                                                              6
+

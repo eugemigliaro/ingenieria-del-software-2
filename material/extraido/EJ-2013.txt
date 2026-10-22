@@ -1,0 +1,44 @@
+FUENTE: EJ-2013
+TITULO: Ejercicio de parcial rotulado 2013: sistema de control de una fábrica con sensores
+ORIGINAL: material/catedra/practica/ejercicio-2013-control-de-fabrica.pdf
+PAGINAS: 1
+
+===== PAGINA 1 =====
+
+1​.​ ​ ​[6​ ​ptos]​ ​Dado​ ​el​ ​siguiente​ ​caso:
+
+          Se requiere realizar un sistema de control en una fábrica. Para esto se tomarán datos
+de sensores distribuidos por la planta por medio de una interfaz serie, que tiene una velocidad
+de transferencia bastante limitada. La comunicación con los sensores es por medio de polling:
+ante un pedido del sistema, el sensor retorna el valor actualmente sensado. Dado que se utiliza
+una​ ​interfaz​ ​serie,​ ​sólo​ ​se​ ​puede​ ​hablar​ ​con​ ​un​ ​sensor​ ​por​ ​vez.
+          Las métricas que importa controlar dentro de la fábrica, no siempre son directamente las
+censadas, sino que estos valores deben ser procesados de diversas formas (integrados en el
+tiempo, combinados con otras métricas, etc.). Por ejemplo, interesa medir volumen de agua
+que pasa por un caño (metros cúbicos), pero el sensor utilizado es un caudalímetro (metros
+cúbicos por segundo); o interesa medir el consumo eléctrico (Watts), y para ello se cuenta con
+voltímetros​ ​y​ ​amperímetros.​ ​Estos​ ​cómputos​ ​no​ ​siempre​ ​son​ ​sencillos.
+          Dado que el sistema es de control, es fundamental que la frecuencia de sensado sea lo
+más alta posible, de modo de poder disparar alertas cuando algún parámetro está fuera del
+rango​ ​aceptable.
+          Adicionalmente interesa almacenar esta información para poder generar reportes de
+tendencia. Estos reportes obviamente no precisan la información en tiempo real, sino que la
+necesitan agregada, de forma de minimizar los puntos a ser utilizados en los reportes y así
+permitir consultas más veloces. Siendo así, alcanza con un punto por hora por métrica. No
+todos​ ​los​ ​reportes​ ​son​ ​accesibles​ ​a​ ​todos​ ​los​ ​usuarios,​ ​debiéndose​ ​implementar​ ​un​ ​ACL.
+          El sistema deberá funcionar en la fábrica por varios años. Los sensores, como
+dispositivos físicos que son, se romperán y deberán ser cambiados con el transcurso del
+tiempo. Como es natural en el mundo del hardware, las marcas, modelos y prestaciones de los
+sensores que se usarán en el futuro muy posiblemente sean distintos (mayor resolución, menor
+error​ ​de​ ​sensado,​ ​etc.).
+
+Analizar:
+a.​ ​Necesidad​ ​del​ ​cliente​ ​(en​ ​menos​ ​de​ ​40​ ​palabras).
+b.​ ​Punteo​ ​de​ ​funcionalidades​ ​de​ ​alto​ ​nivel​ ​(al​ ​menos​ ​5​ ​items).
+c.​ ​Atributos​ ​de​ ​calidad​ ​prioritarios​ ​en​ ​un​ ​árbol​ ​de​ ​utilidad​ ​(los​ ​primeros​ ​2​ ​niveles).
+
+Definir:
+d.​ ​Una​ ​arquitectura​ ​candidata​ ​y​ ​justificarla​ ​(texto,​ ​gràficos,​ ​lo​ ​que​ ​sea​ ​necesario).
+e.​ ​Indicar​ ​cómo​ ​se​ ​resuelven​ ​los​ ​atributos​ ​de​ ​calidad​ ​del​ ​punto​ ​(1.c)​.
+f.​ ​Indicar​ ​riesgos/no​ ​riesgos,​ ​supuestos​ ​y​ ​tradeoffs​ ​tomados.
+

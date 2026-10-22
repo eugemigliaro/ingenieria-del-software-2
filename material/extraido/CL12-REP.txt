@@ -1,0 +1,141 @@
+FUENTE: CL12-REP
+TITULO: Clase 12: repaso de los temas del segundo parcial
+ORIGINAL: material/catedra/teoria/clase-12-repaso-parcial-2.pdf
+PAGINAS: 11
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Temas del Parcial
+
+===== PAGINA 2 =====
+
+Clase 7 – Atributos de Calidad
+
+-   Rol del arquitecto
+-   Requerimientos Funcionales
+-   Requerimientos de No Funcionales
+-   Atributos de Calidad
+
+
+
+
+                                       2
+
+===== PAGINA 3 =====
+
+Clase 8 – Estilos de Arquitectura
+
+-  Modelo 4+1 de Vistas: Lógica, Procesos, Desarrollo, Física, Escenarios +
+   Diagramas UML asociados
+- Estilos de Arquitectura:
+1. Dataflow
+2. Sistemas Distribuidos
+3. Sistemas Interactivos
+4. Sistemas Basados en Eventos
+
+
+
+
+                                                                              3
+
+===== PAGINA 4 =====
+
+Clase 8 – Estilos de Arquitectura
+
+-   Estilos de Arquitectura – Dataflow
+
+
+
+
+                                         4
+
+===== PAGINA 5 =====
+
+Clase 8 – Estilos de Arquitectura
+
+-   Estilos de Arquitectura – Sistemas distribuidos
+
+
+
+
+                                                      5
+
+===== PAGINA 6 =====
+
+Clase 8 – Estilos de Arquitectura
+
+-   Estilos de Arquitectura – Sistemas Interactivos
+
+
+
+
+                                                      6
+
+===== PAGINA 7 =====
+
+Clase 8 – Estilos de Arquitectura
+
+-   Estilos de Arquitectura – Sistemas Basados en Eventos
+
+
+          Tipo de procesamiento                    Definición                                         Ejemplo
+
+
+                                   Procesa eventos de a uno, en forma            Un sensor IoT de temperatura manda un evento y
+        Single Event Processing
+                                   aislada.                                      el sistema dispara una alarma si pasa 30 °C.
+
+                                   Procesa un flujo continuo de eventos,
+                                                                                 Analizando todos los clics en un sitio web para
+        Event Stream Processing    aplicando transformaciones, agregaciones o
+                                                                                 métricas.
+                                   filtros en línea.
+
+                                   Detecta patrones complejos a partir de        En un sistema financiero: detectar fraude
+        Complex Event Processing   múltiples eventos simples, correlacionados    combinando patrón de muchos retiros pequeños +
+                                   en tiempo y espacio.                          acceso desde IP inusual.
+
+                                   Procesa eventos en tiempo real, casi sin
+                                                                                 Registrar en tiempo real el clic de un usuario en un
+        Online Event Processing    latencia, para reaccionar inmediatamente al
+                                                                                 e-commerce y actualizar su carrito.
+                                   suceso.
+
+                                                                                                                                        7
+
+===== PAGINA 8 =====
+
+Clase 9 – Evaluación de Arquitecturas
+
+
+
+
+                                        8
+
+===== PAGINA 9 =====
+
+Clase 9 – Evaluación de Arquitecturas
+
+
+
+
+                                        9
+
+===== PAGINA 10 =====
+
+Clase 10 – Persistencia
+
+
+
+
+                          10
+
+===== PAGINA 11 =====
+
+Clase 11 – Arquitecturas de Integración
+

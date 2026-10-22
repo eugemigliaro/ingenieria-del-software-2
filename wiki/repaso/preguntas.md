@@ -2,7 +2,7 @@
 
 Preguntas para recuperación activa. Para el primer parcial vigente, priorizar las preguntas 1, 3–4, 7–21, 23–25, 28–32 y 34–38. Las preguntas 2, 5–6, 22, 26–27 y 33 incluyen contenido retirado del recorte; se conservan como ampliación. Las cinco preguntas finales pertenecen al parcial anterior, pero trabajan relaciones entre temas que siguen dentro del alcance actual. Ver [alcance detallado](../parcial-1-alcance.md). Para practicar con respuestas desarrolladas y en ciclos de dificultad creciente, ver el [banco del primer parcial](parcial-1-banco.md). [N-2026-09-07-alcance-primer-parcial] [N-2026-09-07-parkinson-primer-parcial]
 
-Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1, material posterior al recorte del primer parcial.
+Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1, material posterior al recorte del primer parcial. Para el segundo parcial, las preguntas 109–122 recorren el temario del repaso de la clase 12 y practican el formato de ejercicio con `EJ-2013` y los casos de `TP-GRAL`; ver [alcance del segundo parcial](../parcial-2-alcance.md).
 
 ## Fundamentos, procesos y ciclos de vida
 
@@ -150,3 +150,20 @@ Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1,
 106. Describí los tres enfoques de la arquitectura de integración ágil. ¿Por qué usar un runtime de integración liviano dentro de una aplicación de microservicios no recrea un ESB? [B06, p. 2]; [B06, p. 5]; [B06, p. 7]; [B06, p. 8]
 107. ¿Volver a conectar las aplicaciones directamente es regresar al punto a punto? Justificá con el argumento de Clark. [B06, p. 9]; [B06, p. 10]
 108. En el caso 2 del Cross Challenge, la oferta llega de varios agregadores y podrían sumarse otros. Proponé una arquitectura de integración y justificá cómo afecta la modificabilidad y la performance de la búsqueda. [CROSS-2026-05, p. 1]; [CROSS-2026-05, p. 2]
+
+## Segundo parcial: temario y ejercicios tipo
+
+109. Según el repaso de la clase 12, ¿qué temas entran de cada clase? ¿Qué temas estudiados no aparecen, y por qué eso no alcanza para descartarlos? [CL12-REP, p. 2]; [CL12-REP, p. 3]; [CL12-REP, p. 8]; [CL12-REP, p. 10]; [CL12-REP, p. 11]
+110. ¿Qué rol cumple el arquitecto en el Architecture Business Cycle? ¿Qué decide junto con el PM en ATAM? [CL07-P, p. 4]; [CL07-P, p. 5]; [CL07-P, p. 7]; [CL09-P, p. 24]
+111. Distinguí requerimientos funcionales y no funcionales. Dá un ejemplo de cada tipo que sea, además, arquitectónicamente significativo. [CL07-P, p. 13]; [CL07-P, p. 15]; [CL09-P, p. 7]
+112. Para cada vista del 4+1, indicá qué pregunta responde y qué diagrama UML usarías. ¿Dónde ubicarías un diagrama de secuencia y por qué? [CL12-REP, p. 3]; [CL08-P, p. 14]; [CL08-P, p. 15]; [CL08-P, p. 16]
+113. Clasificá en los cuatro tipos de procesamiento de eventos: una alarma de temperatura, métricas de clics, detección de fraude y la actualización de un carrito. ¿Qué distingue *complex* de *stream*? [CL12-REP, p. 7]; [CL08-P, p. 54]
+114. Compará broker, forwarder–receiver y client–dispatcher–server según quién conoce la ubicación de quién y quién queda en el camino de cada mensaje. [CL12-REP, p. 5]; [CL08-P, p. 35]; [CL08-P, p. 42]; [CL08-P, p. 44]
+115. Ejercicio 2013, puntos a–c: formulá la necesidad del cliente en menos de 40 palabras, listá cinco funcionalidades de alto nivel y armá los dos primeros niveles del árbol de utilidad. [EJ-2013, p. 1]; [CL09-P, p. 26]
+116. Ejercicio 2013: ¿qué estilos combinarías para la adquisición por *polling*, el cálculo de métricas derivadas, las alertas y los reportes horarios? ¿Qué persistencia conviene para los reportes de tendencia? [EJ-2013, p. 1]; [CL08-P, p. 26]; [CL08-P, p. 27]; [CL11-P, p. 11]
+117. Ejercicio 2013: los sensores van a cambiar de marca y modelo durante años. ¿Qué atributo está en juego y qué decisión arquitectónica lo protege? Escribilo como hoja del árbol de utilidad con su par [importancia, dificultad]. [EJ-2013, p. 1]; [CL09-P, p. 26]
+118. Ejercicio 2013, punto f: proponé un riesgo, un no riesgo, un supuesto y un trade-off, y explicá por qué el supuesto no es un hallazgo de ATAM. [EJ-2013, p. 1]; [CL09-P, p. 28]
+119. TP general, compensación bancaria: identificá los requisitos arquitectónicamente significativos y proponé estilos para la transferencia sincrónica, la interfaz asincrónica y la compensación de fin del día. [TP-GRAL, p. 3]; [CL09-P, p. 7]; [CL08-P, p. 26]; [CL08-P, p. 38]
+120. TP general, gestor de documentos: ¿qué estilo distribuido da transparencia de ubicación? ¿Qué trade-off hay entre trabajar desconectado y que todos vean los mismos datos dentro de un umbral? [TP-GRAL, p. 5]; [CL08-P, p. 44]
+121. TP general, cartilla online: hay que integrar el sistema de prestadores y el de contratos, atender web y móvil, y crecer como centro de comunicación. ¿Punto a punto, SOA con ESB o API gateway? Justificá. [TP-GRAL, p. 2]; [CL11-INT, p. 10]; [CL11-INT, p. 11]; [CL11-INT, p. 23]
+122. TP general, sistema tintométrico: ¿qué atributo de calidad protege que las fórmulas propias de una pinturería no las vean otras? Formulá un escenario medible para verificarlo. [TP-GRAL, p. 4]; [CL09-P, p. 15]

@@ -1,6 +1,6 @@
 # Arquitectura y atributos de calidad
 
-> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuente principal: presentación de la clase 7 `CL07-P`.
+> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Sí entra en el segundo parcial: ver [alcance del segundo parcial](../parcial-2-alcance.md). Fuente principal: presentación de la clase 7 `CL07-P`.
 
 ## Qué se entiende por arquitectura
 

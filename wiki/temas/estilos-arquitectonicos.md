@@ -1,6 +1,6 @@
 # Estilos arquitectónicos
 
-> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuente principal: segunda mitad de la clase 8 (`CL08-P`, pp. 23–59).
+> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Sí entra en el segundo parcial: ver [alcance del segundo parcial](../parcial-2-alcance.md). Fuente principal: segunda mitad de la clase 8 (`CL08-P`, pp. 23–59).
 
 ## De describir a diseñar
 
@@ -70,7 +70,18 @@ El sistema se subdivide en componentes individuales que se comunican entre sí. 
 | Complex Event Processing | Detecta patrones complejos a partir de múltiples eventos simples correlacionados en tiempo y espacio | Detección de fraude bancario; bloqueo tras varios intentos de login fallidos |
 | Online Event Processing | Procesa eventos en tiempo real, casi sin latencia, para reaccionar de inmediato | Carrito de Amazon; trading en milisegundos |
 
-La tabla resume [CL08-P, p. 53] y [CL08-P, p. 54]. El procesamiento de eventos aparece hoy en microservicios, sistemas de tiempo real, plataformas de streaming —play, pausa y skip como eventos— e IoT, con ejemplos como Netflix, Amazon, Uber y Spotify. [CL08-P, p. 55]
+La tabla resume [CL08-P, p. 53] y [CL08-P, p. 54]. El repaso del segundo parcial reproduce las mismas definiciones con un solo ejemplo por tipo, más fácil de recordar: [CL12-REP, p. 7]
+
+| Tipo | Ejemplo del repaso |
+|---|---|
+| Single Event Processing | Un sensor IoT de temperatura manda un evento y el sistema dispara una alarma si pasa de 30 °C |
+| Event Stream Processing | Analizar todos los clics de un sitio web para obtener métricas |
+| Complex Event Processing | Detectar fraude combinando muchos retiros pequeños con un acceso desde una IP inusual |
+| Online Event Processing | Registrar en tiempo real el clic de un usuario en un e-commerce y actualizar su carrito |
+
+**Inferencia:** la diferencia clave entre stream y complex es que el primero transforma o agrega un flujo, mientras que el segundo correlaciona eventos distintos para detectar un patrón que ninguno revela por separado.
+
+El procesamiento de eventos aparece hoy en microservicios, sistemas de tiempo real, plataformas de streaming —play, pausa y skip como eventos— e IoT, con ejemplos como Netflix, Amazon, Uber y Spotify. [CL08-P, p. 55]
 
 - **Ventaja:** los subsistemas son altamente independientes y pueden desarrollarse, escalarse y ponerse en producción por separado. [CL08-P, p. 56]
 - **Desventajas:** reproducir situaciones particulares o determinar la causa raíz de un problema puede ser complejo; rastrear una operación de punta a punta o garantizar tiempos de procesamiento también exige esfuerzo. La última oración de la diapositiva está incompleta. [CL08-P, p. 56]

@@ -1,6 +1,6 @@
 # Documentación de arquitectura y modelo 4+1
 
-> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Fuentes: primera mitad de la clase 8 (`CL08-P`, pp. 1–23), el paper de Kruchten (`B01`), indicado en clase como lectura para el hogar y como bibliografía recomendada [CL08-P, p. 5]; [CL08-P, p. 59], y el paper de Robal, Viies y Kruus (`B02`). Las páginas de `B01` y `B02` siguen la numeración del PDF: la página 1 de cada uno es una portada de ResearchGate.
+> **Alcance:** esta clase es posterior al recorte del primer parcial y no aparece en él. Ver [alcance del primer parcial](../parcial-1-alcance.md). Sí entra en el segundo parcial: ver [alcance del segundo parcial](../parcial-2-alcance.md). Fuentes: primera mitad de la clase 8 (`CL08-P`, pp. 1–23), el paper de Kruchten (`B01`), indicado en clase como lectura para el hogar y como bibliografía recomendada [CL08-P, p. 5]; [CL08-P, p. 59], y el paper de Robal, Viies y Kruus (`B02`). Las páginas de `B01` y `B02` siguen la numeración del PDF: la página 1 de cada uno es una portada de ResearchGate.
 
 ## Para qué documentar una arquitectura
 
