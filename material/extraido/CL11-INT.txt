@@ -1,0 +1,328 @@
+FUENTE: CL11-INT
+TITULO: Clase 11: arquitecturas de integración
+ORIGINAL: material/catedra/teoria/clase-11-presentacion-arquitecturas-de-integracion.pdf
+PAGINAS: 25
+
+===== PAGINA 1 =====
+
+Ingeniería de Software II
+
+
+
+
+      Arquitecturas de Integración
+
+===== PAGINA 2 =====
+
+- Conexión “punto a punto”
+- Interfaces específicas
+   para cada sistema contra
+   cada Sistema
+
++ Simple
+- Desorden
+
+
+
+
+                        2
+
+===== PAGINA 3 =====
+
+                                                                 Evitar la maraña de
+                                                             integraciones punto a punto
+
+       Intermediado que “rutea”:
+transformación de datos, mediación de             Colas,
+   protocolos, orquestación simple y            HTTP/SOAP,
+  desacoplamiento entre aplicaciones            RMI, JDBC…
+
+
+
+  Middleware
+
+
+
+     Apps
+
+
+
+
+                      Sistemas independientes
+
+
+
+
+                                                                                           3
+
+===== PAGINA 4 =====
+
+                                                    Nuevo:
+                                                    - Gestiona la exposición de servicios
+    Clientes                                        internos.
+  (consumen                                         - Aplica políticas de seguridad,
+ servicios del                                      visibilidad y virtualización.
+     ESB)
+
+
+
+
+  ESB
+
+
+
+
+ Tendencia EAI:
+- Eliminates
+Data Silos
+                                                              Permite reutilización, bajo
+- Automates
+                                                               acoplamiento y gestión
+Workflows         Cobol, app, legacy, ERP, CRM, …             centralizada de servicios
+- Unifies Data                                                                          4
+
+===== PAGINA 5 =====
+
+      Contexto: madurez de la Web 2.0,
+      AJAX, JSON y las primeras APIs REST
+
+
+
+
+                            Servicios como capa
+                            de integración interna
+
+
+
+SOA
+
+
+
+
+           - Apertura hacia el exterior (web y móviles).
+           - Integraciones más chicas y rápidas, sin tanta
+           infraestructura
+           - Mayor granularidad: ya no exponer “servicios
+           empresariales enormes” (por ej, ESB), sino      5
+           funcionalidades granulares específicas.
+
+===== PAGINA 6 =====
+
+- Las APIs ya no son solo conectores: son interfaces de negocio.
+- La empresa se convierte en una plataforma abierta, capaz de
+escalar exponencialmente gracias a integraciones externas.
+- Se pasa de conectar sistemas a conectar ecosistemas.
+
+
+
+                                         Diferencial:
+                                         - API como interfaz
+                                         pública
+                                         - Otros construyen
+                                         valor alrededor
+                                         - No es solo un
+                                         integrador interno
+
+
+
+
+                                                               6
+
+===== PAGINA 7 =====
+
+7
+
+===== PAGINA 8 =====
+
+                     -   Es un estilo arquitectónico
+                     -   Las funcionalidades de negocio deben implementarse como
+                         servicios independientes
+                     -   Deben tener las interfaces bien definidas y contratos
+                         públicos
+                     -   Pueden ser descubiertos, invocados y reutilizados por otros
+                         sistemas dentro (o fuera) de la organización.
+
+
+                     SOA organiza una aplicación (o varias) como un ecosistema de
+                        servicios autónomos que colaboran entre sí mediante
+                                      mensajes estandarizados.
+
+Como si fuera un “catálogo” de servicios donde podés buscar qué hace
+cada uno, cómo se llama y cómo invocarlo: Service Registry                             8
+
+===== PAGINA 9 =====
+
+No conserva información     - Escalabilidad horizontal: se pueden ejecutar en múltiples nodos
+entre una invocación y la   - Confiabilidad y tolerancia a fallos: Si un nodo cae, otro puede continuar
+siguiente                   - Desacoplamiento
+
+                                                                                                          9
+
+===== PAGINA 10 =====
+
+- Muchos sistemas
+conectados entre sí con
+integraciones individuales
+- Cada nuevo sistema
+obliga a tocar medio mapa
+
+
+
+
+                             10
+
+===== PAGINA 11 =====
+
+                                              - Middleware que actúa como un canal de
+                                              comunicación central entre servicios en una
+                                              arquitectura SOA
+                                              - Permite que distintos sistemas y servicios se
+                                              hablen entre sí, sin conectarse directamente.
+
+
+
+
+                      BPM es la capa que orquesta y
+                                                                  - Seguridad
+                      coordina los servicios para ejecutar
+                                                                  - Políticas de acceso
+                      los procesos de negocio de punta            - Control de versiones
+                      a punta                                     - Monitoreo y auditoría
+                                                                  - Gestión de tráfico
+CASO TELECOM – IBM:                                                                        11
+                                                                  - Cumplimiento de contratos
+  Súper Integración
+
+===== PAGINA 12 =====
+
+- Integrar aplicaciones de manera más ordenada y
+centralizada
+- Puede volverse pesada: requiere gobierno, control
+de contratos, versionado y monitoreo
+
+
+
+
+                                               12
+
+===== PAGINA 13 =====
+
+13
+
+===== PAGINA 14 =====
+
+                                Desafío actual: entregar
+                                cambios rápido, pero sin
+                                  destruir producción
+
+
+
+
+CI/CD, tests automáticos, despliegues y feature flags 14
+
+===== PAGINA 15 =====
+
+           Prácticas
+
+
+
+
+Agilidad                 No es
+                       suficiente
+                                    15
+
+===== PAGINA 16 =====
+
+único .jar
+
+
+
+
+             16
+
+===== PAGINA 17 =====
+
+17
+
+===== PAGINA 18 =====
+
+18
+
+===== PAGINA 19 =====
+
+19
+
+===== PAGINA 20 =====
+
+Entonces… ¿Cuándo no usar microservicios?
+
+    Microservicios != Magia
+    • Agregan complejidad distribuida
+    • Problemas de datos
+    • Trazabilidad
+    • Latencia
+    • Coordinación
+
+    No conviene usarlos si:
+    • El dominio es simple
+    • El equipo es chico
+    • No hay madurez DevOps
+    • No se necesita escalar partes por separado
+
+
+
+
+                                                   20
+
+===== PAGINA 21 =====
+
+21
+
+===== PAGINA 22 =====
+
+- Domain-Driven Design: No se separa por capas
+técnicas, sino por capacidades del negocio.
+- Ejemplo, en banca digital: accounts, transfers,
+loans, cards, fraud-detection, notifications
+
+
+
+
+                                               22
+
+===== PAGINA 23 =====
+
+- Concentra el acceso externo,
+- Enruta requests a servicios
+internos
+- Aplica autenticación, logging, …
+
+
+
+
+                               23
+
+===== PAGINA 24 =====
+
+   Modelo
+serverless de
+  Amazon
+
+
+
+
+                24
+
+===== PAGINA 25 =====
+
+Microservicios → entrega
+rápida y confiable → solo si:
+- DevOps
+- Equipos autónomos
+- Buena arquitectura
+
+
+
+
+                                25
+

@@ -1,0 +1,643 @@
+FUENTE: B07
+TITULO: Clark (IBM): Microservices — how they relate to ESB, APIs and messaging
+ORIGINAL: material/catedra/bibliografia/clark-2018-microservicios-esb-apis-mensajeria.pdf
+PAGINAS: 22
+
+===== PAGINA 1 =====
+
+Microservices:
+How they relate to
+ESB, APIs and
+messaging
+
+
+Kim Clark
+Integration Architect
+Offering Management for
+Hybrid Integration
+
+
+0   10/16/2025
+
+===== PAGINA 2 =====
+
+What is microservices architecture?
+      Monolithic Application                                          Microservices Application
+                               A set of principles that
+                               guide the breaking down of
+                               large components into                                  Microservice
+                               smaller, more self                                     component
+                               contained ones enabling
+            Silo logic         greater agility, more elastic
+                               scalability and and more
+                               differential resilience.
+
+                               Fundamental principles
+                               include maximizing
+                               isolation and decoupling
+                               between components
+                               (including their data),
+                               making components as
+               Silo            stateless as possible and
+               data            avoiding affinities.
+
+                               Supporting requirements
+                               include fully automated
+                               DevOps pipelines and
+                               good automated test             Microservice comp    Microservice comp
+                               coverage.
+
+===== PAGINA 3 =====
+
+Why Microservices?               What are the challenges?
+                                 Maturity
+                                   ▪ Are you ready for a radical change in methods, skillsets,
+                                     infrastructure, operations.
+                                   ▪ Are you sufficiently automated (infrastructure, test, dev pipeline,
+                                     deployment etc.)
+Agility                          Maintenance
+                                   ▪ Will you be able to sustain the skillsets needed to maintain the
+       Faster iteration cycles       microservices architecture in the future?
+                                 Latency & Serialization
+                                   ▪ A request/response chained down a set of microservices must
+       Bounded context               incur extra latency from network hops and serialization
+                                   ▪ Serialization has advanced massively in recent years, but
+Scalability                          inevitably has some contribution to CPU usage
+                                 Data sharing
+                                   ▪ Not all data can be split into neat independent functions. Some
+       Elastic scalability           things are shared, and this needs careful design
+                                 Real-time dependencies and their combined availability
+       Workload orchestration      ▪ Microservices calling other microservices synchronously need
+                                     careful consideration
+                                   ▪ Tends to creep, as one service builds on top of another
+Resilience                         ▪ Need to move to more complex message based techniques
+                                     and/or introduce availability patterns such as circuit breaker
+       Reduced dependencies      Manageability
+                                   ▪ How do you manage and monitor a vast network of microservices
+                                   ▪ How do you diagnose problems across a heavily distributed
+       Fail fast                     landscape
+                                 How does persistence work?
+                                   ▪   Pessimistic versus Optimistic
+                                   ▪   How to handle shared objects
+                                   ▪   Relational / NoSQL
+                                   ▪   ACID / BASE / CQRS / Event Sourcing?                             2
+
+===== PAGINA 4 =====
+
+  Are you really doing microservices
+  or just aligning with some of the microservice principles?
+ Martin Fowler/James Lewis                               12 factor apps
+                                                         I.    Codebase
+ 1. Componentization
+                                                         II.   Dependencies
+ 2. Organized around Business Capabilities               III. Config
+ 3. Products not Projects                                IV. Backing Services
+ 4. Smart endpoints and dumb pipes                       V. Build, release, run
+                                                         VI. Processes
+ 5. Decentralized Governance                             VII. Port binding
+ 6. Decentralized Data Management                        VIII. Concurrency
+ 7. Infrastructure Automation                            IX. Disposability
+                                                         X. Dev/prod parity
+ 8. Design for failure
+                                                         XI. Logs
+ 9. Evolutionary Design                                  XII. Admin processes
+ http://martinfowler.com/articles/microservices.html     http://12factor.net
+
+
+Containers, orchestration frameworks, event sourced applications, eventual
+consistency, CQRS, circuit breaker, bulkhead, service discovery, sidecars, routing
+fabrics, continuous delivery, agile programming, test driven development, contract
+driven development, domain driven design, centralised logging, polygot runtimes…...
+
+Consider the adoption paths of SOA, XP, agile, devops etc. These often came with
+an “all or nothing” message, but can you take on the whole package?                   3
+
+===== PAGINA 5 =====
+
+         Service oriented architecture (SOA)
+and microservices architecture relate to different scopes
+
+                                  SOA relates to enterprise service exposure
+
+
+                                                             µService
+                                                                         µService
+
+
+      Application                  Application                 Application
+                                                               µService µService             Application
+                                                               Microservice
+                                                                application
+                                                           Microservices relate to
+                                                          application architecture
+
+         This simple distinction can be contentious depending on your definition of SOA
+                                                             Original PoV paper on microservices and in integration
+Microservices vs SOA - short blog post and 10 min video          http://ibm.biz/MicroservicesVsSoa (~ 15 pages)
+        http://ibm.biz/MicroservicesVsSoaBlog                             webinar based on above paper
+                                                            http://ibm.biz/MicroservicesVsSoaFullWebinar (55 mins)
+
+===== PAGINA 6 =====
+
+Some microservices principles are really different to SOA
+                                                  Synchronous is bad
+       Reuse is not the goal
+                                           Making synchronous calls such as API
+  Re-use of common components is
+                                             or web services creates real-time
+discouraged due to the dependencies
+                                            dependencies. Messaging is used
+    it creates. Re-use by copy is
+                                                wherever possible between
+              preferred.
+                                                      microservices.
+
+    Client side load balancing                Data duplication is embraced
+
+  Components are assumed to be              Techniques such as event sourcing
+   volatile, so it is often the client’s   result in multiple independent “views”
+ responsibility to find and even load             of the data, ensuring the
+      balance across instances.              microservices are truly decoupled.
+                                                                                    5
+
+===== PAGINA 7 =====
+
+6
+
+===== PAGINA 8 =====
+
+7
+
+===== PAGINA 9 =====
+
+                               Boundaries make complex environments manageable
+           Microservice          The gateways are the way the boundaries are defined and enforced.
+µService
+           component        This diagram focuses on APIs, but the same applies to messaging based interfaces.
+           Serverless
+   f()
+           function                                                                                                                                                                       API gateway
+
+                                                                                                                                                                                                 f()
+                                                                                                                                                                                                         f()
+           Generally                                                                                                                                                                                                       f()
+                                                                                                            API gateway
+           available API              API gateway                                                                                                                                              f()
+                                                                                                                                                                                                       f()
+                                                                                                           µService                                                                f()                             f()
+                                                                              API gateway
+
+           Local API                   Silo
+                                                                          µService
+                                                                                                                                                                         API gateway                                        API gateway
+                                    application                                      µService
+                                                                                                                      µService
+           Application                                                                                                                                                       f()                                                 f()
+                                                                                                                                                                                                                                          f()
+           boundary                                                                                         µService                                                                                   f()
+                                                                              µService                                                                                                                                     f()
+                                                                                                                                                                                  f()
+                                                                                                                                                                   f()                                                                           f()
+           API gateway                                                                                                                                                                           f()
+
+
+                              API gateway
+                                                                          API gateway
+
+                                                                   µService                                                                          API gateway                                                                 API gateway
+                               Silo                                                  µService
+
+                                                                                                                                             f()                                                                     f()
+            API gateway     application                               µService                  µService                                             f()
+                                                                                                                                                                     f()     f()
+                                                                                                                                                                                                                                  f()
+                                                                                                                                                                                                                                                      f()     f()
+
+                                                                                                                                                                                               f()                                                                            f()
+                                                                                                                                       f()                         f()                                         f()                              f()
+                                                               µService           µService                                                                                 f()                                                                              f()
+                                                                                                                                                   f()       f()                         f()                                 f()         f()                            f()
+              Silo                                                                                                                                                                                           f()
+           application                                                                                      API gateway                                                                                                          f()
+                                                                                                                                                                                                                                                f()          f()          f()
+                                     API gateway                                                                                                           f()                                                       f()
+                                                                                                                                               f()                  f()            f()
+                                                                                  µService                                           f()
+                                                                                                                         f()                                                                                                            f()
+                                                                                                     µService
+                              Silo           µService
+                                                                                                                                                                     f()
+                                                                                                                                                                                                               f()
+                                                                                                                                                                                                                                         f()
+                                                                                                                                                                                                                                                  f()
+                                                                                                                                                                                                                                                                  f()
+                                                                                                                               f()                                                                                           f()
+                           application                  µService                 µService
+                                                                                                                                                   f()       f()                 f()
+
+===== PAGINA 10 =====
+
+Importance of API management for microservices
+                                                                    Developer portal:
+                                                                    • API discovery
+                                                                    • Self subscription/administration
+      API Gateway:
+                                                                    • Account usage analytics
+      • Decoupling/routing
+      • Traffic management                                      Developer
+      • Security                                                 Portal
+      • Translation                   API Gateway
+
+                                                                  API
+                                                                Manager
+
+                               Microservices application            API Manager:
+                                                                    • Plan/product design
+                                                                    • Access management
+ Individual microservice components should not be burdened
+                                                                    • Policy administration
+ with the complexities of API exposure beyond the
+                                                                    • API plan usage analytics
+ microservices application boundary. Exposure should be
+ delegated to a separate capability providing as a minimum, a
+ gateway, a developer portal, and API management.
+
+===== PAGINA 11 =====
+
+Inter-microservice vs. inter-application communication
+
+  Inter-microservice communication
+  • Lightweight protocols: HTTP,                                    Microservice
+
+                                                                                              Microservices
+      application messaging                                         component
+  • Runtime component registry
+  • Client-side load balancing and circuit
+                                                                                               application
+      breaker patterns
+                                                     Microservice              Microservice
+  Inter-application communication                    component                 component
+  • Enterprise protocols: Managed API
+                                                             JSON/HTTP
+      gateways, enterprise messaging
+                                                              Exposure Gateway
+  • Design time developer portals
+                                                                                              Microservices
+  • Gateway load balancing and throttling
+
+
+                                                                                               application
+ JSON/HTTP RESTful communication styles may
+  be present in both types of communication, but
+  their implementation may be radically different.
+
+===== PAGINA 12 =====
+
+Integration in the real world today
+                                                           Externally Exposed Services/APIs
+
+
+                                                            Exposure Gateway (external)
+
+
+
+
+                             Engagement
+                                                                                Microservice
+                             Applications
+                                                                                applications
+
+
+
+
+                                               Exposure Gateway (internal)
+                                               Integration Hub
+                                            Adapter         Adapter
+
+
+
+
+                              Systems
+                                                                      Adapter
+
+
+
+                                                                                               SaaS Applications
+                              of Record
+
+
+                                                                                                  (external)
+
+
+
+
+         Business Partners
+                                                Integration Hub
+
+
+
+
+                                                                                                                   11
+
+===== PAGINA 13 =====
+
+12
+
+===== PAGINA 14 =====
+
+                           Moving to agile integration architecture
+                             http://ibm.biz/AgileIntegArchPaper
+
+                         Further links on agile integration architecture:
+                              http://ibm.biz/AgileIntegArchLinks
+
+
+Looking for         Source paper on microservices in relation to SOA
+                              http://ibm.biz/MicroservicesVsSoa
+more                           Webinar based on above paper
+                      http://ibm.biz/MicroservicesVsSoaFullWebinar
+information?
+                            Look out for related posts and videos on:
+
+                               “Integration Design and Architecture”
+
+                                   blog posts on IBM Integration blog:
+               https://developer.ibm.com/integration/blog/tag/integration-design-and-architecture
+
+===== PAGINA 15 =====
+
+14   10/16/2025
+
+===== PAGINA 16 =====
+
+The Twelve Factors
+
+
+
+I. Codebase
+One codebase tracked in revision control, many deploys
+II. Dependencies
+Explicitly declare and isolate dependencies
+III. Config
+Store config in the environment
+IV. Backing services
+Treat backing services as attached resources
+V. Build, release, run
+Strictly separate build and run stages
+VI. Processes
+Execute the app as one or more stateless processes
+VII. Port binding
+Export services via port binding
+VIII. Concurrency
+Scale out via the process model
+IX. Disposability
+Maximize robustness with fast startup and graceful shutdown
+X. Dev/prod parity
+Keep development, staging, and production as similar as possible
+XI. Logs
+Treat logs as event streams
+XII. Admin processes
+Run admin/management tasks as one-off processes
+
+                                                                   15
+
+===== PAGINA 17 =====
+
+Hybrid Integration Reference Architecture
+                                                                                   API                              SaaS
+                                                       Mobile      Partners        Economy          IoT
+                                                                                                                    Offerings
+                                                                                                                                           XaaS
+
+
+
+                                                                   API & Event Gateway
+
+
+
+
+                                                                                                                                        Cloud affinity
+                         Systems of
+
+
+
+
+    Hybrid Integration
+                                                            {}                      {}            API                         Data
+                         Engagement             {}                      {}                     Composition
+                                                                                                             Events
+                                                                                                                              Sync.
+                         Business logic                   NoSQL                   NoSQL
+                                                                                                     “Digital” connectivity
+
+
+
+
+                         Empowering                                API & Event Gateway
+                         Digital teams
+                                                API Composition                Events              Data Synchronisation
+
+                                                                        “Low level” connectivity
+                         Core
+                         Business                                                                                                     On-Premise
+                         Operations             SoR               SoR            SoR               SoR                 SoR
+
+
+                                                        article                                             video
+                                          http://ibm.biz/HybridIntRefArch                 http://ibm.biz/HybridIntRefArchYouTube
+
+===== PAGINA 18 =====
+
+                                                                                                                                                                             Public API
+Introduction of microservices into large enterprises                                                                                                                     Enterprise API
+                                                                                                                                                                           API Gateway
+Microservices architecture provides an alternative way
+to implement applications within the enterprise, with the                       Externally Exposed Services/APIs                                         Lightweight language runtime
+aim of providing greater agility, scalability and                                                                                                                    Integration runtime
+                                                                                  Exposure Gateway (external)
+resilience by breaking the application up into small
+                                                                                                                                                       Request/response integration
+highly decoupled pieces. These can be safely
+                                                                 Engagement                                                                               Asynchronous integration
+                                                                                                                   Microservice
+maintained and scaled independently by smaller teams
+
+                                                                 Applications
+who can focus on a much smaller scope of functionality.                                                                                           Microservice application boundary
+                                                                                                                   application
+Note that microservices architecture is about how we
+structure the internals of an application. From the                                                                                                                     ESB pattern?
+outside of an application boundary is should be
+                                                                                                                                  In theory, this could be described as “all requests go through
+impossible to tell how it is implemented. Microservices                              Exposure Gateway                             the ESB”, but this causes confusion, as some will interpret it
+architecture says nothing about how we should handle
+                                                                                       Integration Runtime                        as everything going through the Integration Hub, where in
+integration between applications across a large
+                                                                                                                                  fact the only mandatory component of the ESB pattern is the
+enterprise.
+                                                                                                                                  Exposure Gateway. This is a critically important distinction
+                                                                          Microservice                                            because to administer the exposure of an API on the
+Communication between microservice components
+                                                            Systems
+                                                                           application
+                                                                                                                                  gateway is something that an application team should be
+within an application boundary may use no gateway or
+                                                                                                                                  able to do directly, with no need to involve a separate team
+integration at all. However, when communicating from        of Record
+                                                                                                                                  of integration specialists.
+one application to another across application
+boundaries we would expect to see as a minimum an
+                                                                                        Integration                               The Integration Hub should only be used where it is needed,
+API gateway to enable discovery, implement                                                Runtime                                 such as for deep connectivity, complex composition of
+appropriate security, protect the provider systems and
+                                                                                                                                  downstream requests, detailed data mapping,
+provide consistent analytics. There may be a need for
+                                                                                                                                  transactionality, handling of asynchronous transports and so
+deeper integration too.
+                                                                                                                                  on. If all that is needed is exposing and routing of a
+                                                                                                                                  synchronous API, a gateway is sufficient.
+
+===== PAGINA 19 =====
+
+Fine-grained integration: Containerization of the integration hub                                                                                 Public API
+                                                                                                                                              Enterprise API
+Modern integration runtimes have become
+                                                                       Externally Exposed Services/APIs
+                                                                                                                                               API Gateway
+more lightweight, and there is a range of more
+flexible infrastructure including virtual                                                                                       Lightweight language runtime
+                                                                             Exposure Gateway (external)
+machines, containers. There is no longer an                                                                                    Lightweight integration runtime
+imperative to run all integrations in one
+                                                               Engagement
+                                                                                                                              Request/response integration
+runtime.                                                                                                                         Asynchronous integration
+                                                               Application                        Microservice
+                                                                                                  application                               ESB pattern??
+There is no reason why the centralized ESB
+pattern can not be broken up into smaller
+                                                                                                                          Microservice application boundary
+pieces, each containing just a handful of
+integrations. These can be run in containers
+such as Docker and then be managed and                                                                           Would this still be classed as fulfilling the
+scaled independently using for example                                                                           ESB pattern? Does anybody care? The
+Kubernetes orchestration technology.                             Microservice
+                                                                                                                 reality is that it still achieves the same end –
+                                                   Systems
+                                                                  application
+                                                                                                                 exposing services in a standardized way –
+This could certainly be seen to be borrowing                                                                     but in a much more agile, scalable and
+                                                   of Record
+from microservices principles, even if it is not                                                                 resilient fashion. However, the term ESB’s
+necessarily full microservices application                                                                       use is sufficiently broken, that it may be
+architecture.                                                                                                    best to leave it behind.
+
+                                      Note that pre-ESB asynchronous hub and spoke integration
+                                      can also be broken up in this way with the same benefits
+
+===== PAGINA 20 =====
+
+Decentralized integration                                                                                                                             Public API
+Moving ownership to application teams, simplifying the process                                                                                     Enterprise API
+
+                                                                             Externally Exposed Services/APIs
+                                                                                                                                                    API Gateway
+Having broken up the problem into smaller components,
+and with modern integration tooling becoming much                                                                                  Lightweight language runtime
+easier to install and use, it is also now easier distribute                    Exposure Gateway (external)
+                                                                                                                                  Lightweight integration runtime
+the work.
+                                                                                               Microservice
+                                                              Engagement
+                                                                                                                                 Request/response integration
+                                                                                                                                    Asynchronous integration
+                                                                                               application
+Note there is little technical different between this and
+the previous diagram, the change is more about                Applications
+ownership.
+                                                                                                                            Microservice application boundary
+
+Standardized exposure could now be “owned” by the                                                               Note that although ownership of the gateways and
+same team that own the system of record. This                                                                   the integrations is distributed, that doesn’t
+significantly improves agility by reducing the number of                                                        necessarily mean each application team must have
+teams that need to be coordinated for changes to                                                                separate infrastructure. In the diagram, we don’t
+happen.                                                                                                         necessarily have 5 separate gateways for example,
+                                                                                                                there could be just one gateway, or perhaps one for
+We call this style “decentralized integration” to note                                                          all internal API exposure and one for external.
+that it removes the need for a centralized integration        Systems
+
+team that can easily become a bottleneck for projects –       of Record                                         An excellent example of this decentralized
+one of the most common complaints in SOA initiatives.                                                           ownership living on a potentially centralized
+                                                                                                                infrastructure is API management. Teams
+This is particularly powerful when “moving to cloud”.                                                           completely own and administer their own APIs, but
+Integration is already implemented in a cloud friendly                                                          they commonly do that on a multi-tenanted API
+way and aligned with the systems of record. When they                                                           management infrastructure, sharing an API
+move to cloud, the deployment follows a more cloud                                                              gateway.
+ready path.
+
+===== PAGINA 21 =====
+
+Using lightweight integration runtimes within microservices applications                                                                       Public API
+                                                                                                                                           Enterprise API
+
+                                                                      Externally Exposed Services/APIs
+                                                                                                                                             API Gateway
+With only application centric integration,
+microservices will need to do increasingly more                                                                               Lightweight language runtime
+                                                                                Exposure Gateway (external)
+complex integration to take on the compositional                                                                            Lightweight integration runtime
+logic that was in the past implemented (perhaps
+                                                                  Engagement
+                                                                                                                            Request/response integration
+incorrectly) in the centralized ESB.
+                                                                                           Microservice
+                                                                                                                               Asynchronous integration
+                                                                  Application
+                                                                                           application
+Whilst this integration can be done in raw code, we                                                                    Microservice application boundary
+will quickly end up re-inventing the integration
+engines that already exist. It would more make
+sense to use modern lightweight integration
+runtimes where the task is obviously suited to
+them.                                                                                                         It is interesting that the need for completely
+                                                                                                              decoupled data in the microservices
+Typical examples of what would be better done in
+                                                                                                              environments is in fact driving a return the
+an integration runtime would be
+                                                      Systems                                                 use of event centric application design
+composition/aggregation, complex data mapping,
+and ingestion of event streams to populate            of Record                                               patterns. Messaging and asynchronous
+microservices local data stores. Add to that the                                                              interaction in general is something that
+fact that the integration runtime has pre-built                                                               integration engines are also particularly
+connectors to a vast array of protocols and                                                                   well suited to.
+applications, and sophisticated tooling for parsing
+an serializing a wide range of data formats.
+
+===== PAGINA 22 =====
+
+Micro services Inter-communication
+Aim is decoupling for robustness                                            Service
+                                       Microservice                        Discovery
+                                                                JSON /
+Messaging where possible                                        HTTP
+• Lightweight messaging
+                                                                          API
+   (e.g. AMQP, Kafka)              JSON /
+• Publish/subscribe                HTTP                  Publish
+                                                                         Microservice
+• Eventual consistency                      API                           Microservice
+
+Direct calls where necessary           Microservice                                Publish
+Lightweight protocols                   Microservice
+                                                                               Message
+(e.g. JSON/HTTP)                                           Subscribe
+                                                                                 Hub
+• Load balancing/scaling via
+   service discovery
+                                                                   Subscribe
+• Circuit breaker                             Microservice
+                                               Microservice
+• Caching                                        Microservice
+                                                                               Microservices
+                                                                                application
+

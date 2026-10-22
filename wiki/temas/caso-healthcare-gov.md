@@ -171,3 +171,4 @@ El OIG formula diez lecciones: [B04, p. 4]
 - [Metodologías clásicas y ágiles](metodologias-clasicas-y-agiles.md): el informe muestra un ágil aplicado sin requisitos estables por sprint ni gestión disciplinada de cambios. [B04, p. 24]; [B04, p. 26]
 - [Calidad de software](calidad-de-software.md): pruebas *end-to-end*, defectos, deuda técnica y la decisión de refactorizar en vez de reescribir. [B04, p. 35]; [B04, p. 44]
 - [Estilos arquitectónicos](estilos-arquitectonicos.md): el Hub como broker y la distribución en varios centros de datos. **Inferencia.**
+- [Arquitecturas de integración](arquitecturas-de-integracion.md): el Data Services Hub como hub de integración entre el mercado y las agencias. [B04, p. 10] **Inferencia.**

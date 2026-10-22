@@ -43,7 +43,7 @@ El documento plantea tres casos, cada uno con dos consignas. No indica si es eva
 - 2.a. Construir un árbol de utilidad con los dos primeros niveles: atributos de calidad relevantes y, para cada uno, subatributos o escenarios generales.
 - 2.b. Indicar riesgos, no riesgos, supuestos y trade-offs, distinguiéndolos claramente y vinculándolos con el caso.
 
-**Temas involucrados (inferencia).** [Árbol de utilidad y hallazgos de ATAM](temas/evaluacion-de-arquitecturas.md#atam). Los *supuestos* no son una de las salidas de ATAM que lista la clase [CL09-P, p. 28]; la consigna los pide aparte.
+**Temas involucrados (inferencia).** [Árbol de utilidad y hallazgos de ATAM](temas/evaluacion-de-arquitecturas.md#atam). Los *supuestos* no son una de las salidas de ATAM que lista la clase [CL09-P, p. 28]; la consigna los pide aparte. Unificar varios agregadores, con otros por sumarse, es un problema de [arquitecturas de integración](temas/arquitecturas-de-integracion.md): conviene aislar cada proveedor detrás de un adaptador o de un hub, en lugar de integrarlo punto a punto. [CROSS-2026-05, p. 1]; [CL11-INT, p. 3]
 
 ### Caso 3: cotizador y emisor online de pólizas
 
@@ -58,6 +58,6 @@ El documento plantea tres casos, cada uno con dos consignas. No indica si es eva
 - 3.a. Documentar dos vistas del modelo 4+1. Como mínimo, una vista lógica o de módulos que separe dominio, integración con proveedores, reglas de comparación y emisión, y una vista de procesos o escenarios con el flujo principal de cotización automotor.
 - 3.b. Indicar al menos tres estilos arquitectónicos, dónde se aplican y qué problema resuelve cada uno, justificados en el caso.
 
-**Temas involucrados (inferencia).** [Modelo 4+1](temas/documentacion-de-arquitectura-y-modelo-4-mas-1.md) y [estilos arquitectónicos](temas/estilos-arquitectonicos.md). La expansión a nuevos rubros y países apunta a la modificabilidad y la escalabilidad.
+**Temas involucrados (inferencia).** [Modelo 4+1](temas/documentacion-de-arquitectura-y-modelo-4-mas-1.md) y [estilos arquitectónicos](temas/estilos-arquitectonicos.md). La expansión a nuevos rubros y países apunta a la modificabilidad y la escalabilidad. La «integración con proveedores» que pide la vista lógica se relaciona con las [arquitecturas de integración](temas/arquitecturas-de-integracion.md). [CROSS-2026-05, p. 2]
 
 **Inferencia general:** los tres casos recorren la secuencia de la unidad de arquitectura: necesidad y funcionalidades, atributos de calidad y evaluación, y documentación con estilos. Sirven como práctica integradora.

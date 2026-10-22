@@ -468,3 +468,4 @@ La clase cierra con cinco ideas: [CL09-P, p. 32]
 - YAGNI se apoya en refactorizar para eliminar [deuda técnica](calidad-de-software.md) [CL09-P, p. 3], y Lightweight ATAM funciona como revisión intermedia de QA. [CL09-P, p. 30]
 - El [caso HealthCare.gov](caso-healthcare-gov.md) es la consigna para simular las fases 0 y 1 de ATAM sobre un sistema real que falló en su lanzamiento. [CASO-HCG, p. 8]; [CASO-HCG, p. 9]
 - La elección del mecanismo de [persistencia](persistencia.md) es una decisión arquitectónica con trade-offs evaluables. **Inferencia.**
+- Las métricas de entrega de la clase de [arquitecturas de integración](arquitecturas-de-integracion.md#el-desafío-moverse-rápido-sin-romper-nada) miden el proceso de entrega; los SLI y SLO, el servicio en producción. Ambas sirven para escenarios medibles. [CL11-INT, p. 14] **Inferencia.**
