@@ -15,3 +15,6 @@ __pycache__/
 laboratorio/**/data/
 laboratorio/**/.venv/
 laboratorio/**/node_modules/
+
+# Repo propio del TPIF (git@github.com:eugemigliaro/inge2-yolo.git)
+entregas/inge2-yolo/

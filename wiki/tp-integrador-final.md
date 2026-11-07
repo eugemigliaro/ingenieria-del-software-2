@@ -96,6 +96,15 @@ Toda la tabla es **inferencia**: el enunciado no remite a ninguna clase.
 
 La elección de la opción y del caso de uso de la PoC le corresponde al grupo.
 
+## Entrega del grupo
+
+El 7/11/2026 el grupo eligió la opción 2 con **Kafka**. La PoC, el README, el white paper y los diagramas están en un repositorio propio (`git@github.com:eugemigliaro/inge2-yolo.git`). Está clonado en `entregas/inge2-yolo/` y excluido de este repositorio por `.gitignore`. Decisiones:
+
+- **Caso de uso:** el dashboard de analíticas del recorrido para tutores, con alertas de interés y de frustración. Usa los tres tipos de procesamiento de eventos de la clase 8: single, stream y complex.
+- **Stack:** Next.js y TypeScript, consumidores en Node, Postgres y Docker Compose. El despliegue es en una VM de Azure for Students, con el mismo compose.
+- **Diferencia con la [Actividad 2](../practica/clase-09-actividad-2/README.md):** allí el MVP usaba un bus interno apoyado en la base de datos y dejaba el servicio pub-sub para la expansión. La PoC usa Kafka directamente, y el white paper lo justifica por el replay de métricas y la absorción de ráfagas.
+- **Supuesto sobre «se requieren credenciales»:** la app desplegada pide login, y la entrega incluye los usuarios de prueba. La duda sigue abierta con la cátedra.
+
 ## Dudas abiertas
 
 - Qué significa «se requieren credenciales» en el despliegue en la nube. [TPIF-2026, p. 6]
