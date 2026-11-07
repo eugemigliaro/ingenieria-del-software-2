@@ -2,6 +2,8 @@
 
 Índice de consignas oficiales de práctica. Para cada una se indica qué pide y qué páginas de la wiki hacen falta. Las resoluciones van en `practica/` y se trabajan con `$resolver-practica`.
 
+El trabajo práctico integrador final (`TPIF-2026`) no figura acá porque tiene entrega y defensa: ver [Trabajo práctico integrador final](tp-integrador-final.md). Tampoco tiene relación con el «Trabajo práctico general» de cinco casos (`TP-GRAL`): el TPIF trabaja sobre el producto de cada grupo. [TPIF-2026, p. 2]
+
 | Consigna | Fuente | Qué integra | Resolución |
 |---|---|---|---|
 | Clase 9 — Actividad 1: estilos para el producto del grupo | [CL09-P, p. 2] | [Estilos arquitectónicos](temas/estilos-arquitectonicos.md) | [practica/clase-09-actividad-1](../practica/clase-09-actividad-1/README.md) |

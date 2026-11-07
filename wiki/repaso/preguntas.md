@@ -167,3 +167,13 @@ Las preguntas 39–58 cubren las clases 7 y 8 y la bibliografía del modelo 4+1,
 120. TP general, gestor de documentos: ¿qué estilo distribuido da transparencia de ubicación? ¿Qué trade-off hay entre trabajar desconectado y que todos vean los mismos datos dentro de un umbral? [TP-GRAL, p. 5]; [CL08-P, p. 44]
 121. TP general, cartilla online: hay que integrar el sistema de prestadores y el de contratos, atender web y móvil, y crecer como centro de comunicación. ¿Punto a punto, SOA con ESB o API gateway? Justificá. [TP-GRAL, p. 2]; [CL11-INT, p. 10]; [CL11-INT, p. 11]; [CL11-INT, p. 23]
 122. TP general, sistema tintométrico: ¿qué atributo de calidad protege que las fórmulas propias de una pinturería no las vean otras? Formulá un escenario medible para verificarlo. [TP-GRAL, p. 4]; [CL09-P, p. 15]
+
+## Trabajo práctico integrador final
+
+Las preguntas 123–127 preparan la defensa del TPIF; ver [Trabajo práctico integrador final](../tp-integrador-final.md).
+
+123. ¿Qué dos ejes pide integrar el TPIF? ¿Qué debe mostrar cada uno y por qué el enunciado los presenta como el enfoque de la materia? [TPIF-2026, p. 3]; [TPIF-2026, p. 4]; [TPIF-2026, p. 5]
+124. Las tres primeras opciones técnicas del TPIF corresponden a los tres dominios que pedía la Actividad 1 de la clase 9. Relacioná cada opción con su dominio y con un estilo concreto de la clase 8. [TPIF-2026, p. 4]; [CL09-P, p. 2]; [CL08-P, p. 33]; [CL08-P, p. 38]; [CL08-P, p. 54]
+125. Kafka aparece en la clase 8 en dos lugares distintos. ¿Cuáles son, y qué papel cumplen los topics en cada uno? [CL08-P, p. 33]; [CL08-P, p. 54]
+126. En los términos de las técnicas cuantitativas de evaluación, ¿la PoC del TPIF es un experimento o un prototipo? ¿Qué hipótesis del producto podría poner a prueba? [TPIF-2026, p. 3]; [CL09-P, p. 18]
+127. La defensa pide justificar el producto y estimar tiempo y recursos humanos y técnicos. ¿Qué herramientas de productos digitales y qué variables de estimación usarías para cada pedido? [TPIF-2026, p. 7]; [CL04-P, p. 3]; [CL05-P, p. 22]
