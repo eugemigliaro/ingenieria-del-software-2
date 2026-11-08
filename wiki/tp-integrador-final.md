@@ -100,10 +100,12 @@ La elección de la opción y del caso de uso de la PoC le corresponde al grupo.
 
 El 7/11/2026 el grupo eligió la opción 2 con **Kafka**. La PoC, el README, el white paper y los diagramas están en un repositorio propio (`git@github.com:eugemigliaro/inge2-yolo.git`). Está clonado en `entregas/inge2-yolo/` y excluido de este repositorio por `.gitignore`. Decisiones:
 
-- **Caso de uso:** el dashboard de analíticas del recorrido para tutores, con alertas de interés y de frustración. Usa los tres tipos de procesamiento de eventos de la clase 8: single, stream y complex.
-- **Stack:** Next.js y TypeScript, consumidores en Node, Postgres y Docker Compose. El despliegue es en una VM de Azure for Students, con el mismo compose.
-- **Diferencia con la [Actividad 2](../practica/clase-09-actividad-2/README.md):** allí el MVP usaba un bus interno apoyado en la base de datos y dejaba el servicio pub-sub para la expansión. La PoC usa Kafka directamente, y el white paper lo justifica por el replay de métricas y la absorción de ráfagas.
-- **Supuesto sobre «se requieren credenciales»:** la app desplegada pide login, y la entrega incluye los usuarios de prueba. La duda sigue abierta con la cátedra.
+- **Caso de uso:** el dashboard de analíticas del recorrido para padres y profesores. El interés se avisa al completar dos niveles distintos de un área. La frustración, al salir dos veces del mismo nivel después de haber intentado. Usa los tres tipos de procesamiento de eventos de la clase 8: single, stream y complex.
+- **Juegos:** tres minijuegos de texto, uno por carrera. Medicina es El caso, Sistemas es La bajada y Derecho es El tablero. No dependen de reflejos. El servidor publica `nivel_completado` solo cuando el juego se cumple.
+- **Identidad:** Clerk, con onboarding de alumno, padre o profesor. El padre vincula hijos por código y el profesor, un curso. Postgres guarda el rol y los vínculos. Kafka, los dos consumidores y el modelo de lectura siguen igual.
+- **Stack:** Next.js y TypeScript, consumidores en Node, Postgres y Docker Compose. El despliegue es en una VM de Azure for Students, con el mismo compose. Clerk queda afuera del compose: hacen falta sus claves.
+- **Diferencia con la [Actividad 2](../practica/clase-09-actividad-2/README.md):** allí el MVP usaba un bus interno apoyado en la base de datos y dejaba el servicio pub-sub para la expansión. La PoC usa Kafka directamente, y el white paper lo justifica por el replay de métricas y el desacople entre el juego y las alertas.
+- **Supuesto sobre «se requieren credenciales»:** la app desplegada pide login de Clerk, y la entrega incluye los usuarios de prueba (`yolo-demo-2026!`). La duda sigue abierta con la cátedra.
 
 ## Dudas abiertas
 
