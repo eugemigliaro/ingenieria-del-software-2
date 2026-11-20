@@ -101,16 +101,35 @@ La elección de la opción y del caso de uso de la PoC le corresponde al grupo.
 El 7/11/2026 el grupo eligió la opción 2 con **Kafka**. La PoC, el README, el white paper y los diagramas están en un repositorio propio (`git@github.com:eugemigliaro/inge2-yolo.git`). Está clonado en `entregas/inge2-yolo/` y excluido de este repositorio por `.gitignore`. Decisiones:
 
 - **Caso de uso:** el dashboard de analíticas del recorrido para padres y profesores. El interés se avisa al completar dos niveles distintos de un área. La frustración, al salir dos veces del mismo nivel después de haber intentado. Usa los tres tipos de procesamiento de eventos de la clase 8: single, stream y complex.
-- **Juegos:** tres minijuegos de texto, uno por carrera. Medicina es El caso, Sistemas es La bajada y Derecho es El tablero. No dependen de reflejos. El servidor publica `nivel_completado` solo cuando el juego se cumple.
+- **Juegos:** tres minijuegos de texto, uno por carrera, de 9 niveles cada uno. Medicina es El caso, Sistemas es La bajada y Derecho es El tablero. No dependen de reflejos. El servidor publica `nivel_completado` solo cuando el juego se cumple.
 - **Identidad:** Clerk, con onboarding de alumno, padre o profesor. El padre vincula hijos por código y el profesor, un curso. Postgres guarda el rol y los vínculos. Kafka, los dos consumidores y el modelo de lectura siguen igual.
 - **Stack:** Next.js y TypeScript, consumidores en Node, Postgres y Docker Compose. El despliegue es en una VM de Azure for Students, con el mismo compose. Clerk queda afuera del compose: hacen falta sus claves.
 - **Diferencia con la [Actividad 2](../practica/clase-09-actividad-2/README.md):** allí el MVP usaba un bus interno apoyado en la base de datos y dejaba el servicio pub-sub para la expansión. La PoC usa Kafka directamente, y el white paper lo justifica por el replay de métricas y el desacople entre el juego y las alertas.
-- **Supuesto sobre «se requieren credenciales»:** la app desplegada pide login de Clerk, y la entrega incluye los usuarios de prueba (`yolo-demo-2026!`). La duda sigue abierta con la cátedra.
+- **Despliegue:** la PoC está en <https://yolo-tpif-34cb00.brazilsouth.cloudapp.azure.com>. Kafka UI y Mailpit no se exponen a Internet: se ven por túnel SSH, con una clave autorizada en la VM. El 19/11 el grupo acordó dejar la VM prendida hasta la defensa del 26/11.
+- **Supuesto sobre «se requieren credenciales»:** la app desplegada pide login de Clerk, y la entrega incluye las cuentas de prueba de padre, alumno y profesor. Las contraseñas no se guardan en esta wiki. La duda sigue abierta con la cátedra; ver la propuesta de envío más abajo.
+- **White paper (19/11):** cinco páginas de cuerpo más un anexo con la demo en la nube, las cuentas de prueba y el stack. Kafka se justifica por la relectura del log y por el desacople entre el juego y el mail, no por volumen ni por tiempo real; la comparativa empieza por la escritura directa en Postgres.
+
+### Entregables y defensa
+
+El enunciado pide dos entregables: el white paper y la PoC, que incluye el despliegue en la nube. [TPIF-2026, p. 6] La exposición no figura como entregable: no hace falta entregar diapositivas.
+
+Para la defensa, el grupo planea 5 minutos de exposición, 5 de demo y 10 de preguntas. El enunciado indica 10, 10 y 10. [TPIF-2026, p. 7] La diferencia está registrada en [Dudas y conflictos](dudas-y-conflictos.md).
+
+### Propuesta para enviar las credenciales
+
+**Inferencia y conocimiento general**, a confirmar en el grupo:
+
+- Los dos repositorios son públicos, y la contraseña de las cuentas de prueba ya figura en el README de la PoC y en su historial de git. Cualquiera puede entrar como Tomás o como Ana y jugar, o cambiar la contraseña desde el perfil de Clerk y dejar al grupo afuera antes de la defensa.
+- Mandar las credenciales solo por el canal oficial de entrega de la cátedra (el campus o el mail de los docentes), junto con la URL, y no en el repositorio.
+- Antes de mandarlas, cambiar la contraseña de las cuentas de prueba por una nueva que no esté en git. En el README y en el anexo del white paper, reemplazarla por «se envía con la entrega».
+- No compartir nunca las claves de Clerk, la contraseña de Postgres ni el acceso a la cuenta de Azure. Si la cátedra pide acceso a la infraestructura, conviene darle a su cuenta del ITBA un rol de solo lectura en el grupo de recursos (`Reader` en Azure) o agregar su clave SSH a la VM, como hizo el grupo.
+- Después del 26/11, borrar las cuentas de prueba o cambiarles la contraseña.
 
 ## Dudas abiertas
 
 - Qué significa «se requieren credenciales» en el despliegue en la nube. [TPIF-2026, p. 6]
 - Si Flink debe usarse como *single event processing*, según el rótulo del enunciado. [TPIF-2026, p. 4]
 - El enunciado no indica criterios de evaluación, peso en la nota, medio ni hora de entrega, ni quién valida la opción «Otros» y hasta cuándo. [TPIF-2026, p. 4]; [TPIF-2026, p. 6]
+- Si la defensa es de 10 + 10 + 10 minutos, como dice el enunciado, o de 5 + 5 + 10, como informó el grupo. [TPIF-2026, p. 7]
 
-Las tres están registradas en [Dudas y conflictos](dudas-y-conflictos.md).
+Las cuatro están registradas en [Dudas y conflictos](dudas-y-conflictos.md).
