@@ -124,7 +124,7 @@ Los dos repositorios son públicos, y la contraseña original de las cuentas de 
 
 - Se cambió la contraseña de las cinco cuentas. La anterior quedó en el historial de git, pero ya no sirve. La nueva vive en `DEMO_PASSWORD`, en el `.env` de cada integrante, y `scripts/clerk.mjs` la lee de ahí. Las cuentas están en Clerk y se comparten entre local y la nube: correr el script con otra contraseña la cambia para todos.
 - El README y el anexo del white paper dicen que la contraseña se envía con la entrega.
-- `credenciales-demo.md`, en la raíz de la PoC, reúne la URL, las cinco cuentas, la contraseña y el código de verificación. Está en el `.gitignore` y `azure.sh` no lo copia a la VM. Se subió a Google Drive con acceso para cualquier persona que tenga el enlace, y se entrega junto con el trabajo. El grupo eligió ese permiso para que la cátedra no tenga que pedir acceso, y cuida la distribución del enlace. Desde el 20/11 incluye también las claves de la instancia de desarrollo de Clerk, necesarias para levantar la PoC en local; se regeneran después del 26/11.
+- `credenciales-demo.md`, en la raíz de la PoC, reúne la URL, las cinco cuentas, la contraseña y el código de verificación. Está en el `.gitignore` y `azure.sh` no lo copia a la VM. Se subió a Google Drive con acceso para cualquier persona que tenga el enlace, y se entrega junto con el trabajo. El grupo eligió ese permiso para que la cátedra no tenga que pedir acceso, y cuida la distribución del enlace. Desde el 19/11 incluye también las claves de la instancia de desarrollo de Clerk, necesarias para levantar la PoC en local; se regeneran después del 26/11.
 
 Queda como **recomendación (inferencia y conocimiento general)**:
 
