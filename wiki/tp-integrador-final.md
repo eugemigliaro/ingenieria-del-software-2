@@ -104,10 +104,13 @@ El 7/11/2026 el grupo eligió la opción 2 con **Kafka**. La PoC, el README, el 
 - **Juegos:** tres minijuegos de texto, uno por carrera, de 9 niveles cada uno. Medicina es El caso, Sistemas es La bajada y Derecho es El tablero. No dependen de reflejos. El servidor publica `nivel_completado` solo cuando el juego se cumple.
 - **Identidad:** Clerk, con onboarding de alumno, padre o profesor. El padre vincula hijos por código y el profesor, un curso. Postgres guarda el rol y los vínculos. Kafka, los dos consumidores y el modelo de lectura siguen igual.
 - **Stack:** Next.js y TypeScript, consumidores en Node, Postgres y Docker Compose. El despliegue es en una VM de Azure for Students, con el mismo compose. Clerk queda afuera del compose: hacen falta sus claves.
+- **Persistencia del log (corregido el 19/11):** la imagen `apache/kafka` guardaba el log en `/tmp/kafka-logs`, dentro del contenedor, y el volumen `kafka` quedaba vacío: al recrear el contenedor se perdía toda la historia, en contra de la retención infinita y del replay que argumenta el white paper. `KAFKA_LOG_DIRS` lo lleva al volumen. En la VM se migró el log existente sin perder datos, y se verificó recreando el contenedor de Kafka: el log y los offsets de los dos grupos se conservaron.
 - **Diferencia con la [Actividad 2](../practica/clase-09-actividad-2/README.md):** allí el MVP usaba un bus interno apoyado en la base de datos y dejaba el servicio pub-sub para la expansión. La PoC usa Kafka directamente, y el white paper lo justifica por el replay de métricas y el desacople entre el juego y las alertas.
 - **Despliegue:** la PoC está en <https://yolo-tpif-34cb00.brazilsouth.cloudapp.azure.com>. Kafka UI y Mailpit no se exponen a Internet: se ven por túnel SSH, con una clave autorizada en la VM. El 19/11 el grupo acordó dejar la VM prendida hasta la defensa del 26/11.
+- **Operación de la VM:** `deploy/azure.sh` despliega y se niega a hacerlo si hay cambios sin commitear o la copia local está atrás del remoto, porque copia el directorio con `rsync --delete`. En macOS hace falta el rsync de Homebrew (`brew install rsync`). `deploy/azure.sh reset` vuelve la demo al estado inicial: borra Kafka, Postgres y Mailpit, conserva el certificado de HTTPS y vuelve a sembrar a Juana. Conviene correrlo la mañana de la defensa. Se probó el 19/11 con un backup previo, que después se restauró.
+- **Prueba de punta a punta:** `scripts/e2e.sh` no depende de lo que ya se haya jugado: prueba la frustración en el primer nivel de Sistemas que Tomás no completó y, si completó los 9, libera el último.
 - **Supuesto sobre «se requieren credenciales»:** la app desplegada pide login de Clerk, y la entrega incluye las cuentas de prueba de padre, alumno y profesor. Las contraseñas no se guardan en esta wiki. La duda sigue abierta con la cátedra; ver la propuesta de envío más abajo.
-- **White paper (19/11):** cinco páginas de cuerpo más un anexo con la demo en la nube, las cuentas de prueba y el stack. Kafka se justifica por la relectura del log y por el desacople entre el juego y el mail, no por volumen ni por tiempo real; la comparativa empieza por la escritura directa en Postgres.
+- **White paper (19/11):** se titula «YOLO: descubrí tu camino», tomado del titular del sitio del producto. Tiene cinco páginas de cuerpo y tres anexos: A, la demo en la nube, las cuentas de prueba y el stack; B, los diagramas de despliegue y de secuencia; C, las referencias. Kafka se justifica por la relectura del log y por el desacople entre el juego y el mail, no por volumen ni por tiempo real; la comparativa empieza por la escritura directa en Postgres. Se verificaron todos los links, también en el PDF.
 
 ### Entregables y defensa
 
@@ -115,13 +118,16 @@ El enunciado pide dos entregables: el white paper y la PoC, que incluye el despl
 
 Para la defensa, el grupo planea 5 minutos de exposición, 5 de demo y 10 de preguntas. El enunciado indica 10, 10 y 10. [TPIF-2026, p. 7] La diferencia está registrada en [Dudas y conflictos](dudas-y-conflictos.md).
 
-### Propuesta para enviar las credenciales
+### Envío de las credenciales
 
-**Inferencia y conocimiento general**, a confirmar en el grupo:
+Los dos repositorios son públicos, y la contraseña original de las cuentas de prueba figuraba en el README de la PoC. Cualquiera podía entrar como Tomás o como Ana, o cambiar la contraseña desde el perfil de Clerk y dejar al grupo afuera antes de la defensa. Lo hecho el 19/11:
 
-- Los dos repositorios son públicos, y la contraseña de las cuentas de prueba ya figura en el README de la PoC y en su historial de git. Cualquiera puede entrar como Tomás o como Ana y jugar, o cambiar la contraseña desde el perfil de Clerk y dejar al grupo afuera antes de la defensa.
-- Mandar las credenciales solo por el canal oficial de entrega de la cátedra (el campus o el mail de los docentes), junto con la URL, y no en el repositorio.
-- Antes de mandarlas, cambiar la contraseña de las cuentas de prueba por una nueva que no esté en git. En el README y en el anexo del white paper, reemplazarla por «se envía con la entrega».
+- Se cambió la contraseña de las cinco cuentas. La anterior quedó en el historial de git, pero ya no sirve. La nueva vive en `DEMO_PASSWORD`, en el `.env` de cada integrante, y `scripts/clerk.mjs` la lee de ahí. Las cuentas están en Clerk y se comparten entre local y la nube: correr el script con otra contraseña la cambia para todos.
+- El README y el anexo del white paper dicen que la contraseña se envía con la entrega.
+- `credenciales-demo.md`, en la raíz de la PoC, reúne la URL, las cinco cuentas, la contraseña y el código de verificación. Está en el `.gitignore` y `azure.sh` no lo copia a la VM. Se subió a Google Drive, compartido solo con cuentas del ITBA, y se entrega junto con el trabajo.
+
+Queda como **recomendación (inferencia y conocimiento general)**:
+
 - No compartir nunca las claves de Clerk, la contraseña de Postgres ni el acceso a la cuenta de Azure. Si la cátedra pide acceso a la infraestructura, conviene darle a su cuenta del ITBA un rol de solo lectura en el grupo de recursos (`Reader` en Azure) o agregar su clave SSH a la VM, como hizo el grupo.
 - Después del 26/11, borrar las cuentas de prueba o cambiarles la contraseña.
 
